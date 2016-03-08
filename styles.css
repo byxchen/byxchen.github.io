@@ -2,23 +2,29 @@ span{
 	color:blue; 
 	font-size:20px;
 }
-.content{
-	width: 65%; 
-	margin: 0 auto; 
-	background: #000; 
-	color: #fff;
-	height: 3000px
-}
 body{
 	background: #b3d9ff
 }
-.header{
-	height:50px;
-	background:white;
-	border:1px solid #CCC;
-	width: 65%;
-	position:fixed;
-	margin: 0px, auto;
-	top:0px;
-	left:17.5%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
