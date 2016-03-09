@@ -93,6 +93,10 @@ p{
 	padding-left:50px
 }
 
+.text{
+	font-size:14px;
+	font-family: 'Lato', sans-serif;
+}
 .titleHeader{
 	font-family: 'Lora', serif;
 	font-size:50px;
