@@ -76,8 +76,10 @@
 				span.onclick = function() { 
 					modal.style.display = "none";
 				}
-				non-x-area.onclick = function() { 
-					modal.style.display = "none";
+				non-x-area.onclick = function() {
+					if(modal.style.display != "none"){
+						modal.style.display = "none";
+					}
 				}
 				// Get all images and insert the clicked image inside the modal
 				// Get the content of the image description and insert it inside the modal image caption
