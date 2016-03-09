@@ -5,6 +5,8 @@
 		<link href = "styles.css" rel="stylesheet" type="text/css" />
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -28,11 +30,16 @@
 			</p>
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
-			
 				<p class="subheader">
-					Riven
+					Riven&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#more_info">Show Details</button>
 				<p>
-				<div class="responsive">
+				<div class="container">
+				  <div id="more_info" class="collapse">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				  </div>
+				</div>				<div class="responsive">
 				  <div class="img">
 					  <img src="/assets/riven/item_purchase.png" alt="Item Purchase" width="300" height="200">
 					<div class="desc">Item Purchase</div>

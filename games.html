@@ -3,24 +3,11 @@
 	<head>
 		<title> Brian Chen </title>
 		<link href = "styles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-		<script type="text/javascript">
-		   function toggle_visibility(but, id) {
-			   var e = document.getElementById(id);
-			   if(e.style.display == 'block')
-				  e.style.display = 'none';
-			   else
-				  e.style.display = 'block';
-			   var button = document.getElementById(but);
-			   if(button.innerHTML == "+"){
-				button.innerHTML = '-';
-			   }
-			   else{
-				button.innerHTML = '+';
-			   }
-		   }
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -45,11 +32,14 @@
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
 				<p class="subheader">
-					<button id="button_1" class="clearbutton" type="button" onclick="toggle_visibility('button_1','hidden_1');">+</button>
-					Riven
+					Riven&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#more_info">Show Details</button>
 				<p>
-				<div style="display:none" id="hidden_1">
-					Text to come... about Riven
+				<div class="container">
+				  <div id="more_info" class="collapse">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				  </div>
 				</div>
 				<div class="responsive">
 				  <div class="img">
@@ -122,11 +112,14 @@
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
 				<p class="subheader">
-					<button id="button_2" class="clearbutton" type="button" onclick="toggle_visibility('button_2','hidden_2');">+</button>
-					Trash Smash
+					Trash Smash&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#more_info_2">Show Details</button>
 				<p>
-				<div style="display:none" id="hidden_2">
-					Text to come... About Trash Smash
+				<div class="container">
+				  <div id="more_info_2" class="collapse">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				  </div>
 				</div>
 				<div class="responsive">
 				  <div class="img">
