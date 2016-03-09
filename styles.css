@@ -80,3 +80,16 @@ body{
 .active {
     background-color: #4CAF50;
 }
+
+.subheader{
+	font-family: 'Lora', serif;
+	font-size:40px;
+	margin: 30;
+	padding-left:50px
+}
+
+.contentBox{
+	background-color:pink;
+	display: table;
+    margin: 0 auto;
+}
