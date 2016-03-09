@@ -79,7 +79,7 @@ p{
 	width:55%;
     background: #F0F0F0;
     border: 1px solid #CCC;
-    height: 2000px;
+    min-height:600px;
     margin: 40px auto;
 }
 .active {
@@ -107,7 +107,6 @@ p{
 }
 
 .contentBox{
-	background-color:pink;
 	display: table;
     margin: 0 auto;
 }
