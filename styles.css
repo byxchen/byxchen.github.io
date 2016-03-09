@@ -90,7 +90,7 @@ p{
 	font-family: 'Lora', serif;
 	font-size:30px;
 	margin: 30;
-	padding-left:50px
+	padding-left:30px
 }
 
 .text{
@@ -247,4 +247,15 @@ div.desc {
     content: "";
     display: table;
     clear: both;
+}
+
+.hidden_1{
+	display: none;
+}
+
+.clearbutton{
+	font-family: 'Lora', serif;
+	font-size:30px;
+    background: transparent;
+    border: none !important;
 }

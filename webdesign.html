@@ -5,6 +5,22 @@
 		<link href = "styles.css" rel="stylesheet" type="text/css" />
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<script type="text/javascript">
+		   function toggle_visibility(but, id) {
+			   var e = document.getElementById(id);
+			   if(e.style.display == 'block')
+				  e.style.display = 'none';
+			   else
+				  e.style.display = 'block';
+			   var button = document.getElementById(but);
+			   if(button.innerHTML == "+"){
+				button.innerHTML = '-';
+			   }
+			   else{
+				button.innerHTML = '+';
+			   }
+		   }
+		</script>
 	</head>
 	<body>
 		<div class="header">
@@ -29,8 +45,12 @@
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
 				<p class="subheader">
+					<button id="button_1" class="clearbutton" type="button" onclick="toggle_visibility('button_1','hidden_1');">+</button>
 					IvyGlobal Diagnostics
 				<p>
+				<div style="display:none" id="hidden_1">
+					Text to come... about IvyGlobal Diagnostics
+				</div>
 				<div class="responsive">
 				  <div class="img">
 					  <img src="/assets/websites/diagnostics_homepage.png" alt="Login Screen" width="300" height="200">
@@ -101,8 +121,12 @@
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
 				<p class="subheader">
+					<button id="button_2" class="clearbutton" type="button" onclick="toggle_visibility('button_2','hidden_2');">+</button>
 					CollegeGrid SAT/ACT Database
 				<p>
+				<div style="display:none" id="hidden_2">
+					Text to come... About CollegeGrid
+				</div>
 				<div class="responsive">
 				  <div class="img">
 					  <img src="/assets/websites/collegegrid_overview.png" alt="University Overview" width="300" height="200">
@@ -173,8 +197,12 @@
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
 				<p class="subheader">
+					<button id="button_3" class="clearbutton" type="button" onclick="toggle_visibility('button_3','hidden_3');">+</button>
 					IvyGlobal Classroom
 				<p>
+				<div style="display:none" id="hidden_3">
+					Text to come... about IvyGlobal classroom
+				</div>
 				<div class="responsive">
 				  <div class="img">
 					  <img src="/assets/websites/classroom_overview.png" alt="Overview of Classes" width="300" height="200">
