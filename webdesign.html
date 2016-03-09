@@ -28,9 +28,8 @@
 			</p>
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
-			
 				<p class="subheader">
-					Riven
+					IvyGlobal Classroom
 				<p>
 				<div class="responsive">
 				  <div class="img">
@@ -97,7 +96,219 @@
 				   }
 				}
 				</script>
-				<p class=
+			</div>
+			<hr>
+			<div style="margin:20px 0px 0px 40px;"> 
+				<p class="subheader">
+					IvyGlobal Real Time SAT Feedback
+				<p>
+				<div class="responsive">
+				  <div class="img">
+					  <img src="/assets/riven/item_purchase.png" alt="Item Purchase" width="300" height="200">
+					<div class="desc">Item Purchase</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/battling_slimes.png" alt="Battling Enemies" width="300" height="200">
+					<div class="desc">Battling Enemies</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/ability_tree.png" alt="Ability Trees" width="300" height="200">
+					<div class="desc">Ability Trees</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/tele_areas.png" alt="Teleport to areas" width="300" height="200">
+					<div class="desc">Teleport to areas</div>
+				  </div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				 <span class="blankspace">
+				  <span class="close">×</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				 </span>
+				</div>
+				<script>
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				var non_area = document.getElementsByClassName("blankspace")[0];
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
+				// Doesnt force user to have to click (x) to exit image. Any click exists image
+				non_area.onclick = function() {
+					if(modal.style.display != "none"){
+						modal.style.display = "none";
+					}
+				}
+				// Get all images and insert the clicked image inside the modal
+				// Get the content of the image description and insert it inside the modal image caption
+				var images = document.getElementsByTagName('img');
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				var i;
+				for (i = 0; i < images.length; i++) {
+				   images[i].onclick = function(){
+					   modal.style.display = "block";
+					   modalImg.src = this.src;
+					   modalImg.alt = this.alt;
+					   captionText.innerHTML = this.nextElementSibling.innerHTML;
+				   }
+				}
+				</script>
+			</div>
+			<hr>
+			<div style="margin:20px 0px 0px 40px;"> 
+				<p class="subheader">
+					IvyGlobal Diagnostics
+				<p>
+				<div class="responsive">
+				  <div class="img">
+					  <img src="/assets/riven/item_purchase.png" alt="Item Purchase" width="300" height="200">
+					<div class="desc">Item Purchase</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/battling_slimes.png" alt="Battling Enemies" width="300" height="200">
+					<div class="desc">Battling Enemies</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/ability_tree.png" alt="Ability Trees" width="300" height="200">
+					<div class="desc">Ability Trees</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/tele_areas.png" alt="Teleport to areas" width="300" height="200">
+					<div class="desc">Teleport to areas</div>
+				  </div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				 <span class="blankspace">
+				  <span class="close">×</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				 </span>
+				</div>
+				<script>
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				var non_area = document.getElementsByClassName("blankspace")[0];
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
+				// Doesnt force user to have to click (x) to exit image. Any click exists image
+				non_area.onclick = function() {
+					if(modal.style.display != "none"){
+						modal.style.display = "none";
+					}
+				}
+				// Get all images and insert the clicked image inside the modal
+				// Get the content of the image description and insert it inside the modal image caption
+				var images = document.getElementsByTagName('img');
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				var i;
+				for (i = 0; i < images.length; i++) {
+				   images[i].onclick = function(){
+					   modal.style.display = "block";
+					   modalImg.src = this.src;
+					   modalImg.alt = this.alt;
+					   captionText.innerHTML = this.nextElementSibling.innerHTML;
+				   }
+				}
+				</script>
+			</div>
+			<hr>
+			<div style="margin:20px 0px 0px 40px;"> 
+				<p class="subheader">
+					CollegeGrid SAT/ACT Database
+				<p>
+				<div class="responsive">
+				  <div class="img">
+					  <img src="/assets/riven/item_purchase.png" alt="Item Purchase" width="300" height="200">
+					<div class="desc">Item Purchase</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/battling_slimes.png" alt="Battling Enemies" width="300" height="200">
+					<div class="desc">Battling Enemies</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/ability_tree.png" alt="Ability Trees" width="300" height="200">
+					<div class="desc">Ability Trees</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/riven/tele_areas.png" alt="Teleport to areas" width="300" height="200">
+					<div class="desc">Teleport to areas</div>
+				  </div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				 <span class="blankspace">
+				  <span class="close">×</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				 </span>
+				</div>
+				<script>
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				var non_area = document.getElementsByClassName("blankspace")[0];
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
+				// Doesnt force user to have to click (x) to exit image. Any click exists image
+				non_area.onclick = function() {
+					if(modal.style.display != "none"){
+						modal.style.display = "none";
+					}
+				}
+				// Get all images and insert the clicked image inside the modal
+				// Get the content of the image description and insert it inside the modal image caption
+				var images = document.getElementsByTagName('img');
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				var i;
+				for (i = 0; i < images.length; i++) {
+				   images[i].onclick = function(){
+					   modal.style.display = "block";
+					   modalImg.src = this.src;
+					   modalImg.alt = this.alt;
+					   captionText.innerHTML = this.nextElementSibling.innerHTML;
+				   }
+				}
+				</script>
 			</div>
 		</div>
 		<hr>
