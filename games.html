@@ -59,10 +59,11 @@
 				<div class="clearfix"></div>
 				<!-- The Modal -->
 				<div id="myModal" class="modal">
-				  <span class="close">
-					  <img class="modal-content" id="img01">
-					  <div id="caption"></div>
-				  </span>
+				 <span class="blankspace">
+				  <span class="close">×</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				 </span>
 				</div>
 				<script>
 				// Get the modal
@@ -70,12 +71,14 @@
 
 				// Get the <span> element that closes the modal
 				var span = document.getElementsByClassName("close")[0];
-
+				var non-x-area = document.getElementsByClassName("close")[0];
 				// When the user clicks on <span> (x), close the modal
 				span.onclick = function() { 
 					modal.style.display = "none";
 				}
-
+				non-x-area.onclick = function() { 
+					modal.style.display = "none";
+				}
 				// Get all images and insert the clicked image inside the modal
 				// Get the content of the image description and insert it inside the modal image caption
 				var images = document.getElementsByTagName('img');
