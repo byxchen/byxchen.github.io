@@ -2,15 +2,28 @@
 <html>
 	<head>
 		<title> Brian Chen </title>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link href = "styles.css" rel="stylesheet" type="text/css"/>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		   function toggle_visibility(but, id) {
+			   var e = document.getElementById(id);
+			   if(e.style.display == 'block')
+				  e.style.display = 'none';
+			   else
+				  e.style.display = 'block';
+			   var button = document.getElementById(but);
+			   if(button.innerHTML == "+"){
+				button.innerHTML = '-';
+			   }
+			   else{
+				button.innerHTML = '+';
+			   }
+		   }
+		</script>
 	</head>
 	<body>
-		<div class="header_2">
+		<div class="header">
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li class="dropdown">
@@ -32,14 +45,11 @@
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
 				<p class="subheader">
-					Riven&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#more_info">Show Details</button>
+					<button id="button_1" class="clearbutton" type="button" onclick="toggle_visibility('button_1','hidden_1');">+</button>
+					Riven
 				<p>
-				<div class="container">
-				  <div id="more_info" class="collapse">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				  </div>
+				<div style="display:none" id="hidden_1">
+					Text to come... about Riven
 				</div>
 				<div class="responsive">
 				  <div class="img">
@@ -74,52 +84,17 @@
 				  <div id="caption"></div>
 				 </span>
 				</div>
-				<script>
-				// Get the modal
-				var modal = document.getElementById('myModal');
-
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
-				var non_area = document.getElementsByClassName("blankspace")[0];
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() { 
-					modal.style.display = "none";
-				}
-				// Doesnt force user to have to click (x) to exit image. Any click exists image
-				non_area.onclick = function() {
-					if(modal.style.display != "none"){
-						modal.style.display = "none";
-					}
-				}
-				// Get all images and insert the clicked image inside the modal
-				// Get the content of the image description and insert it inside the modal image caption
-				var images = document.getElementsByTagName('img');
-				var modalImg = document.getElementById("img01");
-				var captionText = document.getElementById("caption");
-				var i;
-				for (i = 0; i < images.length; i++) {
-				   images[i].onclick = function(){
-					   modal.style.display = "block";
-					   modalImg.src = this.src;
-					   modalImg.alt = this.alt;
-					   captionText.innerHTML = this.nextElementSibling.innerHTML;
-				   }
-				}
-				</script>
 			</div>
 			<br>
 			<br>
 			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
 				<p class="subheader">
-					Trash Smash&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#more_info_2">Show Details</button>
+					<button id="button_2" class="clearbutton" type="button" onclick="toggle_visibility('button_2','hidden_2');">+</button>
+					Trash Smash
 				<p>
-				<div class="container">
-				  <div id="more_info_2" class="collapse">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				  </div>
+				<div style="display:none" id="hidden_2">
+					Text to come... About Trash Smash
 				</div>
 				<div class="responsive">
 				  <div class="img">
