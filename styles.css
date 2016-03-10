@@ -259,3 +259,8 @@ div.desc {
     background: transparent;
     border: none !important;
 }
+
+.hidden_text{
+	margin-left:68px;
+	margin-bottom:40px;
+}
