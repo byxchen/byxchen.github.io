@@ -18,14 +18,14 @@ li a {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown_m:hover .dropbtn {
     background-color: #111;
 }
 
 li a.dropbtn-2{
 	background-color:#4CAF50;
 }
-li.dropdown {
+li.dropdown_m {
     display: inline-block;
 }
 
@@ -47,7 +47,7 @@ li.dropdown {
 
 .dropdown-content a:hover {background-color: #cccccc}
 
-.dropdown:hover .dropdown-content {
+.dropdown_m:hover .dropdown-content {
     display: block;
 }
 
