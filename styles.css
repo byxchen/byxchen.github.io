@@ -18,14 +18,14 @@ li a {
     text-decoration: none;
 }
 
-li a:hover, .dropdown_m:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
     background-color: #111;
 }
 
 li a.dropbtn-2{
 	background-color:#4CAF50;
 }
-li.dropdown_m {
+li.dropdown {
     display: inline-block;
 }
 
@@ -47,7 +47,7 @@ li.dropdown_m {
 
 .dropdown-content a:hover {background-color: #cccccc}
 
-.dropdown_m:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -66,7 +66,7 @@ p{
 	font-size:18px;
 }
 
-.header{
+.header_2{
 	position:fixed;
 	margin: 0px, auto;
 	top:0px;
