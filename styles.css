@@ -89,7 +89,7 @@ p{
 .subheader{
 	font-family: 'Lora', serif;
 	font-size:30px;
-	margin: 30;
+	margin: 30 30 0 30;
 	padding-left:30px
 }
 
@@ -263,4 +263,6 @@ div.desc {
 .hidden_text{
 	margin-left:68px;
 	margin-bottom:40px;
+	font-family: 'Lato', sans-serif;
+	font-size:14px;
 }
