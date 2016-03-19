@@ -39,9 +39,19 @@
 			</ul>
 		</div>
 		MY APPs!
-		<applet code="Riven.class" archive="http://byxc.me/assets/games/Riven.jar" width="1024" height="768"></applet>
 		MY APP
-		<applet code="Main.class" archive="http://byxc.me/assets/games/Riven.jar" width="1024" height="768"></applet>
+		<object code="Main.class" archive="http://byxc.me/assets/games/Riven.jar" width="1024" height="768"></object>
 		MY APP
+		<script src="http://www.java.com/js/deployJava.js"></script>
+		<script>
+			var attributes = {codebase:'http://java.sun.com/products/plugin/1.5.0/demos/jfc/Java2D',
+							  code:'java2d.Java2DemoApplet.class',
+							  archive:'Java2Demo.jar',
+							  width:710, height:540} ;
+			var parameters = {fontSize:16} ;
+			var version = '1.6' ;
+			deployJava.runApplet(attributes, parameters, version);
+		</script>
+
 	</body>
 </html>
