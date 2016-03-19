@@ -1,26 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Brian Chen - Misc</title>
+		<title> Brian Chen - Misc Projects </title>
 		<link href = "styles.css" rel="stylesheet" type="text/css"/>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-		<script type="text/javascript">
-		   function toggle_visibility(but, id) {
-			   var e = document.getElementById(id);
-			   if(e.style.display == 'block')
-				  e.style.display = 'none';
-			   else
-				  e.style.display = 'block';
-			   var button = document.getElementById(but);
-			   if(button.innerHTML == "+"){
-				button.innerHTML = '-';
-			   }
-			   else{
-				button.innerHTML = '+';
-			   }
-		   }
-		</script>
 	</head>
 	<body>
 		<div class="header">
@@ -38,41 +22,188 @@
 				<li><a href="/contact.html">Contact</a></li>
 			</ul>
 		</div>
+		<a name=""/>
 		<div class="content">
 			<p class="titleHeader">
 				Miscellaneous Projects
 			</p>
 			<hr>
+				<div style="display: table; margin: 0 auto;">
+					<p class="nodecolink">
+						<a class="nodecolink"href="#Fuudi"> Fuudi </a>
+						&nbsp;|&nbsp;
+						<a class="nodecolink"href="#PokeTbase"> OneMark </a>
+						&nbsp;|&nbsp;
+						<a class="nodecolink"href="#OneMark"> PokeTbase </a>
+					</p>
+				</div>
+			<a name="Fuudi"/>
+			<hr>
 			<div style="margin:20px 0px 0px 40px;"> 
 				<p class="subheader">
-					<button id="button_1" class="clearbutton" type="button" onclick="toggle_visibility('button_1','hidden_1');">+</button>
-					Fuudi
+					Fuudi <a class="nodecolink_small" href="#top">[Back To Top]</a>
 				<p>
-				<div class = "hidden_text" style="display:none" id="hidden_1">
-					Text to come... about Fuudi
-				</div>			
+				<div class = "desc-text" id="hidden_1">
+					<a class="nodecolink" href="http://collegegrid.com/EvoEdu/index.asp"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
+					<br>
+					<span style="font-style:italic" >Fuudi is a Fantasy Football information consolidation application developped for the CFL.</span>
+					<br><span style="font-weight:bold">Not official application nor otherwise affiliated with the CFL.</span>
+					<br>
+					<br>
+					IvyGlobal is a SAT/ACT preparation company that helps students in Canada and America prepare for the
+					Standardized Aptitute Test, and the American College Testing Standardized Test. We designed IvyGlobal
+					diagnostics to help tutors and students get a good idea of how they're progressing with their SAT/ACT
+					studies. 
+					<br>
+					<br>
+					Teachers can create test banks for Math, Reading - passage, Reading - article, and Writing
+					subjects, as well as questions for secondary test topics such as Biology and Physics. These mock-tests
+					are stored server-side.
+					<br>
+					<br>
+					In helping create IvyGlobal diagnostics, I learned to work with Javascript, AJAX, MathJax, LaTeX, and Microsoft SQL.
+					<br>
+					Fuudi was created
+					in collaboration with three other developers, <a href="https://github.com/wgma00"> William </a>, <a href="https://github.com/justinli1">Justin</a>, and <a href="https://github.com/aditpatel14">Adit</a>. We employed Agile Development methods and used Github as a collaborative platform.
+				</div>
 				<div class="responsive">
 				  <div class="img">
-					  <img src="/assets/misc/item_purchase.png" alt="Item Purchase" width="300" height="200">
-					<div class="desc">Item Purchase</div>
+					  <img src="/assets/misc/fuudi_overview.png" alt="Interest Players" width="300" height="200">
+					<div class="desc">Interest Players</div>
 				  </div>
 				</div>
 				<div class="responsive">
 				  <div class="img">
-					<img src="/assets/misc/battling_slimes.png" alt="Battling Enemies" width="300" height="200">
-					<div class="desc">Battling Enemies</div>
+					<img src="/assets/websites/fuudi_player_profile.png" alt="Player Profiles" width="300" height="200">
+					<div class="desc">Player Profiles</div>
 				  </div>
 				</div>
 				<div class="responsive">
 				  <div class="img">
-					<img src="/assets/misc/ability_tree.png" alt="Ability Trees" width="300" height="200">
-					<div class="desc">Ability Trees</div>
+					<img src="/assets/websites/fuudi_twitter_trends.png" alt="Player Trends" width="300" height="200">
+					<div class="desc">Player Trends</div>
+				  </div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				 <span class="blankspace">
+				  <span class="close">×</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				 </span>
+				</div>
+			</div>
+			<br><br>
+			<a name = "PokeTbase"/>
+			<hr>
+			<div style="margin:20px 0px 0px 40px;"> 
+				<p class="subheader">
+					PokéTBase <a class="nodecolink_small" href="#top">[Back To Top]</a>
+				<p>
+				<div class = "desc-text" id="hidden_1">
+					<a class="nodecolink" href="http://collegegrid.com"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
+					<br>
+					<span style="font-style:italic" >CollegeGrid ACT/SAT Database is a information bank of US colleges and their related SAT information.</span>
+					<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
+					<br>
+					<br>
+					CollegeGrid is a repository of information regarding American colleges and universities. Information such as average tuition, male
+					to female ratio, and rate of undergraduate and masters degrees awarded per year can all be found on this site. CollegeGrid also has a 
+					system to predict a student's chances (MyChances) of being accepted to a specific college based on a holistic analysis of predicted SAT/ACT
+					scores, placement in their class, and extracurriculars. CollegeGrid also recommends colleges to users, based uniquely on SAT/ACT scores.
+					<br>
+					<br>
+					Students are able to analyze their chances of getting into the colleges and universities that they desire, with their predicted or actual SAT/ACT
+					scores. They are able to see the univerisites that are par/reach/safe for them, with their current scores, and plan accordingly. University information
+					is updated yearly from official sources, so information is guarenteed to be accurate and relevant.
+					<br>
+					<br>
+					In helping create CollegeGrid, I learned to work with Javascript, AJAX, ASP, VBScript, ASP.net, and Microsoft SQL.
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					  <img src="/assets/websites/collegegrid_overview.png" alt="University Overview" width="300" height="200">
+					<div class="desc">University Overview</div>
 				  </div>
 				</div>
 				<div class="responsive">
 				  <div class="img">
-					<img src="/assets/misc/tele_areas.png" alt="Teleport to areas" width="300" height="200">
-					<div class="desc">Teleport to areas</div>
+					<img src="/assets/websites/collegegrid_stanford_advanced.png" alt="Detailed University Information" width="300" height="200">
+					<div class="desc">Detailed University Information</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/websites/collegegrid_mychances_calculator.png" alt="Admission Chances calculator" width="300" height="200">
+					<div class="desc">Admission Chances calculator</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/websites/collegegrid_student_center.png" alt="Applicant Profiles" width="300" height="200">
+					<div class="desc">Applicant Profiles</div>
+				  </div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				 <span class="blankspace">
+				  <span class="close">×</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				 </span>
+				</div>
+			</div>
+			<br><br>
+			<a name = "OneMark"/>
+			<hr>
+			<div style="margin:20px 0px 0px 40px;"> 
+				<p class="subheader">
+					OneMark <a class="nodecolink_small" href="#top">[Back To Top]</a>
+				<p>
+				<div class = "desc-text" id="hidden_1">
+					<a class="nodecolink" href="http://classroom.ivyglobal.com/"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
+					<br>
+					<span style="font-style:italic" >IvyGlobal Classroom is a virtual learning and course management environment.</span>
+					<br><span style="font-weight:bold">Not an official application nor otherwise affiliated with the TDSB.</span>
+					<br>
+					<br>
+					IvyGlobal Classroom is a tool that helps teachers manage their virtual classroom. Students can register for a class and see the
+					syllabus for the class, detailed lesson plans regarding a class, as well as all classes for which they are registered. Teachers are
+					able to monitor student performance, create tests, new classes, and assign homework/create lesson plans for students. This highly
+					streamlined and efficient system creates an easy to use and intuitive virtual learning environment.
+					<br>
+					<br>
+					IvyGlobal classroom offers advanced analytics for each class, including test scores, individual student performances, and average performances.
+					Teachers can use these helpful analytics to cater and adjust the direction of their course as they see fit. They are also able to post notes and
+					reminders to students, for homework help or important reminders.
+					<br>
+					<br>
+					In helping create IvyGlobal Classroom, I learned to work with advanced CSS, AJAX, Angular JS, ASP.net, and MongoDB.
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					  <img src="/assets/websites/classroom_overview.png" alt="Overview of Classes" width="300" height="200">
+					<div class="desc">Overview of Classes</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/websites/class_syllabus.png" alt="Class Syllabuses" width="300" height="200">
+					<div class="desc">Class Syllabuses</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/websites/class_tests_details.png" alt="Detailed Test Management" width="300" height="200">
+					<div class="desc">Detailed Test Management</div>
+				  </div>
+				</div>
+				<div class="responsive">
+				  <div class="img">
+					<img src="/assets/websites/classroom_reports.png" alt="Student Performance Reports" width="300" height="200">
+					<div class="desc">Student Performance Reports</div>
 				  </div>
 				</div>
 				<div class="clearfix"></div>
@@ -117,8 +248,7 @@
 				}
 				</script>
 			</div>
-			<br>
-			<br>
+			<br><br>
 		</div>
 		<hr>
 	</body>
