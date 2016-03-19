@@ -270,3 +270,10 @@ div.desc {
 	font-weight: bold;
 	font-size:18px;
 }
+
+.nodecolink_small{
+	text-decoration: none;
+	color:black;
+	margin-left:1%;
+	font-size:12px;
+}
