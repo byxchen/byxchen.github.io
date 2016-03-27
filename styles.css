@@ -103,6 +103,24 @@ p{
 	font-size:14px;
 	font-family: 'Lato', sans-serif;
 }
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+#intro_pic{
+	display: inline-block;
+    vertical-align: middle;
+}
+#intro{
+	display: inline-block;
+    vertical-align: middle;
+}
 .titleHeader{
 	font-family: 'Lora', serif;
 	font-size:50px;
@@ -113,8 +131,7 @@ p{
 }
 
 .contentBox{
-	display: table;
-    margin: 0 auto;
+	float:left;
 }
 .project_hr{
 	border: 0;
