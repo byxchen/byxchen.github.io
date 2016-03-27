@@ -151,7 +151,7 @@ div.img:hover {
 
 /* The Image */
 div.img img {
-    width: 100%;
+    width: auto;
     height: auto;
     cursor: pointer;
 }
