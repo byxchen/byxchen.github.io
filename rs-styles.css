@@ -1,4 +1,7 @@
 body{
-	background: url("/assets/runeseeker/rs-bck.png");
-	width:130%
+	background: url("/assets/runeseeker/rs-bck.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
