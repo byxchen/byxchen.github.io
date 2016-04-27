@@ -28,9 +28,9 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				  <form class="navbar-form navbar-left" role="search" method="get">
 					<div class="form-group">
-					  <input type="text" class="form-control" name="query" placeholder="Search for an item">
+					  <input type="text" class="form-control" placeholder="Search for an item">
 					</div>
-					<button type="submit" formmethod="post" formaction="search.asp" class="btn btn-default">Submit</button>
+					<button type="submit" formmethod="post" formaction="search.html" class="btn btn-default">Submit</button>
 				  </form>
 				</div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
@@ -38,14 +38,11 @@
 		</header>
 		<div class="container vertical-center">
 			<div class="jumbotron"> 
-			  <h1>Welcome to RuneSeeker!</h1>
-			  <p> RuneSeeker is a database that provides users with fast and detailed information on all RuneScape items.
-			  <br>
-			  </p>
-			  <div class="container.responsive">
-			  <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
-			  <a class="btn btn-secondary btn-lg" href="#" role="button">Learn More</a>
-			  </div>
+			  <h1>TEST!</h1>
+			  <%
+				response.write("My first ASP script!")
+				response.write(request.querystring("query"))
+			  %>
 			</div>
 		</div>
 	</body>
