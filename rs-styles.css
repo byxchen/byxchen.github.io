@@ -14,3 +14,12 @@ body{
   align-items: center;
 }
 
+.jumbo-dark{
+	background-color: #d9d9d9;
+	margin-left: 3%;
+}
+
+.resize{
+	height:40px;
+	width:40px;
+}
