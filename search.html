@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> RuneSeeker - RS Item DB </title>
+		<title> RuneSeeker - Search </title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
@@ -77,6 +77,12 @@
 				<input type='button' class="btn btn-default" value='Search' onclick='displayFormContents(this.form);return false;' />
 			</form>
 			</div>
+			<br>
+			<div class="container">
+				<div id="result" style="color:red">
+					~placeholder~
+				</div>
+			</div>
 		</div>
 		<script>
 			function displayFormContents(someForm) {
@@ -88,6 +94,27 @@
 				}
 			 alert(out);
 			}
+			var getJSON = function(url) {
+			  return new Promise(function(resolve, reject) {
+				var xhr = new XMLHttpRequest();
+				xhr.open('get', url, true);
+				xhr.responseType = 'json';
+				xhr.onload = function() {
+				  var status = xhr.status;
+				  if (status == 200) {
+					resolve(xhr.response);
+				  } else {
+					reject(status);
+				  }
+				};
+				xhr.send();
+			  });
+			};
+			getJSON('http://services.runescape.com/m=itemdb_rs/api/catalogue/items.json?category=9&alpha=c&page=1').then(function(data) {
+				result.innerText = data.result; //display the result in an HTML element
+			}, function(status) { //error detection....
+			  alert('Something went wrong. Try checking the spelling of the item name!');
+			});
 		</script>
 	</body>
 </html>
