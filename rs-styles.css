@@ -15,7 +15,7 @@ body{
 }
 
 .jumbo-lite{
-	background-color: #f2f2f2;
+	background-color: #d9d9d9;
 	margin-left: 3%;
 }
 
@@ -23,3 +23,9 @@ body{
 	height:42px;
 	width:42px;
 }
+
+.resize-small{
+	height:15px;
+	width:15px;
+}
+
