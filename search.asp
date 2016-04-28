@@ -41,7 +41,6 @@
 			  <h1>TEST!</h1>
 			  <%
 				response.write("My first ASP script!")
-				response.write(request.querystring("query"))
 			  %>
 			</div>
 		</div>
