@@ -62,7 +62,7 @@ body{
 }
 
 p{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Arimo', sans-serif;
 	font-size:18px;
 }
 
@@ -72,7 +72,7 @@ p{
 	top:0px;
 	width: 55%;
 	left:22.5%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Arimo', sans-serif;
 }
 
 .footer{
@@ -101,7 +101,7 @@ p{
 
 .text{
 	font-size:14px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Arimo', sans-serif;
 }
 .titleHeader{
 	font-family: 'Lora', serif;
@@ -200,7 +200,7 @@ div.desc {
     width: 80%;
     max-width: 700px;
 	font-size:20px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Arimo', sans-serif;
     text-align: center;
     color: #ccc;
     padding: 10px 0;
@@ -277,7 +277,7 @@ div.desc {
 .desc-text{
 	margin-left:30px;
 	margin-bottom:25px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Arimo', sans-serif;
 	font-size:14px;
 	margin-right: 10%;
 }
@@ -297,7 +297,7 @@ div.desc {
 }
 
 .black{
-	font-family: Lato;
+	font-family: Arimo;
 	background-color: #ffffff;
 	border-radius: 25px;
     border: 2px solid #000000;
@@ -325,7 +325,7 @@ div.desc {
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Lato;
+	font-family:Arimo;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 24px;
