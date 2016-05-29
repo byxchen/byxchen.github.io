@@ -70,8 +70,8 @@ p{
 	position:fixed;
 	margin: 0px, auto;
 	top:0px;
-	width: 55%;
-	left:22.5%;
+	width: 75%;
+	left:12.5%;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -82,7 +82,7 @@ p{
 }
 
 .content{
-	width:55%;
+	width:75%;
     background: #fcfcfc;
     border: 1px solid #CCC;
     min-height:600px;
@@ -354,4 +354,12 @@ div.desc {
 
 .underline{
 	text-decoration:underline;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
 }
