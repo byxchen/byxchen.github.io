@@ -75,10 +75,16 @@ p{
 	font-family: 'Lato', sans-serif;
 }
 
+.footer_box{
+	background-color:#bfbfbf;
+	padding-top:15px;
+	padding-bottom:15px;
+}
 .footer{
+	margin-top:15px;
+	margin-bottom:15px;
 	display: table;
     margin: 0 auto;
-	margin-bottom:30px;
 }
 
 .content{
