@@ -369,3 +369,20 @@ div.desc {
     padding: 0;
     overflow: hidden;
 }
+
+.entry{
+	margin-left:40px;
+	font-family: 'Arimo', sans-serif;
+}
+
+.nolink{
+	text-decoration: none;
+	color:black;
+}
+
+.dropshadowclass {
+        border: solid 1px #CCC;
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999;
+        box-shadow: 5px 5px 0px #999;
+        }
