@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #2F4858;
 }
 
 li {
@@ -19,7 +19,7 @@ li a {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
+    background-color: #86BBD8;
 }
 
 li a.dropbtn-2{
@@ -45,7 +45,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #cccccc}
+.dropdown-content a:hover {background-color: #86BBD8}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -76,7 +76,7 @@ p{
 }
 
 .footer_box{
-	background-color:#595959;
+	background-color:#2F4858;
 	padding-top:15px;
 	padding-bottom:15px;
 }
@@ -95,7 +95,7 @@ p{
     margin: 40px auto;
 }
 .active {
-    background-color: #4CAF50;
+    background-color: ##336699;
 }
 
 .subheader{
@@ -164,7 +164,7 @@ div.desc {
     padding: 15px;
     text-align: center;
 	font-family: 'Arimo';
-	background-color: #46a049;
+	background-color: #86BBD8;
 	color: white;
 	font-size: 13px;
 }
