@@ -52,7 +52,7 @@ li.dropdown {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #86BBD8;
 }
 
 body{
@@ -95,7 +95,7 @@ p{
     margin: 40px auto;
 }
 .active {
-    background-color: ##336699;
+    background-color: #336699;
 }
 
 .subheader{
