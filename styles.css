@@ -385,3 +385,22 @@ div.desc {
     margin: 0 auto;
 	border-radius:10px;
 }
+
+.blog{
+  border: 0;
+  border-top: 1px dotted #8c8c8c;
+  width:70%;
+}
+
+.blogEntry{
+	font-family: Arimo;
+	font-size:14px;
+	font-color:black;
+	width: 70%;
+    margin: 0 auto; 
+}
+
+.resizeImg{
+	width:100%;
+	border:1px solid #021a40;
+}
