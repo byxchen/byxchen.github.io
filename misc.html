@@ -6,6 +6,22 @@
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 500, function(){
+				window.location.hash = hash;
+			  });
+			} 
+		  });
+		});
+		</script>
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<meta name="description" content="Brian Chen, University of Toronto Student in Computer Science. Contains personal blogging, and side projects.">
 		<meta name="keywords" content="Brian, Chen, University, UTSC, CS, CSEC, Personal, Project, Homepage, Crimson Tide, CT, Home Page, Yu Xiang Chen">
