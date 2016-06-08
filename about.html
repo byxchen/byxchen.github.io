@@ -9,6 +9,22 @@
 		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 		<meta name="description" content="Brian Chen, University of Toronto Student in Computer Science. Contains personal blogging, and side projects.">
 		<meta name="keywords" content="Brian, Chen, University, UTSC, CS, CSEC, Personal, Project, Homepage, Crimson Tide, CT, Home Page, Yu Xiang Chen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 500, function(){
+				window.location.hash = hash;
+			  });
+			} 
+		  });
+		});
+		</script>
 	</head>
 	<body>
 		<div class="header">
@@ -265,14 +281,12 @@
 			</div>
 		</div>
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-78742604-1', 'auto');
-		  ga('send', 'pageview');
+			$('a').click(function(){
+				$('html, body').animate({
+					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+				}, 500);
+				return false;
+			});
 		</script>
-
 	</body>
 </html>
