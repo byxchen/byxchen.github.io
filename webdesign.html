@@ -52,298 +52,306 @@
 			</ul>
 		</div>
 		<a name=""/>
-		<div class="content">
-			<p class="titleHeader">
+		<div class="web-content">
+			<p class="titleHeader"style="color:white">
 				Web Design Projects
 			</p>
 				<div style="display: table; margin: 0 auto;">
-					<p class="nodecolink">
-						<a class="nodecolink"href="#RS"> RuneSeeker </a>
+					<p class="nodecolink"style="color:white">
+						<a class="nodecolink"href="#RS"style="color:white"> RuneSeeker </a>
 						&nbsp;|&nbsp;
-						<a class="nodecolink"href="#IVGD"> IvyGlobal Diagnostics </a>
+						<a class="nodecolink"href="#IVGD"style="color:white"> IvyGlobal Diagnostics </a>
 						&nbsp;|&nbsp;
-						<a class="nodecolink"href="#CG"> CollegeGrid </a>
+						<a class="nodecolink"href="#CG"style="color:white"> CollegeGrid </a>
 						&nbsp;|&nbsp;
-						<a class="nodecolink"href="#IVGC"> IvyGlobal Classroom </a>
+						<a class="nodecolink"href="#IVGC"style="color:white"> IvyGlobal Classroom </a>
 					</p>
 				</div>
-			<a name="RS"/>
-			<hr class='project_hr'>
-			<div style="margin:20px 0px 0px 40px;"> 
-				<p class="subheader">
-					RuneSeeker <a class="nodecolink_small" href="#top">[Back To Top]</a>
-				<p>
-				<div class = "desc-text" id="hidden_1">
-					<a class="nodecolink" href="http://www.byxc.me/runeseeker"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
-					<br>
-					<span style="font-style:italic" >RuneSeeker is a JSON parser of RuneScape's GE Item Database that offers users in depth information about items found in RuneScape</span>
-					<br><span style="font-weight:bold">Not an official application nor otherwise affiliated with RuneScape or JaGeX. </span>
-					<br>
-					<br>
-					RuneSeeker is a web-based application that searchs the RuneScape's Grand Exchange database using the Official RuneScape API
-					to retrieve information about each item. It provides the user with a fast and efficient way to access otherwise obscure or
-					uncommon items. By processing the users Query, RuneSeeker makes an API call to RuneScape's Grand Exchange API and recieves back
-					a JSON string with all the relevant information. RuneSeeker parses this information and formats it into a neat information module
-					for the user.
-					<br>
-					<br>
-					RuneSeeker tracks the properties of each item, what type of item it is (combat, furnishing, food, etc.), whether or not it is an exclusive
-					item (members-only), and the monetary value of the item by different standards. It also provides financially savvy users with a graph
-					to track market trends regarding the item, helping to illustrate patterns in the items monetary fluctuation.
-					<br>
-					<br>
-					In creating RuneSeeker, I learned about JSON, AJAX, BootStrap, and PHP.
+			<div class="even-element">
+				<a name="RS"/>
+				<hr class='project_hr'>
+				<div style="margin:20px 0px 0px 40px;"> 
+					<p class="subheader">
+						RuneSeeker <a class="nodecolink_small" href="#top">[Back To Top]</a>
+					<p>
+					<div class = "desc-text" id="hidden_1">
+						<a class="nodecolink" href="http://www.byxc.me/runeseeker"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
+						<br>
+						<span style="font-style:italic" >RuneSeeker is a JSON parser of RuneScape's GE Item Database that offers users in depth information about items found in RuneScape</span>
+						<br><span style="font-weight:bold">Not an official application nor otherwise affiliated with RuneScape or JaGeX. </span>
+						<br>
+						<br>
+						RuneSeeker is a web-based application that searchs the RuneScape's Grand Exchange database using the Official RuneScape API
+						to retrieve information about each item. It provides the user with a fast and efficient way to access otherwise obscure or
+						uncommon items. By processing the users Query, RuneSeeker makes an API call to RuneScape's Grand Exchange API and recieves back
+						a JSON string with all the relevant information. RuneSeeker parses this information and formats it into a neat information module
+						for the user.
+						<br>
+						<br>
+						RuneSeeker tracks the properties of each item, what type of item it is (combat, furnishing, food, etc.), whether or not it is an exclusive
+						item (members-only), and the monetary value of the item by different standards. It also provides financially savvy users with a graph
+						to track market trends regarding the item, helping to illustrate patterns in the items monetary fluctuation.
+						<br>
+						<br>
+						In creating RuneSeeker, I learned about JSON, AJAX, BootStrap, and PHP.
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						  <img src="/assets/websites/rs_index.png" alt="RuneSeeker homepage" width="300" height="200">
+						<div class="webdesc">RuneSeeker Index</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/rs_items.png" alt="RuneSeeker item browsing" width="300" height="200">
+						<div class="webdesc">Item Categories</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/rs_item_details.png" alt="Item descriptions - Pouch" width="300" height="200">
+						<div class="webdesc">Item Details [1]</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/rs_item_details_2.png" alt="Item descriptions - Cloth" width="300" height="200">
+						<div class="webdesc">Item Details [2]</div>
+					  </div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					 <span class="blankspace">
+					  <span class="close">×</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					 </span>
+					</div>
 				</div>
-				<div class="responsive">
-				  <div class="img">
-					  <img src="/assets/websites/rs_index.png" alt="RuneSeeker homepage" width="300" height="200">
-					<div class="desc">RuneSeeker Index</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/rs_items.png" alt="RuneSeeker item browsing" width="300" height="200">
-					<div class="desc">Item Categories</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/rs_item_details.png" alt="Item descriptions - Pouch" width="300" height="200">
-					<div class="desc">Item Details [1]</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/rs_item_details_2.png" alt="Item descriptions - Cloth" width="300" height="200">
-					<div class="desc">Item Details [2]</div>
-				  </div>
-				</div>
-				<div class="clearfix"></div>
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-				 <span class="blankspace">
-				  <span class="close">×</span>
-				  <img class="modal-content" id="img01">
-				  <div id="caption"></div>
-				 </span>
-				</div>
+				<br><br>
 			</div>
-			<br><br>
-			<a name="IVGD"/>
-			<hr class='project_hr'>
-			<div style="margin:20px 0px 0px 40px;"> 
-				<p class="subheader">
-					IvyGlobal Diagnostics <a class="nodecolink_small" href="#top">[Back To Top]</a>
-				<p>
-				<div class = "desc-text" id="hidden_1">
-					<a class="nodecolink" href="http://collegegrid.com/EvoEdu/index.asp"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
-					<br>
-					<span style="font-style:italic" >IvyGlobal Diagnostics is a SAT/ACT prep tool used to test student progression with mock tests.</span>
-					<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
-					<br>
-					<br>
-					IvyGlobal is a SAT/ACT preparation company that helps students in Canada and America prepare for the
-					Standardized Aptitute Test, and the American College Testing Standardized Test. We designed IvyGlobal
-					diagnostics to help tutors and students get a good idea of how they're progressing with their SAT/ACT
-					studies. 
-					<br>
-					<br>
-					Teachers can create test banks for Math, Reading - passage, Reading - article, and Writing
-					subjects, as well as questions for secondary test topics such as Biology and Physics. These mock-tests
-					are stored server-side.
-					<br>
-					<br>
-					In helping create IvyGlobal diagnostics, I learned to work with Javascript, AJAX, MathJax, LaTeX, and Microsoft SQL.
+			<div class="odd-web-element">
+				<a name="IVGD"/>
+				<hr class='project_hr'>
+				<div style="margin:20px 0px 0px 40px;"> 
+					<p class="subheader">
+						IvyGlobal Diagnostics <a class="nodecolink_small" href="#top">[Back To Top]</a>
+					<p>
+					<div class = "desc-text" id="hidden_1">
+						<a class="nodecolink" href="http://collegegrid.com/EvoEdu/index.asp"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
+						<br>
+						<span style="font-style:italic" >IvyGlobal Diagnostics is a SAT/ACT prep tool used to test student progression with mock tests.</span>
+						<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
+						<br>
+						<br>
+						IvyGlobal is a SAT/ACT preparation company that helps students in Canada and America prepare for the
+						Standardized Aptitute Test, and the American College Testing Standardized Test. We designed IvyGlobal
+						diagnostics to help tutors and students get a good idea of how they're progressing with their SAT/ACT
+						studies. 
+						<br>
+						<br>
+						Teachers can create test banks for Math, Reading - passage, Reading - article, and Writing
+						subjects, as well as questions for secondary test topics such as Biology and Physics. These mock-tests
+						are stored server-side.
+						<br>
+						<br>
+						In helping create IvyGlobal diagnostics, I learned to work with Javascript, AJAX, MathJax, LaTeX, and Microsoft SQL.
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						  <img src="/assets/websites/diagnostics_homepage.png" alt="Login Screen" width="300" height="200">
+						<div class="webdesc">Login Screen</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/diagnostics_test_interface.png" alt="Math Mock Test" width="300" height="200">
+						<div class="webdesc">Math Mock Test</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/diagnostics_test_interface_2.png" alt="Reading Mock Test - Article" width="300" height="200">
+						<div class="webdesc">Article Reading Mock Test</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/diagnostics_test_interface_3.png" alt="Reading Mock Test - Passage" width="300" height="200">
+						<div class="webdesc">Passage Reading Mock Test</div>
+					  </div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					 <span class="blankspace">
+					  <span class="close">×</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					 </span>
+					</div>
 				</div>
-				<div class="responsive">
-				  <div class="img">
-					  <img src="/assets/websites/diagnostics_homepage.png" alt="Login Screen" width="300" height="200">
-					<div class="desc">Login Screen</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/diagnostics_test_interface.png" alt="Math Mock Test" width="300" height="200">
-					<div class="desc">Math Mock Test</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/diagnostics_test_interface_2.png" alt="Reading Mock Test - Article" width="300" height="200">
-					<div class="desc">Article Reading Mock Test</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/diagnostics_test_interface_3.png" alt="Reading Mock Test - Passage" width="300" height="200">
-					<div class="desc">Passage Reading Mock Test</div>
-				  </div>
-				</div>
-				<div class="clearfix"></div>
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-				 <span class="blankspace">
-				  <span class="close">×</span>
-				  <img class="modal-content" id="img01">
-				  <div id="caption"></div>
-				 </span>
-				</div>
+				<br><br>
 			</div>
-			<br><br>
-			<a name = "CG"/>
-			<hr class='project_hr'>
-			<div style="margin:20px 0px 0px 40px;"> 
-				<p class="subheader">
-					CollegeGrid ACT/SAT Database <a class="nodecolink_small" href="#top">[Back To Top]</a>
-				<p>
-				<div class = "desc-text" id="hidden_1">
-					<a class="nodecolink" href="http://collegegrid.com"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
-					<br>
-					<span style="font-style:italic" >CollegeGrid ACT/SAT Database is a information bank of US colleges and their related SAT information.</span>
-					<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
-					<br>
-					<br>
-					CollegeGrid is a repository of information regarding American colleges and universities. Information such as average tuition, male
-					to female ratio, and rate of undergraduate and masters degrees awarded per year can all be found on this site. CollegeGrid also has a 
-					system to predict a student's chances (MyChances) of being accepted to a specific college based on a holistic analysis of predicted SAT/ACT
-					scores, placement in their class, and extracurriculars. CollegeGrid also recommends colleges to users, based uniquely on SAT/ACT scores.
-					<br>
-					<br>
-					Students are able to analyze their chances of getting into the colleges and universities that they desire, with their predicted or actual SAT/ACT
-					scores. They are able to see the univerisites that are par/reach/safe for them, with their current scores, and plan accordingly. University information
-					is updated yearly from official sources, so information is guarenteed to be accurate and relevant.
-					<br>
-					<br>
-					In helping create CollegeGrid, I learned to work with Javascript, AJAX, ASP, VBScript, ASP.net, and Microsoft SQL.
+			<div class="even-element">
+				<a name = "CG"/>
+				<hr class='project_hr'>
+				<div style="margin:20px 0px 0px 40px;"> 
+					<p class="subheader">
+						CollegeGrid ACT/SAT Database <a class="nodecolink_small" href="#top">[Back To Top]</a>
+					<p>
+					<div class = "desc-text" id="hidden_1">
+						<a class="nodecolink" href="http://collegegrid.com"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
+						<br>
+						<span style="font-style:italic" >CollegeGrid ACT/SAT Database is a information bank of US colleges and their related SAT information.</span>
+						<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
+						<br>
+						<br>
+						CollegeGrid is a repository of information regarding American colleges and universities. Information such as average tuition, male
+						to female ratio, and rate of undergraduate and masters degrees awarded per year can all be found on this site. CollegeGrid also has a 
+						system to predict a student's chances (MyChances) of being accepted to a specific college based on a holistic analysis of predicted SAT/ACT
+						scores, placement in their class, and extracurriculars. CollegeGrid also recommends colleges to users, based uniquely on SAT/ACT scores.
+						<br>
+						<br>
+						Students are able to analyze their chances of getting into the colleges and universities that they desire, with their predicted or actual SAT/ACT
+						scores. They are able to see the univerisites that are par/reach/safe for them, with their current scores, and plan accordingly. University information
+						is updated yearly from official sources, so information is guarenteed to be accurate and relevant.
+						<br>
+						<br>
+						In helping create CollegeGrid, I learned to work with Javascript, AJAX, ASP, VBScript, ASP.net, and Microsoft SQL.
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						  <img src="/assets/websites/collegegrid_overview.png" alt="University Overview" width="300" height="200">
+						<div class="webdesc">University Overview</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/collegegrid_stanford_advanced.png" alt="Detailed University Information" width="300" height="200">
+						<div class="webdesc">Detailed University Breakdown</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/collegegrid_mychances_calculator.png" alt="Admission Chances calculator" width="300" height="200">
+						<div class="webdesc">MyChances Calculator</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/collegegrid_student_center.png" alt="Applicant Profiles" width="300" height="200">
+						<div class="webdesc">Applicant Profiles</div>
+					  </div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					 <span class="blankspace">
+					  <span class="close">×</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					 </span>
+					</div>
 				</div>
-				<div class="responsive">
-				  <div class="img">
-					  <img src="/assets/websites/collegegrid_overview.png" alt="University Overview" width="300" height="200">
-					<div class="desc">University Overview</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/collegegrid_stanford_advanced.png" alt="Detailed University Information" width="300" height="200">
-					<div class="desc">Detailed University Breakdown</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/collegegrid_mychances_calculator.png" alt="Admission Chances calculator" width="300" height="200">
-					<div class="desc">MyChances Calculator</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/collegegrid_student_center.png" alt="Applicant Profiles" width="300" height="200">
-					<div class="desc">Applicant Profiles</div>
-				  </div>
-				</div>
-				<div class="clearfix"></div>
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-				 <span class="blankspace">
-				  <span class="close">×</span>
-				  <img class="modal-content" id="img01">
-				  <div id="caption"></div>
-				 </span>
-				</div>
+				<br><br>
 			</div>
-			<br><br>
-			<a name = "IVGC"/>
-			<hr class='project_hr'>
-			<div style="margin:20px 0px 0px 40px;"> 
-				<p class="subheader">
-					IvyGlobal Classroom <a class="nodecolink_small" href="#top">[Back To Top]</a>
-				<p>
-				<div class = "desc-text" id="hidden_1">
-					<a class="nodecolink" href="http://classroom.ivyglobal.com/"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
-					<br>
-					<span style="font-style:italic" >IvyGlobal Classroom is a virtual learning and course management environment.</span>
-					<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
-					<br>
-					<br>
-					IvyGlobal Classroom is a tool that helps teachers manage their virtual classroom. Students can register for a class and see the
-					syllabus for the class, detailed lesson plans regarding a class, as well as all classes for which they are registered. Teachers are
-					able to monitor student performance, create tests, new classes, and assign homework/create lesson plans for students. This highly
-					streamlined and efficient system creates an easy to use and intuitive virtual learning environment.
-					<br>
-					<br>
-					IvyGlobal classroom offers advanced analytics for each class, including test scores, individual student performances, and average performances.
-					Teachers can use these helpful analytics to cater and adjust the direction of their course as they see fit. They are also able to post notes and
-					reminders to students, for homework help or important reminders.
-					<br>
-					<br>
-					In helping create IvyGlobal Classroom, I learned to work with advanced CSS, AJAX, Angular JS, ASP.net, and MongoDB.
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					  <img src="/assets/websites/classroom_overview.png" alt="Overview of Classes" width="300" height="200">
-					<div class="desc">Overview of Classes</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/class_syllabus.png" alt="Class Syllabuses" width="300" height="200">
-					<div class="desc">Class Syllabuses</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/class_tests_details.png" alt="Detailed Test Management" width="300" height="200">
-					<div class="desc">Test Management</div>
-				  </div>
-				</div>
-				<div class="responsive">
-				  <div class="img">
-					<img src="/assets/websites/classroom_reports.png" alt="Student Performance Reports" width="300" height="200">
-					<div class="desc">Student Performance Reports</div>
-				  </div>
-				</div>
-				<div class="clearfix"></div>
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-				 <span class="blankspace">
-				  <span class="close">×</span>
-				  <img class="modal-content" id="img01">
-				  <div id="caption"></div>
-				 </span>
-				</div>
-				<script>
-				// Get the modal
-				var modal = document.getElementById('myModal');
+			<div class="odd-web-element">
+				<a name = "IVGC"/>
+				<hr class='project_hr'>
+				<div style="margin:20px 0px 0px 40px;"> 
+					<p class="subheader">
+						IvyGlobal Classroom <a class="nodecolink_small" href="#top">[Back To Top]</a>
+					<p>
+					<div class = "desc-text" id="hidden_1">
+						<a class="nodecolink" href="http://classroom.ivyglobal.com/"> <img height="16" width="16"src="/assets/other/internet.png"/> Website </a>
+						<br>
+						<span style="font-style:italic" >IvyGlobal Classroom is a virtual learning and course management environment.</span>
+						<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
+						<br>
+						<br>
+						IvyGlobal Classroom is a tool that helps teachers manage their virtual classroom. Students can register for a class and see the
+						syllabus for the class, detailed lesson plans regarding a class, as well as all classes for which they are registered. Teachers are
+						able to monitor student performance, create tests, new classes, and assign homework/create lesson plans for students. This highly
+						streamlined and efficient system creates an easy to use and intuitive virtual learning environment.
+						<br>
+						<br>
+						IvyGlobal classroom offers advanced analytics for each class, including test scores, individual student performances, and average performances.
+						Teachers can use these helpful analytics to cater and adjust the direction of their course as they see fit. They are also able to post notes and
+						reminders to students, for homework help or important reminders.
+						<br>
+						<br>
+						In helping create IvyGlobal Classroom, I learned to work with advanced CSS, AJAX, Angular JS, ASP.net, and MongoDB.
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						  <img src="/assets/websites/classroom_overview.png" alt="Overview of Classes" width="300" height="200">
+						<div class="webdesc">Overview of Classes</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/class_syllabus.png" alt="Class Syllabuses" width="300" height="200">
+						<div class="webdesc">Class Syllabuses</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/class_tests_details.png" alt="Detailed Test Management" width="300" height="200">
+						<div class="webdesc">Test Management</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="/assets/websites/classroom_reports.png" alt="Student Performance Reports" width="300" height="200">
+						<div class="webdesc">Student Performance Reports</div>
+					  </div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					 <span class="blankspace">
+					  <span class="close">×</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					 </span>
+					</div>
+					<script>
+					// Get the modal
+					var modal = document.getElementById('myModal');
 
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
-				var non_area = document.getElementsByClassName("blankspace")[0];
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() { 
-					modal.style.display = "none";
-				}
-				// Doesnt force user to have to click (x) to exit image. Any click exists image
-				non_area.onclick = function() {
-					if(modal.style.display != "none"){
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+					var non_area = document.getElementsByClassName("blankspace")[0];
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() { 
 						modal.style.display = "none";
 					}
-				}
-				// Get all images and insert the clicked image inside the modal
-				// Get the content of the image description and insert it inside the modal image caption
-				var images = document.getElementsByTagName('img');
-				var modalImg = document.getElementById("img01");
-				var captionText = document.getElementById("caption");
-				var i;
-				for (i = 0; i < images.length; i++) {
-				   images[i].onclick = function(){
-					   modal.style.display = "block";
-					   modalImg.src = this.src;
-					   modalImg.alt = this.alt;
-					   captionText.innerHTML = this.nextElementSibling.innerHTML;
-				   }
-				}
-				</script>
+					// Doesnt force user to have to click (x) to exit image. Any click exists image
+					non_area.onclick = function() {
+						if(modal.style.display != "none"){
+							modal.style.display = "none";
+						}
+					}
+					// Get all images and insert the clicked image inside the modal
+					// Get the content of the image description and insert it inside the modal image caption
+					var images = document.getElementsByTagName('img');
+					var modalImg = document.getElementById("img01");
+					var captionText = document.getElementById("caption");
+					var i;
+					for (i = 0; i < images.length; i++) {
+					   images[i].onclick = function(){
+						   modal.style.display = "block";
+						   modalImg.src = this.src;
+						   modalImg.alt = this.alt;
+						   captionText.innerHTML = this.nextElementSibling.innerHTML;
+					   }
+					}
+					</script>
+				</div>
+				<br><br>
 			</div>
-			<br><br>
 			<div class="footer_box">
 				<div class="footer">
 					<a class="nodecolink" href="mailto:brianyxc@gmail.com?Subject=Contact" target="_top"> <img width= "25px" height="25px" src="assets/other/em.png"/> </a>
