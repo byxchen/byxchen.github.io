@@ -94,6 +94,14 @@ p{
     min-height:600px;
     margin: 40px auto;
 }
+
+.project-content{
+	width:75%;
+    background: #46a049;
+    border: 1px solid #CCC;
+    min-height:600px;
+    margin: 40px auto;
+}
 .active {
     background-color: #4CAF50;
 }
