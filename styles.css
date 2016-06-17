@@ -465,3 +465,11 @@ div.miscdesc{
 .even-element{
 	background-color:white;
 }
+
+.headpic{
+	border: solid 0.4em #008ae6;
+	border-radius: 100%;
+	float:left;
+	width:18%;
+	margin-right:2%;
+}
