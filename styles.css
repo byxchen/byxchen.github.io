@@ -477,10 +477,11 @@ div.miscdesc{
 @media only screen and (max-device-width: 480px) {
 	.header{
 		position:fixed;
-		margin: 0px, auto;
 		top:0px;
 		width: 100%;
 		font-family: 'Lato', sans-serif;
+		left:0%;
+		font-size:140%;
 	}
 	.content{
 		width:100%;
