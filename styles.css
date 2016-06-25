@@ -495,5 +495,13 @@ div.miscdesc{
 	font-color:black;
 	width: 90%;
     margin: 0 auto; 
+	}
+	.titleHeader{
+	font-family: 'Cabin', sans-serif;
+	font-size:20%;
+	display:table;
+	margin: 0 auto;
+	margin-top:20px;
+	margin-bottom:10px;
 }
 }
