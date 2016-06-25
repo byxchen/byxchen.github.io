@@ -473,3 +473,21 @@ div.miscdesc{
 	width:18%;
 	margin-right:2%;
 }
+
+@media only screen and (max-device-width: 480px) {
+	.header{
+		position:fixed;
+		margin: 0px, auto;
+		top:0px;
+		width: 100%;
+		left:12.5%;
+		font-family: 'Lato', sans-serif;
+	}
+	.content{
+		width:100%;
+		background: #fcfcfc;
+		border: 1px solid #CCC;
+		min-height:600px;
+		margin: 40px auto;
+	}
+}
