@@ -481,7 +481,7 @@ div.miscdesc{
 		width: 100%;
 		font-family: 'Lato', sans-serif;
 		left:0%;
-		font-size:140%;
+		font-size:150%;
 	}
 	.content{
 		width:100%;
@@ -491,18 +491,27 @@ div.miscdesc{
 		margin: 40px auto;
 	}
 	.blogEntry{
-	font-family: Arimo;
-	font-size:14px;
-	font-color:black;
-	width: 90%;
-    margin: 0 auto; 
+		font-family: Arimo;
+		font-size:14px;
+		font-color:black;
+		width: 90%;
+		margin: 0 auto; 
 	}
 	.titleHeader{
-	font-family: 'Cabin', sans-serif;
-	font-size:400%;
-	display:table;
-	margin: 0 auto;
-	margin-top:20px;
-	margin-bottom:10px;
-}
+		font-family: 'Cabin', sans-serif;
+		font-size:400%;
+		display:table;
+		margin: 0 auto;
+		margin-top:20px;
+		margin-bottom:10px;
+	}
+	.web-content{
+		width:100%;
+	}
+	.game-content{
+		width:100%;
+	}
+	.misc-content{
+		width:100%;
+	}
 }
