@@ -15,6 +15,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<link rel="icon" type="image/png" href="images/ctlogo.png">
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -22,6 +23,15 @@
 		</noscript>
 	</head>
 	<body class="landing">
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<a name="top"/>
 		<!-- Header -->
 			<header id="header" class="alt">
@@ -29,9 +39,9 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html">Schedule</a></li>
-						<li><a href="elements.html">Media</a></li>
-						<li><a href="elements.html">Contact</a></li>
+						<li><a href="#">Schedule</a></li>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -69,8 +79,8 @@
 							<div class="6u 12u$(medium)">
 								<header class="major">
 									<h2>What is Dragon Boating ?</h2>
-									<p> Who we are and what we do</p>
-									<a href="#top">[TOP]</a>
+									<br>
+									<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUTSCDragonboat&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 								</header>
 							</div>
 							<div class="6u$ 12u$(medium)">
@@ -150,7 +160,7 @@
 								</div>
 							</div>
 							<div class="feature">
-								<div class="image rounded"><img src="images/pic07.jpg" alt="" /></div>
+								<div class="image rounded"><img src="images/tidbrf.png" alt="" /></div>
 								<div class="content">
 									<header>
 										<h4>Toronto International Dragon Boat Race Festival</h4>
@@ -176,7 +186,7 @@
 							<p>We'd love to have you on board</p>
 						</header>
 						<ul class="actions">
-							<li><a href="#" class="button special big">Get in touch</a></li>
+							<li><a href="https://www.facebook.com/UTSCDragonboat" class="button special big">Get in touch</a></li>
 						</ul>
 					</div>
 				</section>
@@ -185,7 +195,7 @@
 			<footer id="footer">
 				<div class="container">
 					<ul class="icons">
-						<li><a href="https://www.facebook.com/groups/143552222689806/" class="icon fa-facebook"></a></li>
+						<li><a href="https://www.facebook.com/UTSCDragonboat" class="icon fa-facebook"></a></li>
 						<li><a href="#" class="icon fa-twitter"></a></li>
 						<li><a href="#" class="icon fa-instagram"></a></li>
 					</ul>
@@ -193,8 +203,13 @@
 						<li>&copy; UTSC Crimson Tide 2016</li>
 					</ul>
 				</div>
+				<!-- U of T Student Group Disclaimer --> 
+				<div style="background-color:#f6f6f6;font-family: Arial, Verdana, Helvetica, San Serif; font-size: 9px; text-align: center; display:block; width: 800px; margin: 15px auto;" >
+					DISCLAIMER: The content of this web site is entirely the responsibility of a campus organization which is independent from the University of Toronto. 
+					The opinions expressed do not necessarily reflect those of the University. 
+					The University of Toronto shall not be liable for any damage resulting from the use or misuse of the contents of this web site. 
+				</div> <!-- End of Disclaimer -->
 			</footer>
-
 	</body>
 	<script>
 		$(function() {
