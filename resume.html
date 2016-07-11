@@ -48,13 +48,18 @@
 				<div class="contentBox">
 					<p class="text">
 						Can't view the attached resume? 
-						<a href="/assets/Brian_Chen_Resume.pdf" title="Resume">View the PDF Version Online</a>
-						or
-						<a href="/assets/Brian_Chen_Resume.pdf" download> Download the PDF Version</a>
+						<a href="/assets/Brian_Chen_Resume.pdf" title="Resume">View Plaintext PDF</a>
 						/
-						<a href="/assets/Brian_Chen_Resume_EXTENDED.pdf" download>Extended Version </a>
-						<hr>
-						<embed width="820" height="820" src="http://byxc.me/assets/Brian_Chen_Resume.pdf"/>
+						<a href="/assets/Brian_Chen_Resume_[F].pdf" title="Resume">View Design PDF</a>
+						or
+						<a href="/assets/Brian_Chen_Resume.pdf" download> Download Plaintext PDF</a>
+						/
+						<a href="/assets/Brian_Chen_Resume_[F].pdf" download> Download Design PDF</a>
+						<br><br>
+						<div align="center"><a onclick="toggle()" class="myButton">Toggle Style</a></div>
+						<br>
+						<embed id="resume1" style="visibility:visible" width="100%" height="820px" src="assets/Brian_Chen_Resume.pdf"/>
+						<embed id="resume2" style="visibility:hidden" width="0%" height="0px" src="assets/Brian_Chen_Resume_[F].pdf"/>
 						<hr>
 					</p>
 				</div>
@@ -74,14 +79,14 @@
 			</div>
 		</div>
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-78742604-1', 'auto');
-		  ga('send', 'pageview');
-
+			function toggle(){
+				document.getElementById("resume1").style.visibility = "hidden";
+				document.getElementById("resume1").width = "1px";
+				document.getElementById("resume1").height = "1px";
+				document.getElementById("resume2").style.visibility = "visible";
+				document.getElementById("resume2").width = "100%";
+				document.getElementById("resume2").height = "820px";
+			}
 		</script>
 	</body>
 </html>
