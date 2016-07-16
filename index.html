@@ -40,50 +40,44 @@
 		</div>
 		<div class="content">
 			<p class="titleHeader">
-				Blog and Thoughts
+				Home
 			</p>
 			<br>
-				Filter Posts: 
-				<form action="myservlet.do" method="POST">
-					<select id="date" onchange="filter()">
-						<option value="All">All</option>
-						<option value="July">July</option>
-						<option value="August">August</option>
-						<option value="September">September</option>
-						<option value="October">October</option>
-						<option value="November">November</option>
-						<option value="December">December</option>
-						<option value="January">January</option>
-						<option value="February">February</option>
-						<option value="March">March</option>
-						<option value="April">April</option>
-						<option value="May">May</option>
-						<option value="June">June</option>
-					</select>
-				</form>
+				<div align="center" class="blogclass">
+					A blog about life, current events, hobbies, and interests. <br>
+					<span style="font-size:16px">
+					Filter Posts: 
+					<form action="myservlet.do" method="POST">
+						<select style="font-family: 'Open Sans', sans-serif;" id="date" onchange="filter()">
+							<option value="All">All</option>
+							<option value="July">July</option>
+							<option value="August">August</option>
+							<option value="September">September</option>
+							<option value="October">October</option>
+							<option value="November">November</option>
+							<option value="December">December</option>
+							<option value="January">January</option>
+							<option value="February">February</option>
+							<option value="March">March</option>
+							<option value="April">April</option>
+							<option value="May">May</option>
+							<option value="June">June</option>
+						</select>
+					</form>
+					</span>
+				</div>
 				<div class="cf">
 					<p class="desc-text">
 						<div class="blogEntry July">
 							<span style="font-size:26px;">
-								Figma, Hack the North, and more?
+								I'm making so many mock Shells!
 							</span>
 							<br>
 							<span style="font-size:12px;">
-								Jun 6 2016
+								July 16 2016
 							</span> <br><br>
-								My friends recently started talking about a new product currently in Beta called <a href="https://www.figma.com/">Figma</a>. I think this
-								looks promising! As someone who thinks design is really cool (although I'm not very good at it, haha), this could be a really useful product. 
-								What I see is something like Google Doc's collaborative nature coupled with the version control of Git. If the Beta can live up to everything 
-								it promises, I could see this being the next big tool in any good designer's toolkit.
-								<br><br>
-								In other news, Hack the North finally opened their registration! After volunteering for them in 2013, I always thought that HTN was one of the premier 
-								hackathons in Canada. A couple of my friends and I have applied, and if I hear back from them, that'll be awesome. When I was volunteering 
-								back in 2013, they had this app called RememberAll or something. Basically, it could call up an audio recording of something that happened during the day
-								by verbal keywords alone. I can't wait to see what innovative, unique, and crazy ideas they'll come up with this year.
-								<br><br>
-								The Center Island Toronto International Dragon Boat Race Festival (TIDBRF) is coming up in less than two weeks. To say that we, as a team, are jittery is an
-								understatement. Jittery? Yeah. Unprepared? Hell, no! After getting a regatta under our collective belts, as well as twice-weekly practices on-the-water, we're
-								confident we can really make a splash!
+								One for CSCB07 (Software Design) and one for CSCB09 (Software Tools and Systems Programming).
+								-More to come later-
 							<br><br>
 							<hr class="blog">
 							<br>
@@ -174,19 +168,19 @@
 						allposts[i].style.height = "0px";
 					}
 					var posts = document.getElementsByClassName(userDate);
-					if(userDate === "All"{
-						alert("ALL");
-						allposts[i].style.visibility = "visible";
-						allposts[i].style.height = "100%";
-						allposts[i].style.width = "100%";
+					if(userDate === "All"){
+						for(var i = 0; i < allpostsLength; i++) {
+							allposts[i].style.visibility = "visible";
+							allposts[i].style.height = "100%";
+							allposts[i].style.width = "70%";
+						}
 					}
 					else{
-						alert("NOTALL");
 						var postsLength = posts.length;
 						for(var i = 0; i < postsLength; i++) {
 							posts[i].style.visibility = "visible";
 							posts[i].style.height = "100%";
-							posts[i].style.width = "100%";
+							posts[i].style.width = "70%";
 						}
 					}
 				}

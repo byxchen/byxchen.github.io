@@ -558,3 +558,8 @@ div.miscdesc{
 	position:relative;
 	top:1px;
 }
+
+.blogclass{
+	font-family: 'Open Sans', sans-serif;
+	font-size:20px;
+}
