@@ -572,6 +572,14 @@ div.miscdesc{
     margin: 0px auto;
 }
 
+.resume{
+	background-color: #000033;
+	color: white;
+	width:75%;
+    border: 1px solid #CCC;
+    min-height:600px;
+    margin: 0px auto;
+}
 .bodycontent{
 	padding-top: 30px;
 	background-color:#ffffff;
