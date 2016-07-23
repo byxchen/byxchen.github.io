@@ -469,11 +469,10 @@ div.miscdesc{
 }
 
 .headpic{
-	border: solid 0.4em #008ae6;
-	border-radius: 100%;
 	float:left;
-	width:18%;
-	margin-right:2%;
+	width:260px;
+	margin-right:3.5%;
+	margin-left: 2.3%;
 }
 
 @media only screen and (max-device-width: 480px) {
