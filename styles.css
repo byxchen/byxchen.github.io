@@ -99,6 +99,15 @@ p{
     margin: 0px auto;
 }
 
+.maincontent{
+	background-color: #19194d;
+	color: white;
+	width:75%;
+    border: 1px solid #CCC;
+    min-height:600px;
+    margin: 0px auto;
+}
+
 .game-content{
 	width:75%;
     background: #46a049;
@@ -564,15 +573,6 @@ div.miscdesc{
 .blogclass{
 	font-family: 'Open Sans', sans-serif;
 	font-size:20px;
-}
-
-.maincontent{
-	background-color: #19194d;
-	color: white;
-	width:75%;
-    border: 1px solid #CCC;
-    min-height:600px;
-    margin: 0px auto;
 }
 
 .resume{
