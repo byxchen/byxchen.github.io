@@ -256,8 +256,10 @@ div.miscdesc{
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+	max-height: 85%;
+    max-width: 85%;
+	border: 3px;
+	border-style: outset;
 }
 
 /* Caption of Modal Image */
