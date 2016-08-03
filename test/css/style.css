@@ -230,7 +230,7 @@ Main Components
   float: left;
 }
 .cd-3d-nav li:first-of-type a::before {
-  background-image: url(../img/icon-1.svg);
+  background-image: url(../img/home.png);
 }
 .cd-3d-nav li:nth-of-type(2) a::before {
   background-image: url(../img/icon-2.svg);
