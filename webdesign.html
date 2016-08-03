@@ -68,8 +68,6 @@
 						<a class="nodecolink"href="#IVGD"style="color:white"> IvyGlobal Diagnostics </a>
 						&nbsp;|&nbsp;
 						<a class="nodecolink"href="#CG"style="color:white"> CollegeGrid </a>
-						&nbsp;|&nbsp;
-						<a class="nodecolink"href="#IVGC"style="color:white"> IvyGlobal Classroom </a>
 					</p>
 				</div>
 			<div class="even-element">
@@ -269,102 +267,39 @@
 				</div>
 				<br><br>
 			</div>
-			<div class="odd-web-element">
-				<a name = "IVGC"/>
-				<hr class='project_hr'>
-				<div style="margin:20px 0px 0px 40px;"> 
-					<p class="subheader" align="center">
-						IvyGlobal Classroom <br>
-						<a class="nodecolink" href="http://classroom.ivyglobal.com/"> <img height="16" width="16"src="assets/other/internet.png"/> Website </a>
-						&nbsp;&nbsp;
-						<a class="nodecolink" href="#">&#9650; Top</a>
-						<br>
-					<p>
-					<div class = "desc-text" id="hidden_1">
-						<span style="font-style:italic" >IvyGlobal Classroom is a virtual learning and course management environment.</span>
-						<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
-						<br>
-						<br>
-						IvyGlobal Classroom is a tool that helps teachers manage their virtual classroom. Students can register for a class and see the
-						syllabus for the class, detailed lesson plans regarding a class, as well as all classes for which they are registered. Teachers are
-						able to monitor student performance, create tests, new classes, and assign homework/create lesson plans for students. This highly
-						streamlined and efficient system creates an easy to use and intuitive virtual learning environment.
-						<br>
-						<br>
-						IvyGlobal classroom offers advanced analytics for each class, including test scores, individual student performances, and average performances.
-						Teachers can use these helpful analytics to cater and adjust the direction of their course as they see fit. They are also able to post notes and
-						reminders to students, for homework help or important reminders.
-						<br>
-						<br>
-						In helping create IvyGlobal Classroom, I learned to work with advanced CSS, AJAX, Angular JS, ASP.net, and MongoDB.
-					</div>
-					<div class="responsive">
-					  <div class="img">
-						  <img src="assets/websites/classroom_overview.png" alt="Overview of Classes" width="300" height="200">
-						<div class="webdesc">Overview of Classes</div>
-					  </div>
-					</div>
-					<div class="responsive">
-					  <div class="img">
-						<img src="assets/websites/class_syllabus.png" alt="Class Syllabuses" width="300" height="200">
-						<div class="webdesc">Class Syllabuses</div>
-					  </div>
-					</div>
-					<div class="responsive">
-					  <div class="img">
-						<img src="assets/websites/class_tests_details.png" alt="Detailed Test Management" width="300" height="200">
-						<div class="webdesc">Test Management</div>
-					  </div>
-					</div>
-					<div class="responsive">
-					  <div class="img">
-						<img src="assets/websites/classroom_reports.png" alt="Student Performance Reports" width="300" height="200">
-						<div class="webdesc">Student Performance Reports</div>
-					  </div>
-					</div>
-					<div class="clearfix"></div>
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-					 <span class="blankspace">
-					  <span class="close">×</span>
-					  <img class="modal-content" id="img01">
-					  <div id="caption"></div>
-					 </span>
-					</div>
-					<script>
-					// Get the modal
-					var modal = document.getElementById('myModal');
+			<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
 
-					// Get the <span> element that closes the modal
-					var span = document.getElementsByClassName("close")[0];
-					var non_area = document.getElementsByClassName("blankspace")[0];
-					// When the user clicks on <span> (x), close the modal
-					span.onclick = function() { 
-						modal.style.display = "none";
-					}
-					// Doesnt force user to have to click (x) to exit image. Any click exists image
-					non_area.onclick = function() {
-						if(modal.style.display != "none"){
-							modal.style.display = "none";
-						}
-					}
-					// Get all images and insert the clicked image inside the modal
-					// Get the content of the image description and insert it inside the modal image caption
-					var images = document.getElementsByTagName('img');
-					var modalImg = document.getElementById("img01");
-					var captionText = document.getElementById("caption");
-					var i;
-					for (i = 0; i < images.length; i++) {
-					   images[i].onclick = function(){
-						   modal.style.display = "block";
-						   modalImg.src = this.src;
-						   modalImg.alt = this.alt;
-						   captionText.innerHTML = this.nextElementSibling.innerHTML;
-					   }
-					}
-					</script>
-				</div>
-				<br><br>
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			var non_area = document.getElementsByClassName("blankspace")[0];
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+				modal.style.display = "none";
+			}
+			// Doesnt force user to have to click (x) to exit image. Any click exists image
+			non_area.onclick = function() {
+				if(modal.style.display != "none"){
+					modal.style.display = "none";
+				}
+			}
+			// Get all images and insert the clicked image inside the modal
+			// Get the content of the image description and insert it inside the modal image caption
+			var images = document.getElementsByTagName('img');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			var i;
+			for (i = 0; i < images.length; i++) {
+			   images[i].onclick = function(){
+				   modal.style.display = "block";
+				   modalImg.src = this.src;
+				   modalImg.alt = this.alt;
+				   captionText.innerHTML = this.nextElementSibling.innerHTML;
+			   }
+			}
+			</script>
+			<br><br>
 			</div>
 			<div class="footer_box">
 				<div class="footer">
