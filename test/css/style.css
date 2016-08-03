@@ -421,6 +421,17 @@ main h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main h2{
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: 300;
+  color: #ffffff;
+  opacity:#000000;
+  background-color : transparent;
+  margin: 1.5em auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 main.nav-is-visible {
   -webkit-transform: translateY(80px);
   -moz-transform: translateY(80px);
@@ -440,10 +451,199 @@ main.nav-is-visible {
     font-size: 4.6rem;
     margin: 4em auto;
   }
+  main h2{
+	  font-size: 4.0rem;
+    margin: 3em auto;
+  }
 }
 
 .translucent-descriptor{
 	padding-top:50px;
 	padding-bottom:50px;
 	background-color: rgba(0,0,0,0.4)
+}
+
+
+/* The Image */
+div.img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Description of Image */
+div.desc {
+    padding: 15px;
+    text-align: center;
+	font-family: 'Arimo';
+	background-color: #46a049;
+	color: white;
+	font-size: 13px;
+}
+
+div.webdesc{
+	background-color: #008ae6;
+	color: white;
+	font-size: 13px;
+	padding: 15px;
+    text-align: center;
+	font-family: 'Arimo';
+}
+
+div.miscdesc{
+	color: white;
+	font-size: 13px;
+	padding: 15px;
+    text-align: center;
+	font-family: 'Arimo';
+	background-color: #e68a00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add Responsiveness */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 23.5%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+	max-height: 85%;
+    max-width: 85%;
+	border: 3px;
+	border-style: outset;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+	font-size:20px;
+	font-family: 'Arimo', sans-serif;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Columns */
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+/* Clear Floats */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.game-content{
+	width:75%;
+    background: #46a049;
+    border: 1px solid #CCC;
+    min-height:600px;
+    margin: 0px auto;
+}
+
+.web-content{
+	width:75%;
+    background: #008ae6;
+    border: 1px solid #CCC;
+    min-height:600px;
+    margin: 0px auto;
+}
+
+.misc-content{
+	background: #e68a00;
+	width:75%;
+    border: 1px solid #CCC;
+    min-height:600px;
+    margin: 0px auto;
+}
+
+.odd-game-element{
+	background-color: #EBF5EE;
+}
+
+.odd-web-element{
+	background-color: #E6F5FF;
+}
+
+.odd-misc-element{
+	background-color: #fff5e6;
+}
+.even-element{
+	background-color:white;
 }
