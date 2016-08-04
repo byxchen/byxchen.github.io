@@ -509,7 +509,7 @@ div.miscdesc{
 
 /* Add Responsiveness */
 .responsive {
-    padding: 0 6px;
+    padding: 0px 3px;
     float: left;
     width: 23.5%;
 }
