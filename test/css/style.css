@@ -23,6 +23,10 @@ body {
   background-repeat:repeat;
 }
 
+#proj{
+  background-color:#1a1a1a;
+}
+
 a {
   text-decoration: none;
 }
@@ -646,4 +650,69 @@ div.miscdesc{
 }
 .even-element{
 	background-color:white;
+}
+
+/*-- to-top --*/
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 28px;
+	right: 1%;
+	overflow: hidden;
+	z-index: 999; 
+	width: 32px;
+	height: 32px;
+	border: none;
+	text-indent: 100%;
+	background: url("../img/arr.png") no-repeat 0px 0px;
+}
+#toTopHover {
+	width: 32px;
+	height: 32px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+}
+/*-- //to-top --*/
+
+
+hr {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  max-width: 300px;
+  text-align: center;
+}
+
+hr.fancy {
+  border-top: 1px solid #8c8b8b;
+  text-align: center;
+}
+
+hr.fancy:after {
+  background: #1a1a1a;
+  color: #8c8b8b;
+  content: '§';
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 10px;
+  position: relative;
+  top: -30px;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+hr.wide {
+  max-width: inherit !important;
+}
+
+.project_title{
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #ffffff;
 }
