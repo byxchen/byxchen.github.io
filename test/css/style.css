@@ -237,7 +237,7 @@ Main Components
   background-image: url(../img/home.png);
 }
 .cd-3d-nav li:nth-of-type(2) a::before {
-  background-image: url(../img/icon-2.svg);
+  background-image: url(../img/projects.png);
 }
 .cd-3d-nav li:nth-of-type(3) a::before {
   background-image: url(../img/icon-3.svg);
