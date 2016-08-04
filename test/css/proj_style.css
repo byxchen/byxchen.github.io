@@ -132,6 +132,9 @@ p{
     margin: 0px auto;
 }
 
+.item{
+	margin:20px 0px 0px 40px;
+}
 .active {
     background-color: #4CAF50;
 }
@@ -355,7 +358,7 @@ div.miscdesc{
 	text-decoration: none;
 	color:black;
 	font-weight: bold;
-	font-size:18px;
+	font-size:1.6rem;
 	font-family: Lato;
 }
 
@@ -528,6 +531,9 @@ div.miscdesc{
 	}
 	.maincontent{
 		width:95%;
+	}
+	.item{
+		margin: 0px;
 	}
 }
 
