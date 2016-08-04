@@ -427,12 +427,12 @@ main h1 {
 }
 main h2{
   text-align: center;
-  font-size: 2.0rem;
+  font-size: 6.0rem;
   font-weight: 300;
   color: #ffffff;
   opacity:#000000;
   background-color : transparent;
-  margin: 1.5em auto;
+  margin: 1em auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -456,8 +456,8 @@ main.nav-is-visible {
     margin: 4em auto;
   }
   main h2{
-	  font-size: 4.0rem;
-    margin: 3em auto;
+	 font-size: 6.0rem;
+    margin: 1em auto;
   }
 }
 
@@ -693,17 +693,11 @@ hr.fancy {
 }
 
 hr.fancy:after {
-  background: #1a1a1a;
   color: #8c8b8b;
-  content: '§';
   display: inline-block;
   font-size: 18px;
   padding: 0 10px;
   position: relative;
-  top: -30px;
-  transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
 }
 
 hr.wide {
