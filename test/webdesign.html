@@ -1,16 +1,24 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title> Brian Chen - Web Dev </title>
-		<link href = "styles.css" rel="stylesheet" type="text/css"/>
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/proj_style.css"> <!-- CSS for projects page -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+	<!-- Smooth Scrolling -->
+  	<script>
 		$(document).ready(function(){
 		  $("a").on('click', function(event) {
 			if (this.hash !== "") {
@@ -24,63 +32,42 @@
 			} 
 		  });
 		});
-		</script>
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<meta name="description" content="Brian Chen, University of Toronto Student in Computer Science. Contains personal blogging, and side projects.">
-		<meta name="keywords" content="Brian, Chen, University, UTSC, CS, CSEC, Personal, Project, Homepage, Crimson Tide, CT, Home Page, Yu Xiang Chen">
-	</head>
-	<body>
-	<a name=""></a>
-	<div class="spacer"> </div>
-		<div class="header">
-			<ul>
-				<li><a href="/index">Home</a></li>
-				<li class="dropdown">
-					<a class="active" href="#" class="dropbtn-2">Projects</a>
-					<div class="dropdown-content">
-					  <a href="/webdesign">Web Design</a>
-					  <a href="/games">Games</a>
-					  <a href="/misc">Misc</a>
-					</div>
-				</li>
-				<li><a href="/resume">Resume</a></li>
-				<li class="dropdown">
-					<a href="/about" class="dropbtn">About</a>
-					<div class="dropdown-content">
-					  <a href="about#me">Me</a>
-					  <a href="about#awards">Awards</a>
-					  <a href="about#leadership">Leadership</a>
-					  <a href="about#hobbies">Hobbies</a>
-					</div>
-				</li>
-				<li><a href="/contact">Contact</a></li>
-			</ul>
-		</div>
-		<a name=""/>
-		<div class="web-content">
-			<p class="titleHeader"style="color:white">
-				<img src="assets/other/internetbw.png" width="7%"/>&nbsp;&nbsp;Web Design Projects
+	</script>
+	<title>Brian Chen</title>
+</head>
+<body id="proj">
+	<a name="top"/>
+	<header class="cd-header">
+		<a href="#0" class="cd-3d-nav-trigger">
+			Menu
+			<span></span>
+		</a>
+	</header> <!-- .cd-header -->
+	
+	<main>
+		<h2 style="text-shadow: 2px 2px #000000;">
+			PROJECTS
+			<hr class="fancy">
+			<div style="display: table; margin: 0 auto;">
+			<p class="nodecolink"style="color:white">
+				<a class="nodecolink smoothScroll"href="#RS"style="color:white"> RuneSeeker </a>
+				&nbsp;·&nbsp;
+				<a class="nodecolink smoothScroll"href="#IVGD"style="color:white"> IvyGlobal Diagnostics </a>
+				&nbsp;·&nbsp;
+				<a class="nodecolink smoothScroll"href="#CG"style="color:white"> CollegeGrid </a>
 			</p>
-				<div style="display: table; margin: 0 auto;">
-					<p class="nodecolink"style="color:white">
-						<a class="nodecolink"href="#RS"style="color:white"> RuneSeeker </a>
-						&nbsp;|&nbsp;
-						<a class="nodecolink"href="#IVGD"style="color:white"> IvyGlobal Diagnostics </a>
-						&nbsp;|&nbsp;
-						<a class="nodecolink"href="#CG"style="color:white"> CollegeGrid </a>
-					</p>
-				</div>
+		</div>
+		</h2>
+		<div class="web-content">
 			<div class="even-element">
-				<a name="RS"/>
+				<a target="_blank" href="http://www.byxc.me/runeseeker" name="RS"/>
 				<hr class='project_hr'>
-				<div style="margin:20px 0px 0px 40px;"> 
+				<div class="item"> 
 					<p class="subheader" align="center">
-						RuneSeeker <br>
-						<a class="nodecolink" href="http://www.byxc.me/runeseeker"> <img height="16" width="16"src="assets/other/internet.png"/> Website </a>
-						&nbsp;&nbsp;
-						<a class="nodecolink" href="#">&#9650; Top</a>
+						RuneSeeker<br>
 						<br>
 					<p>
+					</a>
 					<div class = "desc-text" id="hidden_1">
 						
 						<span style="font-style:italic" >RuneSeeker is a JSON parser of RuneScape's GE Item Database that offers users in depth information about items found in RuneScape</span>
@@ -98,8 +85,6 @@
 						item (members-only), and the monetary value of the item by different standards. It also provides financially savvy users with a graph
 						to track market trends regarding the item, helping to illustrate patterns in the items monetary fluctuation.
 						<br>
-						<br>
-						In creating RuneSeeker, I learned about JSON, AJAX, BootStrap, and PHP.
 					</div>
 					<div class="responsive">
 					  <div class="img">
@@ -138,16 +123,14 @@
 				<br><br>
 			</div>
 			<div class="odd-web-element">
-				<a name="IVGD"/>
+				<a target="_blank" href="http://collegegrid.com/EvoEdu/index.asp" name="IVGD">
 				<hr class='project_hr'>
-				<div style="margin:20px 0px 0px 40px;"> 
+				<div class="item"> 
 					<p class="subheader" align="center">
-						IvyGlobal Diagnostics <br>
-						<a class="nodecolink" href="http://collegegrid.com/EvoEdu/index.asp"> <img height="16" width="16"src="assets/other/internet.png"/> Website </a>
-						&nbsp;&nbsp;
-						<a class="nodecolink" href="#">&#9650; Top</a>
+						IvyGlobal Diagnostics<br>
 						<br>
 					<p>
+					</a>
 					<div class = "desc-text" id="hidden_1">
 						<span style="font-style:italic" >IvyGlobal Diagnostics is a SAT/ACT prep tool used to test student progression with mock tests.</span>
 						<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
@@ -163,8 +146,6 @@
 						subjects, as well as questions for secondary test topics such as Biology and Physics. These mock-tests
 						are stored server-side.
 						<br>
-						<br>
-						In helping create IvyGlobal diagnostics, I learned to work with Javascript, AJAX, MathJax, LaTeX, and Microsoft SQL.
 					</div>
 					<div class="responsive">
 					  <div class="img">
@@ -203,16 +184,14 @@
 				<br><br>
 			</div>
 			<div class="even-element">
-				<a name = "CG"/>
+				<a target="_blank" href="http://collegegrid.com" name = "CG"> 
 				<hr class='project_hr'>
-				<div style="margin:20px 0px 0px 40px;"> 
+				<div class="item"> 
 					<p class="subheader" align="center">
-						CollegeGrid ACT/SAT Database <br>
-						<a class="nodecolink" href="http://collegegrid.com"> <img height="16" width="16"src="assets/other/internet.png"/> Website </a>
-						&nbsp;&nbsp;
-						<a class="nodecolink" href="#">&#9650; Top</a>
+						CollegeGrid ACT/SAT Database<br>
 						<br>
 					<p>
+					</a>
 					<div class = "desc-text" id="hidden_1">
 						<span style="font-style:italic" >CollegeGrid ACT/SAT Database is a information bank of US colleges and their related SAT information.</span>
 						<br><span style="font-weight:bold">I do not claim ownership nor attempt to redistribute the services of this site.</span>
@@ -228,8 +207,6 @@
 						scores. They are able to see the univerisites that are par/reach/safe for them, with their current scores, and plan accordingly. University information
 						is updated yearly from official sources, so information is guarenteed to be accurate and relevant.
 						<br>
-						<br>
-						In helping create CollegeGrid, I learned to work with Javascript, AJAX, ASP, VBScript, ASP.net, and Microsoft SQL.
 					</div>
 					<div class="responsive">
 					  <div class="img">
@@ -322,14 +299,37 @@
 					</span<
 				</div>
 			</div>
-		</div>
-		<script>
-			$('a').click(function(){
-				$('html, body').animate({
-					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-				}, 500);
-				return false;
-			});
-		</script>
-	</body>
+	</main>
+	<br><br>
+	<nav class="cd-3d-nav-container">
+		<ul class="cd-3d-nav">
+			<li >
+				<a href="index">Home</a>
+			</li>
+
+			<li class="cd-selected">
+				<a href="projects">Portfolio</a>
+			</li>
+
+			<li>
+				<a href="resume">Resume</a>
+			</li>
+
+			<li>
+				<a href="blog">Blog</a>
+			</li>
+
+			<li>
+				<a href="contact">Contact</a>
+			</li>
+		</ul> <!-- .cd-3d-nav -->
+
+		<span class="cd-marker color-1"></span>	
+	</nav> <!-- .cd-3d-nav-container -->
+<a class="smoothScroll" href="#top" id="toTop" style="display: block;"></a>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
 </html>

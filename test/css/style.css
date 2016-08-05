@@ -711,3 +711,11 @@ hr.wide {
   color: #ffffff;
 }
 
+.border{
+  border: 4px;
+  border-style: outset;
+  width:90%;
+  min-width:200px;
+  max-height:100%;
+  max-width:100%;
+}
