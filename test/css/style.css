@@ -31,6 +31,12 @@ a {
   text-decoration: none;
 }
 
+#proj_disamb{
+  background: url("../img/proj.jpg")no-repeat;
+  background-size: cover;
+}
+
+
 /* -------------------------------- 
 
 Main Components 
@@ -712,10 +718,7 @@ hr.wide {
 }
 
 .border{
-  border: 4px;
-  border-style: outset;
-  width:90%;
-  min-width:200px;
-  max-height:100%;
-  max-width:100%;
+  border-radius:50%;
+  border: 5px solid #010101;
+  border-style: double;
 }
