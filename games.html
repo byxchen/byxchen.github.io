@@ -1,19 +1,24 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title> Brian Chen - Games</title>
-		<link href = "styles.css" rel="stylesheet" type="text/css"/>
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<meta name="description" content="Brian Chen, University of Toronto Student in Computer Science. Contains personal blogging, and side projects.">
-		<meta name="keywords" content="Brian, Chen, University, UTSC, CS, CSEC, Personal, Project, Homepage, Crimson Tide, CT, Home Page, Yu Xiang Chen">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/proj_style.css"> <!-- CSS for projects page -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+	<!-- Smooth Scrolling -->
+  	<script>
 		$(document).ready(function(){
 		  $("a").on('click', function(event) {
 			if (this.hash !== "") {
@@ -27,64 +32,151 @@
 			} 
 		  });
 		});
-		</script>
-	</head>
-	<body>
-	<a name=""></a>
-	<div class="spacer"> </div>
-		<div class="header">
-			<ul>
-				<li><a href="/index">Home</a></li>
-				<li class="dropdown">
-					<a class="active" href="#" class="dropbtn-2">Projects</a>
-					<div class="dropdown-content">
-					  <a href="/webdesign">Web Design</a>
-					  <a href="/games">Games</a>
-					  <a href="/misc">Misc</a>
-					</div>
-				</li>
-				<li><a href="/resume">Resume</a></li>
-				<li class="dropdown">
-					<a href="/about" class="dropbtn">About</a>
-					<div class="dropdown-content">
-					  <a href="about#me">Me</a>
-					  <a href="about#awards">Awards</a>
-					  <a href="about#leadership">Leadership</a>
-					  <a href="about#hobbies">Hobbies</a>
-					</div>
-				</li>
-				<li><a href="/contact">Contact</a></li>
-			</ul>
-		</div>
-		<div class="game-content">
-			<p class="titleHeader"style="color:white">
-				<img src="assets/other/playbw.png" width="9%"/>&nbsp;&nbsp;Game Projects
+	</script>
+	<title>Brian Chen</title>
+</head>
+<body id="game">
+	<a name="top"/>
+	<header class="cd-header">
+		<a href="#0" class="cd-3d-nav-trigger">
+			Menu
+			<span></span>
+		</a>
+	</header> <!-- .cd-header -->
+	
+	<main>
+		<h2 style="text-shadow: 2px 2px #000000;">
+			GAME PROJECTS
+			<hr class="fancy">
+			<div style="display: table; margin: 0 auto;">
+			<p class="nodecolink"style="color:white">
+				<a class="nodecolink smoothScroll"href="#CPIT"style="color:white"> Critterpit</a>
+				&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+				<a class="nodecolink smoothScroll"href="#Riven"style="color:white"> Riven</a>
+				&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+				<a class="nodecolink smoothScroll"href="#TS"style="color:white"> RuneSeeker</a>
 			</p>
-				<div style="display: table; margin: 0 auto; ">
-					<p class="nodecolink" style="color:white">
-						<a class="nodecolink"href="#Riven"style="color:white"> Riven </a>
-						&nbsp;|&nbsp;
-						<a class="nodecolink"href="#TS"style="color:white"> Trash Smash </a>
-					</p>
-				</div>
-			<div class="even-element">
-				<a name="Riven"/>
+		</div>
+		</h2>
+		<div class="game-content">
+		<div class="odd-game-element">
+				<a target="_blank" name = "CPIT"> 
 				<hr class='project_hr'>
-				<div style="margin:20px 0px 0px 40px;"> 
+				<div class="item"> 
 					<p class="subheader" align="center">
-						Riven 
+						Critterpit
 						<br>
-						<a class="nodecolink" href="https://github.com/Avarrocka/Riven"> <img height="16" width="16"src="assets/other/github.png"/> GitHub </a>
-						&nbsp;&nbsp;
-						<a class="nodecolink" href="https://www.dropbox.com/s/vab3xym3r18zx80/Riven.zip?dl=1"> <img height="16" width="16"src="assets/other/download.png"/> Download </a>
-						&nbsp;&nbsp;
-						<a class="nodecolink" href="/assets/games/Riven.jar"> <img height="16" width="16"src="assets/other/play.png"/> Play </a>
-						&nbsp;&nbsp;
-						<a class="nodecolink" href="#">&#9650; Top</a>
-						<br>
+						<a class="nodecolink" target="_blank" href="http://critterpit.ca"> <img height="16" width="16"src="assets/other/play.png"/> Play</a>
+						<br><br>
 					<p>
-					<div class = "desc-text" id="hidden_1">
-						
+				</a>
+					<div class = "desc-text" style="line-height:1.5em" id="hidden_1">
+						<span style="font-style:italic" >Critterpit is a Java-based web strategy game. Requires Java 6 or higher to run. [Play] button redirects to hosting website.</span>
+						<br><span style="font-weight:bold">Not intended for redistribution or monetization.</span>
+						<br>
+						<br>
+						Unrest is afoot in the Kingdom of Animalia! Take charge of key heroes and restore peace in the kingdom through violence!
+						<br><br>
+						Choose four of six (soon to be twelve) unique animal Heroes and charge into battle! Each Hero has unique health, unbench, passive, and active moves. There are tanks,
+						healers, brawlers, and supports. Discover your own strategy and engage the enemy to victory!
+						<br><br>
+						Based loosely on the trading card games Hearthstone, Kongai, and Magic: The Gathering, Critterpit is a turn based-real time strategy (sounds confusing, but it is!) It offers unique battle phases 
+						where both your moves and your enemy's moves are executed simultaneously. Predicting your opponent's moves and strategic gameplay are the key to victory.
+						<br><br>
+						Critterpit was created by <a href="https://github.com/gabrielhouse">Gabe</a>. I collaborated with Gabe to expand the game by adding new mechanics, heroes, and updating game logistics and design.
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						  <img src="assets/games/cpit_heroes.png" alt="Select Heroes" width="300" height="200">
+						<div class="desc">Select Unique Heroes</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="assets/games/cpit_setup.png" alt="Challenging Battles" width="300" height="200">
+						<div class="desc">Strategic Gameplay</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="assets/games/cpit_battle.png" alt="Hidden Levels" width="300" height="200">
+						<div class="desc">Rich Graphics</div>
+					  </div>
+					</div>
+					<div class="responsive">
+					  <div class="img">
+						<img src="assets/games/cpit_rtcb.png" alt="Powerups - Shockwave" width="300" height="200">
+						<div class="desc">Real-Time Combat</div>
+					  </div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					 <span class="blankspace">
+					  <span class="close">×</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					 </span>
+					</div>
+					<div class="clearfix"></div>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					 <span class="blankspace">
+					  <span class="close">×</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					 </span>
+					</div>
+					<script>
+					// Get the modal
+					var modal = document.getElementById('myModal');
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+					var non_area = document.getElementsByClassName("blankspace")[0];
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() { 
+						modal.style.display = "none";
+					}
+					// Doesnt force user to have to click (x) to exit image. Any click exists image
+					non_area.onclick = function() {
+						if(modal.style.display != "none"){
+							modal.style.display = "none";
+						}
+					}
+					// Get all images and insert the clicked image inside the modal
+					// Get the content of the image description and insert it inside the modal image caption
+					var images = document.getElementsByTagName('img');
+					var modalImg = document.getElementById("img01");
+					var captionText = document.getElementById("caption");
+					var i;
+					for (i = 0; i < images.length; i++) {
+					   images[i].onclick = function(){
+						   modal.style.display = "block";
+						   modalImg.src = this.src;
+						   modalImg.alt = this.alt;
+						   captionText.innerHTML = this.nextElementSibling.innerHTML;
+					   }
+					}
+					</script>
+				</div>
+				<br><br>
+			</div>
+			<div class="even-element">
+				<a name = "Riven">
+				<hr class='project_hr'>
+				<div class="item" > 
+					<p class="subheader" align="center">
+						Riven<br>
+						<a class="nodecolink" href="https://github.com/Avarrocka/Riven"> <img height="16" width="16"src="assets/other/github.png"/> GitHub</a>
+						&nbsp;&nbsp;
+						<a class="nodecolink" href="https://www.dropbox.com/s/vab3xym3r18zx80/Riven.zip?dl=1"> <img height="16" width="16"src="assets/other/download.png"/> Download</a>
+						&nbsp;&nbsp;
+						<a class="nodecolink" href="/assets/games/Riven.jar"> <img height="16" width="16"src="assets/other/play.png"/> Play</a>
+						<br><br>
+				</a>
+					<p>
+					<div class = "desc-text" style="line-height:1.5em" id="hidden_1">
 						<span style="font-style:italic" >Riven is a Java-based high-fantasy RPG. Requires Java 6 or higher to run. [Play] button downloads a .JAR file.</span>
 						<br><span style="font-weight:bold">Not intended for redistribution or monetization.</span>
 						<br>
@@ -100,7 +192,7 @@
 						Riven uses graphics from Fire Emblem: Awakening, Guild Wars 2, League of Legends, and music from select artists on SoundCloud. 
 						<br>
 						<br>
-						In creating Riven, I learned about reward systems, experience, combat, game balance, and story crafting.
+						Riven was created entirely by myself, taking multiple months of animation, sprite ripping, and programming. It was my first venture into solo-game programming, and it was pretty fun!
 					</div>
 					<div class="responsive">
 					  <div class="img">
@@ -135,28 +227,25 @@
 					  <div id="caption"></div>
 					 </span>
 					</div>
-					<br>
-					<br>
 				</div>
+				<br><br>
 			</div>
 			<div class="odd-game-element">
-				<a name="TS"/>
+				<a target="_blank" name = "TS"> 
 				<hr class='project_hr'>
-				<div style="margin:20px 0px 0px 40px;"> 
+				<div class="item"> 
 					<p class="subheader" align="center">
 						Trash Smash
 						<br>
-						<a class="nodecolink" href="https://github.com/00benallen/TrashSmash"> <img height="16" width="16"src="assets/other/github.png"/> GitHub </a>
+						<a class="nodecolink" href="https://github.com/00benallen/TrashSmash"> <img height="16" width="16"src="assets/other/github.png"/> GitHub</a>
 						&nbsp;&nbsp;
-						<a class="nodecolink" href="https://www.dropbox.com/s/ntdctal98klkwvi/TrashSmash.zip?dl=1"> <img height="16" width="16"src="assets/other/download.png"/> Download </a>
+						<a class="nodecolink" href="https://www.dropbox.com/s/ntdctal98klkwvi/TrashSmash.zip?dl=1"> <img height="16" width="16"src="assets/other/download.png"/> Download</a>
 						&nbsp;&nbsp;
-						<a class="nodecolink" href="/assets/games/Trash Smash.jar"> <img height="16" width="16"src="assets/other/play.png"/> Play </a>
-						&nbsp;&nbsp;
-						<a class="nodecolink" href="#">&#9650; Top</a>
-						<br>
+						<a class="nodecolink" href="/assets/games/Trash Smash.jar"> <img height="16" width="16"src="assets/other/play.png"/> Play</a>
+						<br><br>
 					<p>
-					<div class = "desc-text" id="hidden_2">
-						
+				</a>
+					<div class = "desc-text" style="line-height:1.5em" id="hidden_1">
 						<span style="font-style:italic" >Trash Smash is a Java-based shoot-em-up scroller. Requires Java 6 or higher to run. [Play] button downloads a .JAR file.</span>
 						<br><span style="font-weight:bold">Not intended for redistribution or monetization.</span>
 						<br>
@@ -172,12 +261,9 @@
 						trash we encounter every day, and help to identify and correctly dispose of these items.
 						<br>
 						Trash Smash uses completely custom pixel art created by me, backgrounds from various artists, and music from select artists on SoundCloud.
-						<br>
-						In creating Trash Smash, I learned about game design, difficulty settings, artificial intelligence, and animations. 
-						<br>
-						<br>
+						<br><br>
 						Trash Smash was created
-						in collaboration with two other developers, <a href="https://github.com/00benallen"> Ben </a> and <a href="https://github.com/boddhi"> Tristan</a>. We employed Agile Development methods and used Github as a collaborative platform.
+						in collaboration with two other developers, <a href="https://github.com/00benallen"> Ben </a> and <a href="https://github.com/boddhi"> Tristan</a>. 
 					</div>
 					<div class="responsive">
 					  <div class="img">
@@ -202,6 +288,15 @@
 						<img src="assets/games/ts_powerup_usage.png" alt="Powerups - Shockwave" width="300" height="200">
 						<div class="desc">Powerups - Shockwave</div>
 					  </div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					 <span class="blankspace">
+					  <span class="close">×</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					 </span>
 					</div>
 					<div class="clearfix"></div>
 					<!-- The Modal -->
@@ -261,14 +356,37 @@
 					</span<
 				</div>
 			</div>
-		</div>
-		<script>
-			$('a').click(function(){
-				$('html, body').animate({
-					scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-				}, 500);
-				return false;
-			});
-		</script>
-	</body>
+	</main>
+	<br><br>
+	<nav class="cd-3d-nav-container">
+		<ul class="cd-3d-nav">
+			<li >
+				<a href="index">Home</a>
+			</li>
+
+			<li class="cd-selected">
+				<a href="projects">Portfolio</a>
+			</li>
+
+			<li>
+				<a href="resume">Resume</a>
+			</li>
+
+			<li>
+				<a href="blog">Blog</a>
+			</li>
+
+			<li>
+				<a href="contact">Contact</a>
+			</li>
+		</ul> <!-- .cd-3d-nav -->
+
+		<span class="cd-marker color-1"></span>	
+	</nav> <!-- .cd-3d-nav-container -->
+<a class="smoothScroll" href="#top" id="toTop" style="display: block;"></a>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
 </html>

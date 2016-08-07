@@ -24,7 +24,7 @@ body {
 }
 
 #proj{
-  background-color:#001a33;
+  background-color:#062F4F;
 }
 
 #game{
@@ -53,6 +53,14 @@ a {
   background-size: cover;
 }
 
+#extra{
+  background-color: #233237;
+}
+
+#blog{
+  background: url("../assets/repeat_chrome.png");
+  background-repeat: repeat;
+}
 
 /* -------------------------------- 
 
@@ -662,6 +670,14 @@ div.miscdesc{
     margin: 0px auto;
 }
 
+.extra-content{
+	width:75%;
+    background: #E9BF66;
+    border: 1px solid #CCC;
+    min-height:600px;
+    margin: 0px auto;
+}
+
 .misc-content{
 	background: #e68a00;
 	width:75%;
@@ -676,6 +692,10 @@ div.miscdesc{
 
 .odd-web-element{
 	background-color: #E6F5FF;
+}
+
+.odd-extra-element{
+	background-color: #F2EBDC;
 }
 
 .odd-misc-element{

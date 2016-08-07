@@ -93,6 +93,13 @@ p{
     margin: 0px auto;
 }
 
+.blog-content{
+	width:75%;
+    background: #008ae6;
+    min-height:600px;
+    margin: 0px auto;
+}
+
 .misc-content{
 	background: #e68a00;
 	width:75%;
@@ -431,17 +438,25 @@ div.miscdesc{
     margin: 0 auto; 
 }
 
-.resizeImg{
-	width:100%;
-	border:1px solid #021a40;
+.bentry{
+	font-size: 1.3rem;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 2rem;
+	color:black;
+	width: 90%;
+    margin: 0 auto; 
 }
-
 .odd-game-element{
 	background-color: #EBF5EE;
 }
 
 .odd-web-element{
 	background-color: #E6F5FF;
+}
+
+.blog-element{
+	background-color: white;
 }
 
 .odd-misc-element{
@@ -506,6 +521,11 @@ div.miscdesc{
 	}
 }
 
+.resizeImg{
+  width:98%;
+  border: 1px #000000 solid;
+}
+
 .myButton2 {
 	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
 	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
@@ -550,6 +570,7 @@ div.miscdesc{
 .blogclass{
 	font-family: 'Open Sans', sans-serif;
 	font-size:20px;
+	color: white;
 }
 
 .resume{
@@ -557,9 +578,4 @@ div.miscdesc{
 	width:75%;
     min-height:600px;
     margin: 0px auto;
-}
-.bodycontent{
-	padding-top: 30px;
-	background-color:#ffffff;
-	color: black;
 }
