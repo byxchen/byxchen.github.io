@@ -1,34 +1,3 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
-}
-
-li a.dropbtn-2{
-	background-color:#4CAF50;
-}
-li.dropdown {
-    display: inline-block;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -584,10 +553,8 @@ div.miscdesc{
 }
 
 .resume{
-	background-color: #000033;
 	color: white;
 	width:75%;
-    border: 1px solid #CCC;
     min-height:600px;
     margin: 0px auto;
 }

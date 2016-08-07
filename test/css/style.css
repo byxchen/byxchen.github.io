@@ -24,15 +24,27 @@ body {
 }
 
 #proj{
-  background-color:#1a1a1a;
+  background-color:#001a33;
 }
 
+#game{
+  background-color: #1a1a1a;
+}
+
+#misc{
+  background-color: #336699;
+}
 a {
   text-decoration: none;
 }
 
 #proj_disamb{
   background: url("../img/proj.jpg")no-repeat;
+  background-size: cover;
+}
+
+#rsm{
+ background: url("../img/rsm.jpg")no-repeat;
   background-size: cover;
 }
 
@@ -433,7 +445,7 @@ main h1 {
 }
 main h2{
   text-align: center;
-  font-size: 6.0rem;
+  font-size: 5.2rem;
   font-weight: 300;
   color: #ffffff;
   opacity:#000000;
@@ -441,6 +453,12 @@ main h2{
   margin: 1em auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main h3{
+  font-size: 2.8rem;
+  color: #000000;
+  margin: 0.3em auto;
 }
 main.nav-is-visible {
   -webkit-transform: translateY(80px);
@@ -462,8 +480,12 @@ main.nav-is-visible {
     margin: 4em auto;
   }
   main h2{
-	 font-size: 6.0rem;
+	 font-size: 5.2rem;
     margin: 1em auto;
+  }
+  main h3{
+	  font-size: 2.8rem;
+	  margin: 0.5em auto;
   }
 }
 
@@ -718,7 +740,53 @@ hr.wide {
 }
 
 .border{
+  width:85%;
   border-radius:50%;
   border: 5px solid #010101;
   border-style: double;
+}
+
+/*** Resume ***/
+
+.resume ul {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+table.float-entry {
+  display: inline-table;
+  width: 100%;
+}
+
+table.float-entry td {
+  vertical-align: middle;
+}
+
+table.float-entry td.left {
+  font-style: italic;
+  text-align: left;
+  width: 30%;
+}
+
+table.float-entry td.center {
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  padding-right: 10px;
+}
+
+table.float-entry td.right {
+  text-align: right;
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .left-when-sm {
+    text-align: left !important;
+  }
+}
+
+.left-when-sm {
+  text-align: center;
 }
