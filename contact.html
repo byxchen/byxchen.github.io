@@ -17,7 +17,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 	<!-- Smooth Scrolling -->
   	<script>
 		$(document).ready(function(){
@@ -36,7 +35,7 @@
 	</script>
 	<title>Brian Chen</title>
 </head>
-<body id="proj_disamb">
+<body id="game">
 	<a name="top"/>
 	<header class="cd-header">
 		<a href="#0" class="cd-3d-nav-trigger">
@@ -47,64 +46,61 @@
 	
 	<main>
 		<h2 style="text-shadow: 2px 2px #000000;">
-			PROJECTS
+			Contact Me
 			<hr class="fancy">
 			<div style="display: table; margin: 0 auto;">
 		</div>
 		</h2>
-		<div style="min-height: 760px;">
-			<p align=center style="margin-left: 20%; font-size: 1.5rem; width:60%; color:white;">
-				These are a collection of my various projects (academic, work, personal, leadership) that I've worked on in the past few years.
+		<div style="min-height: 550px;">
+			<p align=center style="line-height: 2rem; margin-left: 20%; font-size: 1.5rem; width:60%; color:white;">
+				Hi! If you want to contact me regarding any of the following subjects, please email me at <span style="color: #99ddff">brianyx.chen [at] mail.utoronto.ca</span>
+				<br>
+				<br>
+				· Employment Opportunities
+				<br>
+				· Website Bugs or Formatting Mistakes
+				<br>
+				· Questions regarding my Personal Projects
+				<br>
+				· Questions/Concerns about course(s) I'm TA-ing for
+				<br>
+				<br>
 				<br><br>
-				Some of these are independent projects, some are collaborative projects with other developers. 
-				I've still got a few other projects in the pipeline (a new Game, and more Miscellanious projects) coming soon. Be sure to stay tuned.
-				<br><br><br>
-				<span style="color:#99ddff; font-family: 'Didact Gothic', sans-serif; serif;font-size:2.4rem;"">Click on a portal to start exploring.</span>
+				Otherwise, please leave your feedback, inquiries, or comments in the form below
+				<br>
+				<span style="font-size: 1.2rem"> NOTE: GitHub Pages does not support PHP so the following form does not work. Please email your concerns to me instead </span>
+				<br><br>
+				<form action="action.php" method="post" style="color: white; font-size: 1.3rem; text-align: center">
+					<div class="block">
+						<label>Full Name&nbsp;&nbsp;</label>
+						<input style="color: black;" type="text" required=""/>
+					</div>
+					<br><br>
+					<div class="block">
+						<label>Email Address&nbsp;&nbsp;</label>
+						<input style="color: black;" type="text" placeholder="example@xyz.c" required=""/>
+					</div>
+					<br><br>
+					<div class="block">
+						<label>Area of Concern&nbsp;&nbsp;</label>
+						<input style="color: black;" type="text" placeholder="e.g. Question" required="" />
+					</div>
+					<br><br>
+					Enter Your Message Below (Drag to Resize)
+					<br><br>
+					<div class="block">
+						<textarea style="color: black;" name="Text1" cols="40" rows="5"></textarea>
+					</div>
+					<br><br>
+					<input type="submit" style="color: black;" onclick="alertDoesntWork()" name="submit" value="Send">	
+					<br>
+				</form>
 			</p>
 			<br>
-			<hr class="fancy">
-			<br><br><br>
-			<div style="font-family: 'Open Sans', sans-serif; serif;color:#ffffff; font-size:3.2rem;text-shadow: 2px 2px #000000;">
-				<div class="col-sm-3 text-center">
-					<a style="text-decoration: none; color:white;" href="webdesign">
-						Web Development
-						<br><br>
-						<img class="border" src="img/proj/web_c.jpg"/>
-					</a>
-					<br><br><br>
-					<br>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a style="text-decoration: none; color:white;" href="games">
-						Game Development 
-						<br><br>
-						<img class="border" src="img/proj/game_c.jpg"/>
-					</a>
-					<br><br><br>
-					<br>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a style="text-decoration: none; color:white;" href="misc">
-						Miscellanious Projects
-						<br><br>
-						<img class="border" src="img/proj/misc_c.jpg"/>
-					</a>
-					<br><br><br>
-					<br>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a style="text-decoration: none; color:white;" href="extracurriculars">
-						Extracurriculars
-						<br><br>
-						<img class="border" src="img/proj/team_c.jpg"/>
-					</a>
-					<br><br>
-				</div>
-			</div>
 		</div>
 		<br><br>
-		<div class="footer_box" style="background-color: transparent;">
-			<div class="footer" style="margin: 0 auto;">
+		<div class="footer_box">
+			<div class="footer">
 				<a class="nodecolink" href="mailto:brianyxc@gmail.com?Subject=Contact" target="_top"> <img width= "25px" height="25px" src="assets/other/em.png"/> </a>
 				<a class="nodecolink" target="_blank"  href = "http://www.github.com/avarrocka"> <img width= "25px" height="25px" src="assets/other/gh.png"> </a>
 				<a class="nodecolink" target="_blank"  href = "http://stackoverflow.com/users/5273571/avarr"> <img width= "25px" height="25px" src="assets/other/so.png"/> </a>
@@ -118,13 +114,18 @@
 			</div>
 		</div>
 	</main>
+	<script>
+		function alertDoesntWork(){
+			alert("NOTE: GitHub Pages does not support PHP so the following form does not work. Please email your concerns to me instead.");
+		}
+	</script>
 	<nav class="cd-3d-nav-container">
 		<ul class="cd-3d-nav">
 			<li >
 				<a href="index">Home</a>
 			</li>
 
-			<li class="cd-selected">
+			<li>
 				<a href="projects">Portfolio</a>
 			</li>
 
@@ -136,7 +137,7 @@
 				<a href="blog">Blog</a>
 			</li>
 
-			<li>
+			<li  class="cd-selected">
 				<a href="contact">Contact</a>
 			</li>
 		</ul> <!-- .cd-3d-nav -->

@@ -815,3 +815,20 @@ table.float-entry td.right {
 .left-when-sm {
   text-align: center;
 }
+
+.footer-left {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+.footer-right {
+    float: right;
+    width: 50%;
+    padding: 0 10px;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}​
