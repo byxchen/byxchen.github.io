@@ -113,14 +113,6 @@
 					  </div>
 					</div>
 					<div class="clearfix"></div>
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-					 <span class="blankspace">
-					  <span class="close">×</span>
-					  <img class="modal-content" id="img01">
-					  <div id="caption"></div>
-					 </span>
-					</div>
 				</div>
 				<br><br>
 			</div>
@@ -175,14 +167,6 @@
 					  </div>
 					</div>
 					<div class="clearfix"></div>
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-					 <span class="blankspace">
-					  <span class="close">×</span>
-					  <img class="modal-content" id="img01">
-					  <div id="caption"></div>
-					 </span>
-					</div>
 				</div>
 				<br><br>
 			</div>
@@ -236,14 +220,6 @@
 					  </div>
 					</div>
 					<div class="clearfix"></div>
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-					 <span class="blankspace">
-					  <span class="close">×</span>
-					  <img class="modal-content" id="img01">
-					  <div id="caption"></div>
-					 </span>
-					</div>
 				</div>
 				<br><br>
 			</div>
@@ -339,10 +315,13 @@
 					var i;
 					for (i = 0; i < images.length; i++) {
 					   images[i].onclick = function(){
+						   var topL =  $(window).scrollTop();   
+						   var topLPlace = topL + "px";
 						   modal.style.display = "block";
 						   modalImg.src = this.src;
 						   modalImg.alt = this.alt;
 						   captionText.innerHTML = this.nextElementSibling.innerHTML;
+						   modal.style.paddingTop = topLPlace;
 					   }
 					}
 					</script>

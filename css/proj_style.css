@@ -25,9 +25,6 @@ li a:hover {
 }
 
 body{
-	background: url("assets/repeat_chrome.png");
-	background-repeat:repeat;
-	/*-webkit-text-size-adjust: 100%;*/
 }
 
 p{
