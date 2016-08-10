@@ -154,13 +154,11 @@
 		</div>
 	<br>
 	<script>
-		function displayTextFile()
-{
+	function displayTextFile(){
 		var rawFile = new XMLHttpRequest();
 		var loc = window.location.pathname;
 		var dir = loc.substring(0, loc.lastIndexOf('/'));
 		var fname = dir + "/" + document.getElementById("filename").value;
-		alert(fname);
 		rawFile.open("GET", fname, true);
 		rawFile.onreadystatechange = function (){
 			if(rawFile.readyState === 4){
