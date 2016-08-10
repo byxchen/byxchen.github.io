@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="../css/proj_style.css"> <!-- CSS for projects page -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="../js/modernizr.js"></script> <!-- Modernizr -->
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
@@ -19,22 +19,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-	<!-- Smooth Scrolling -->
-  	<script>
-		$(document).ready(function(){
-		  $("a").on('click', function(event) {
-			if (this.hash !== "") {
-			  event.preventDefault();
-			  var hash = this.hash;
-			  $('html, body').animate({
-				scrollTop: $(hash).offset().top
-			  }, 500, function(){
-				window.location.hash = hash;
-			  });
-			} 
-		  });
-		});
-	</script>
 	<title>BYXC - CSCA08 TUT4</title>
 </head>
 <body id="ta">
@@ -62,7 +46,9 @@
 	</script>
 	from HOMECOMPUTER
 	<br><br>
-	Welcome to Brian Chen's Tutorials Site for CSCA08
+	Welcome to Brian's Tutorials Site for
+	<br>
+	UTSC 2016: CSCA08H3 S Introduction to Computer Science (I)
 	<br>
 	EOM
 	<br><br>
@@ -159,11 +145,56 @@
 	</table>
 	<br>
 	byxchen@localhost:~/a08TutorialRecaps$ cat 
-	<form>
-		<input type="text" name="name" autofocus="autofocus" style="border: none; color: white; background-color: #262626"id="xax" />
-		<input type="submit">
+	<form style="display:inline;" onsubmit="displayTextFile2()">
+		<input type="text" name="display" autofocus="autofocus" style="border: none; color: white; background-color: #262626"id="filename" />
+		<input type="submit" style="display: none">
 	</form>
 	<br>
-		<div id="
+		<div id="displayFile">
+			[placeholder]
+		</div>
 	<br>
+	<script>
+		function displayTextFile()
+{
+		var rawFile = new XMLHttpRequest();
+		var loc = window.location.pathname;
+		var dir = loc.substring(0, loc.lastIndexOf('/'));
+		var fname = "file://" + dir + "/" + document.getElementById("filename").value;
+		alert(fname);
+		rawFile.open("GET", fname, true);
+		rawFile.onreadystatechange = function ()
+		{
+			if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+		}
+
+		rawFile.send();
+	}
+	</script>
+	<script>
+	function displayTextFile2(){
+		var loc = window.location.pathname;
+		var dir = loc.substring(0, loc.lastIndexOf('/'));
+		var file = document.getElementById("filename").value;
+		var reader = new FileReader();
+		reader.onload = function(progressEvent){
+			// Entire file
+			console.log(this.result);
+
+			// By lines
+			var lines = this.result.split('\n');
+			for(var line = 0; line < lines.length; line++){
+			  console.log(lines[line]);
+			}
+		  };
+		  reader.readAsText(file);
+	}
+	</script>
 </body>
