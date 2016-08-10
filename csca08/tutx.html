@@ -165,8 +165,11 @@
 			if(rawFile.readyState === 4){
 				if(rawFile.status === 200 || rawFile.status == 0){
 					var allText = rawFile.responseText;
+					lines = allText.split("\n"); 
+					for(i = 0; i < lines.length; i++){ 
+						document.getElementById("displayFile").innerHTML = document.getElementById("displayFile").innerHTML + "<br>" + lines[i];
+					}
 					console.log(allText);
-					document.getElementById("displayFile").innerHTML = allText;
 				}
 			}
 			else{
