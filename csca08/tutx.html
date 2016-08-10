@@ -146,7 +146,7 @@
 	</table>
 	<br>
 	byxchen@localhost:~/a08TutorialRecaps$ cat 
-	<form style="display:inline;" id="catform">
+	<form style="display:inline;" onsubmit="getText(); return false;" id="catform">
 		<input type="text" name="display" autofocus="autofocus" style="border: none; color: white; background-color: #262626"id="filename" />
 		<input type="submit" style="display: none">
 	</form>
@@ -155,7 +155,7 @@
 		</div>
 	<br>
 	<script>
-	$('#catform').submit(function () {
+	function getText() {
 		var rawFile = new XMLHttpRequest();
 		var loc = window.location.pathname;
 		var dir = loc.substring(0, loc.lastIndexOf('/'));
@@ -166,12 +166,12 @@
 				if(rawFile.status === 200 || rawFile.status == 0){
 					var allText = rawFile.responseText;
 					console.log(allText);
-					alert(allText);
+					//alert(allText);
 					document.getElementById("displayFile").innerHTML = allText;
 				}
 			}
 		}
 		return false;
-	});
+	}
 	</script>
 </body>
