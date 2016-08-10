@@ -1,5 +1,42 @@
 ++++++++++++ CSCA08 Important Dates ++++++++++++
 
-There doesn't seem to be anything here yet...
+You can find a list of important academic dates<a href="https://www.utsc.utoronto.ca/registrar/sites/utsc.utoronto.ca.registrar/files/resource-files/Fall%202016%20-%20Winter%202017%20Dates_0.pdf">here</a>
 
+Tutorial Times
+-----------------------------
+TBD
+
+
+Tutorial Office Hours
+-----------------------------
+TBD
+
+
+AMACSS Office Hours
+-----------------------------
+TBD
+
+
+CSEC Lectures
+-----------------------------
+Friday 4PM-6PM IC330, recurring weekly
+
+
+Assignment Due Dates
+-----------------------------
+A0: TBD
+A1: TBD
+A2: TBD
+A3: TBD
+A4: TBD
+
+
+Midterms and Finals
+-----------------------------
+Reading Week: Oct 11 - Oct 15
+Midterm 1: TBD
+Midterm 2: TBD
+Final Exam Period: Dec 5 - Dec 20
+
+Good luck, and don't miss any important dates!
 EOF
