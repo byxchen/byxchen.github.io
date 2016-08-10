@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="../css/proj_style.css"> <!-- CSS for projects page -->
 	<script src="../js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
@@ -145,7 +146,7 @@
 	</table>
 	<br>
 	byxchen@localhost:~/a08TutorialRecaps$ cat 
-	<form style="display:inline;" onsubmit="displayTextFile()">
+	<form style="display:inline;" id="catform">
 		<input type="text" name="display" autofocus="autofocus" style="border: none; color: white; background-color: #262626"id="filename" />
 		<input type="submit" style="display: none">
 	</form>
@@ -154,7 +155,7 @@
 		</div>
 	<br>
 	<script>
-	function displayTextFile(){
+	$('#catform').submit(function () {
 		var rawFile = new XMLHttpRequest();
 		var loc = window.location.pathname;
 		var dir = loc.substring(0, loc.lastIndexOf('/'));
@@ -170,7 +171,7 @@
 				}
 			}
 		}
-		rawFile.send();
-	}
+		return false;
+	});
 	</script>
 </body>
