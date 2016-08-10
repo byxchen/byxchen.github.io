@@ -162,22 +162,16 @@
 		var fname = dir + "/" + document.getElementById("filename").value;
 		alert(fname);
 		rawFile.open("GET", fname, true);
-		rawFile.onreadystatechange = function ()
-		{
-			if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-				console.log(allText);
-                document.getElementById("displayFile").innerHTML = allText;
-            }
-			else{
-				document.getElementById("displayFile").innerHTML = "cat: "+document.getElementById("filename").value + ": No such file or directory";
+		rawFile.onreadystatechange = function (){
+			if(rawFile.readyState === 4){
+				if(rawFile.status === 200 || rawFile.status == 0){
+					var allText = rawFile.responseText;
+					console.log(allText);
+					alert(allText);
+					document.getElementById("displayFile").innerHTML = allText;
+				}
 			}
-        }
 		}
-
 		rawFile.send();
 	}
 	</script>
