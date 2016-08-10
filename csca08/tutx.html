@@ -164,6 +164,7 @@
 		rawFile.onreadystatechange = function (){
 			if(rawFile.readyState === 4){
 				if(rawFile.status === 200 || rawFile.status == 0){
+					document.getElementById("displayFile").innerHTML = "";
 					var allText = rawFile.responseText;
 					lines = allText.split("\n"); 
 					for(i = 0; i < lines.length; i++){ 
