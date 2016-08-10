@@ -516,6 +516,9 @@ div.miscdesc{
 	.item{
 		margin: 0px;
 	}
+	.blog-content{
+		width:97%;
+	}
 }
 
 .resizeImg{
