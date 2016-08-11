@@ -49,9 +49,9 @@
 		<br><br>
 		Welcome to Brian's Tutorials Site for
 		<br>
-		UTSC 2016: CSCA08H3 S Introduction to Computer Science (I)
+		UTSC Fall 2016: CSCA08H3 F Introduction to Computer Science (I)
 		<br>
-		For any concerns or inquiries, email me at brianyx.chen@mail.utoronto.ca
+		For any concerns or inquiries, email me at brianyx.chen[at]mail.utoronto.ca
 		<br>
 		EOM
 		<br><br>
@@ -143,7 +143,12 @@
 			var rawFile = new XMLHttpRequest();
 			var loc = window.location.pathname;
 			var dir = loc.substring(0, loc.lastIndexOf('/'));
-			var fname = dir + "/" + document.getElementById("filename").value.toLowerCase();
+			var file = document.getElementById("filename").value.toLowerCase();
+			if(!(file.includes(".txt"))){
+				file = file + ".txt";
+			}
+			var fname = dir + "/" + file;
+			alert(fname);
 			rawFile.open("GET", fname, true);
 			rawFile.onreadystatechange = function (){
 				if(rawFile.readyState === 4){
