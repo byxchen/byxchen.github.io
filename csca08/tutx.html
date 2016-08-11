@@ -148,7 +148,6 @@
 				file = file + ".txt";
 			}
 			var fname = dir + "/" + file;
-			alert(fname);
 			rawFile.open("GET", fname, true);
 			rawFile.onreadystatechange = function (){
 				if(rawFile.readyState === 4){
