@@ -1,8 +1,0 @@
-Easter Egg 001:
-
-// Why are you exploring easter eggs when you should be studying
-
-var yearof = (When did Prantar learn Basic?) + ".txt";
-
-goto byxc.me/yearof
-
