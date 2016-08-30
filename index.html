@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-
+	<link href="css/jquery-sakura.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/sstyle.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
+
 	<title>Brian Chen</title>
 </head>
 <body id="hmpg" onload="chooseimg();">
@@ -19,7 +19,8 @@
 			<span></span>
 		</a>
 	</header> <!-- .cd-header -->
-	
+
+
 	<main>
 		<h1>
 			<div class="translucent-descriptor">
@@ -70,7 +71,13 @@
 		}
 	}
 </script>
-<script src="js/jquery-2.1.1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery-sakura.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+	$(window).load(function () {
+	$('body').sakura();
+	});
+</script>
 </body>
 </html>

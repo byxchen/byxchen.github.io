@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   background-color: #485274;
-  
+  .sakura{z-index:5;}
 }
 
 #hmpg{
