@@ -44,8 +44,7 @@ a {
 }
 
 #rsm{
- background: url("../img/rsm.jpg")no-repeat;
-  background-size: cover;
+ background-color: #13181D;
 }
 
 #nfound{
@@ -293,6 +292,7 @@ Main Components
   display: block;
   height: 100%;
   color: transparent;
+  font-family: 'Raleway', sans-serif;
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
@@ -514,7 +514,7 @@ main.nav-is-visible {
 .translucent-descriptor{
 	padding-top:50px;
 	padding-bottom:50px;
-	background-color: rgba(0,0,0,0.6)
+	background-color: rgba(0,0,0,0.6);
 }
 
 
