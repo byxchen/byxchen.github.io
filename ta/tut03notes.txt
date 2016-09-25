@@ -29,8 +29,8 @@ x = addOne(5)
 
 You can find all the code that was covered in Week 3 Tutorials here: 
 
-byxc.me/ta/w3/
-
-<a href="byxc.me/ta/w3/">Click Here if you're viewing this using AJAX.</a>
+byxc.me/ta/w3/ex1.txt
+byxc.me/ta/w3/ex2.txt
+byxc.me/ta/w3/ex3.txt
 
 EOF
