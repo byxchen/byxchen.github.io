@@ -27,4 +27,8 @@ x = addOne(5)
 
 - Gave the resouce Python Tutor (google it). It's a great resource to see how to step-by-step trace a program using Dr. Harrington's model.
 
+You can find all the code that was covered in Week 3 Tutorials here: byxc.me/ta/a08/w3/
+
+<a href="byxc.me/ta/a08/w3/">Click Here if you're viewing this using AJAX.</a>
+
 EOF
