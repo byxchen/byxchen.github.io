@@ -1,17 +1,5 @@
-++++++++++++ CSCA08 Tutorial 02 ++++++++++++
+++++++++++++ CSCA48 Tutorial 02 ++++++++++++
 
-- This week is mainly a meet & greet.
-
-- Gave my overall thoughts on the course
-
-- Explain Python vs Wing (Python is the language, whereas Wing is the IDE that compiles and runs the Python code)
-
-- Showed class how to check that they’re using the right version of Wing (A lot of you will have 2.7 installed by default, we’re requiring 3.2 or later)
-
-- Create a small file (nothing fancy, just a Hello World program)
-
-- Explained the difference between typing a line of code into the command line, and writing a file that you then execute (in particular, mentioned how when you run the file, only things inside the print command get printed, whereas when you’re running form the shell, everything gets echoed).
-
-- Reminded that the automarker is PICKY!!! In terms of time, 5:00:01 is not 5pm, it will count it as late. In terms of submission titles, Ex0.py != ex0.py and my_function() != my_func(). Try to submit earlier to avoid these problems.
+Doesn't look like anything to me -- Westworld
 
 EOF

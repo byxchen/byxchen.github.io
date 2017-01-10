@@ -1,0 +1,36 @@
+++++++++++++ CSCA08 Tutorial 03 ++++++++++++
+
+- Explained python memory model
+
+- Explained concept of garbage collection -- any 'boxes' without anything pointing to them are deleted
+
+- Showed how to trace memory model through variable changes
+
+- Showed how to trace memory model through different functions
+
+- Explained the difference between Print and Return (Print puts output to console, whereas Return returns a value from a function and terminates it, giving it back to what called it)
+e.g. 
+def addOne(x):
+    y = x + 1
+    return y
+
+x = addOne(5)
+//if addOne() terminates and returns 6, then x = 6. 
+
+- Explained that functions without Return statements will return a NoneType object. Remember to represent this using the Memory Model!
+e.g.
+def addOne(x):
+    x = x + 1
+
+x = addOne(5)
+// x will equal NoneType
+
+- Gave the resouce Python Tutor (google it). It's a great resource to see how to step-by-step trace a program using Dr. Harrington's model.
+
+You can find all the code that was covered in Week 3 Tutorials here: 
+
+byxc.me/ta/w3/ex1.txt
+byxc.me/ta/w3/ex2.txt
+byxc.me/ta/w3/ex3.txt
+
+EOF

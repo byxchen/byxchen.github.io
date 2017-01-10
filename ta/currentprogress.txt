@@ -1,13 +1,7 @@
-Current Progress of CSCA08: 
+Current Progress of CSCA48: 
 
-Week 1 - 
-No tutorials
+Week 0 - Warmups, no tutorial
+Week 1 - ADT review, stack implementations. See tut01Notes.txt on byxc.me/ta/a48
 
-Week 2 - 
-We learned about submitting on Markus, creating simple programs (ex. Hello World!), and not having infinite loops in programs.
 
-Week 3 -
-We learned a bit about tracing the memory model, how to represent varaiables, functions, etc. in the Python memory model.
-
-Week 4 -
-TBD!
+EOF
