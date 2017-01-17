@@ -1,6 +1,6 @@
 ++++++++++++ CSCA48 Tutorial 02 ++++++++++++
 
-This week we’re going to go through the process of creating a new container. The Deque, or double ended queue. Basically it’s just a queue where you can enqueue and dequeue from either end (really useful for cases where you want to have high-priority items like job scheduling, or for an undo/redo feature to keep track of operations).
+This week we're going to go through the process of creating a new container. The Deque, or double ended queue. Basically it’s just a queue where you can enqueue and dequeue from either end (really useful for cases where you want to have high-priority items like job scheduling, or for an undo/redo feature to keep track of operations).
 
 First off, Deque is NOT 'De-Queue' (the operation). Its pronounced 'deck' and is just a (d)ouble (e)nded queue, or d.e.queue. Imagine a line down the middle representing the current amount of Contents in your queue. You can either add from:
 The left: ITEM + [Contents]
@@ -32,7 +32,6 @@ Representation invariant:
           _contents[-1] is the tail,
           _contents[:] contains
            the elements in the order they were inserted.
-        self._contents = []
 
 -------------------------------------------------------
 
