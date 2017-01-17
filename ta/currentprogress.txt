@@ -2,6 +2,7 @@ Current Progress of CSCA48:
 
 Week 0 - Warmups, no tutorial
 Week 1 - ADT review, stack implementations. See tut01Notes.txt on byxc.me/ta/a48
-
+Week 2 - ADT review, dequeue implementation. Talked a lot about Representative Invariants. See 
+tut02Notes.txt on byxc.me/ta/a48
 
 EOF
