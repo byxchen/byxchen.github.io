@@ -3,8 +3,19 @@
 Term Test 1 - Friday February 3rd 5-7PM.
  Review: AMACSS Seminar Monday January 30th 5-7PM. AA112.
 
-Notes have been uploaded. You can find them here:
+Test topics (suggested):
+Linked Lists
+Doubly Linked Lists
+ADTs and properties
+Queues
+Stacks
+Representational Invariants
+
+Notes have been uploaded from the AMACSS review seminar. You can find them here:
 byxc.me/ta/A48_MRQ.pdf
 
+I'll be out of town from Feb 1 - Feb 4. Reach me by email if you need to at brianyx.chen@mail.utoronto.ca
+
+Good luck!
 
 EOF
