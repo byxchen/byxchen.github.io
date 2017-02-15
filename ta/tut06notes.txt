@@ -46,4 +46,19 @@ def fac(n):
         result = n * fac(n-1)
     return result
 
+REVERSE LINKED LIST EXAMPLE
+-----------------------------------------------------
+What are the base cases of reverse?
+	when node.next = None (tail of orig. list)
+How do we get to each successive term?
+	(reversed-node).(original-next)
+
+def reverse (item --> LLNode, tail = None):
+    next = item.next
+    item.next = tail
+    if next is None:
+        return item
+    else:
+        return reverse(next, item)
+
 EOF
