@@ -1,11 +1,13 @@
 Current Progress of CSCA48: 
 
 Week 0 - Warmups, no tutorial
-Week 1 - ADT review, stack implementations. See tut01Notes.txt on byxc.me/ta/a48
+Week 1 - ADT review, stack implementations. See tut01Notes.txt 
 Week 2 - ADT review, dequeue implementation. Talked a lot about Representative Invariants. See 
-tut02Notes.txt on byxc.me/ta/a48
-Week 3 - Doubly Linked Lists and operations on them. See tut03Notes.txt on byxc.me/ta/a48
-Week 4 - Binary Trees and operations on them. See tut04Notes.txt on byxc.me/ta/a48
+tut02Notes.txt 
+Week 3 - Doubly Linked Lists and operations on them. See tut03Notes.txt 
+Week 4 - Binary Trees and operations on them. See tut04Notes.txt 
 Midterm Review - We had a review seminar on Jan 30th Monday. Take a look at the notes at: byxc.me/ta/A48_MRQ.pdf
-Week 5 - Binary Trees, operations, and Heaps. See tut05Notes.txt on byxc.me/ta/a48
+Week 5 - Binary Trees, operations, and Heaps. See tut05Notes.txt 
+Week 6 - Recursion. What is it and how to do it. See tut06Notes.txt
+Week 7 - More Recursion with String comparing examples. See tut07Notes.txt
 EOF
