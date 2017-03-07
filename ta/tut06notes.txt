@@ -1,6 +1,6 @@
 ++++++++++++ CSCA48 Tutorial 06 ++++++++++++
 
-Quiz Topic: ---
+Quiz Topic: Min-heaps
 
 Funny recursion collage --> byxc.me/ta/recursion.png
 
