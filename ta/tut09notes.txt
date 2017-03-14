@@ -1,5 +1,54 @@
 ++++++++++++ CSCA48 Tutorial 09 ++++++++++++
 
-Doesn't look like anything to me -- Westworld
+Quiz Topic: --
+
+We took a look at various Binary Tree Operations.
+-----------------------------------------------------
+class BTNode(object):
+    """A node in a binary tree."""
+
+    def __init__(self, value, left=None, right=None):
+        """(BTNode, int, BTNode, BTNode) -> NoneType
+        Initialize this node to store value and have children left and right,
+        as well as depth 0.
+        """
+        self.value = value
+        self.left = left
+        self.right = right
+        self.depth = 0  # the depth of this node in a tree
+        self.sibling = False
+-----------------------------------------------------
+Challenge 1 - Given a BTNode, find the height of the Binary Tree rooted at the BTNode. Remember that one node alone has height of 0, two nodes has height of 1, (basically count edges from root to furthest leaf).
+    def get_height(self):
+        '''(BTNode) -> int
+        Return the height of the tree rooted at this node. We define the
+        height of a tree with a single node to be 0
+        '''
+        left_height = 0
+        right_height = 0
+
+        if(self.left):
+            left_height = self.left.get_height() + 1
+
+        if(self.right):
+            right_height = self.right.get_height() + 1
+
+        return max(left_height, right_height)
+
+		
+Challenge 2 - Given a BTNode, find out if it has a sibling match. That is, does the other child of its parent exist? This should recursively solve this question for all nodes rooted at BTNode.
+    def set_sibling(self, have_sib=False):
+        '''(BTNode[, bool]) -> NoneType
+        For each node in the tree rooted at this node, set their
+        .sibling variable to True iff they have a sibling
+        '''
+        self.sibling = have_sib
+        if(self.left and self.right):
+            self.left.set_sibling(True)
+            self.right.set_sibling(True)
+        elif(self.left):
+            self.left.set_sibling(False)
+        elif(self.right):
+            self.right.set_sibling(False)
 
 EOF

@@ -1,6 +1,6 @@
 ++++++++++++ CSCA48 Tutorial 08 ++++++++++++
 
-Quiz Topic: --
+Quiz Topic: Drawing Squares Recursively
 
 We took a look at various ways to implement Binary Search.
 -----------------------------------------------------
