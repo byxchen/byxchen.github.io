@@ -1,5 +1,5 @@
 ++++++++++++ CSCA48 Tutorial 10 ++++++++++++
 
-Doesn't look like anything to me -- Westworld
+Quiz Topics were confusing last week. We had 3 different things we took up, the correct solution (contains), the incorrect but also valid solution (using a BTNode instead of a BSTNode, we wrote BTContains), and the common but incorrect solution (bad_contains).
 
 EOF

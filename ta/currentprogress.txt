@@ -10,4 +10,8 @@ Midterm Review - We had a review seminar on Jan 30th Monday. Take a look at the 
 Week 5 - Binary Trees, operations, and Heaps. See tut05Notes.txt 
 Week 6 - Recursion. What is it and how to do it. See tut06Notes.txt
 Week 7 - More Recursion with String comparing examples. See tut07Notes.txt
+Week 8 - More Recursion. Drawing Squares and examples. See tut08Notes.txt
+Week 9 - More Recursion. Binary tree and operations. See tut09Notes.txt
+Week 10 - Took up quiz. Taught about complexity. See tut10Notes.txt
+
 EOF
