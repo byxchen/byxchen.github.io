@@ -184,6 +184,7 @@
           'select':'select.png',
           'select_node':'select_node.png',
           'pencil':'pencil.png',
+          'keyboard':'keyboard.png',
           'pen':'line.png',
           'rect':'square.png',
           'ellipse':'ellipse.png',
@@ -207,6 +208,7 @@
           '#logo':'logo',
           '#tool_select':'select',
           '#tool_fhpath':'pencil',
+          '#tool_onscreenkeyboard':'keyboard',
           '#tool_line':'pen',
           '#tool_rect,#tools_rect_show':'rect',
           '#tool_ellipse,#tools_ellipse_show':'ellipse',
@@ -2078,6 +2080,10 @@
         }
       };
 
+      var clickOSK = function(){
+        openPanel();
+      }
+
       var clickLine = function() {
         if (toolButtonClick('#tool_line')) {
           svgCanvas.setMode('line');
@@ -3225,6 +3231,7 @@
         var tool_buttons = [
           {sel:'#tool_select', fn: clickSelect, evt: 'click', kAy: ['V', true]},
           {sel:'#tool_fhpath', fn: clickFHPath, evt: 'click', kAy: ['Q', true]},
+          {sel:'#tool_onscreenkeyboard', fn: clickOSK, evt: 'click', kAy: ['K', true]},
           {sel:'#tool_line', fn: clickLine, evt: 'click', kAy: ['L', true]},
           {sel:'#tool_rect', fn: clickRect, evt: 'click', kAy: ['R', true], icon: 'rect'},
           {sel:'#tool_ellipse', fn: clickEllipse, evt: 'mouseup', kAy: ['C', true], icon: 'ellipse'},
