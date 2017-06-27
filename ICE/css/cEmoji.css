@@ -1,7 +1,7 @@
 div.tab {
   overflow: hidden;
   border: 1px;
-  background-color: #ffc266;
+  background-color: transparent;
 }
 
 .emojibutton{
@@ -30,15 +30,16 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ffc266;
+    background-color: transparent;
 }
 
 div#panel {
-    top: 6%;
+    top:-500%;
     display:none;
     position:absolute;
     z-index:99;
-    background-color: white;
+    background-color: black;
+    opacity: 0.6;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
@@ -86,10 +87,41 @@ div.tab button.active {
 }
 
 .tablinks{
-  background-color: Transparent;
+  background-color: transparent;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
   overflow: hidden;
   outline:none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+li input {
+    width: 120px;
+    text-align: center;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+/* Change the link color on hover */
+li input:hover {
+    background-color: #555;
+    color: white;
+}
+
+li input.active{
+  background-color: #ff6600;
+}
+
+.entry{
+  padding: 10px;
 }

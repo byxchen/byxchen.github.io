@@ -144,7 +144,7 @@
   <div class="menu">
     <div class="menu_title">Chat</div>
     <div class="menu_list" id="file_menu">
-      <div id="tool_chat" onclick="alert('Action Locked - Log into Chat to continue');" class="menu_item">Send Canvas to Chat</div>
+      <div id="tool_chat" onclick="alert('ERROR: Cross origin requests are only supported for HTTP.')" class="menu_item">Send Canvas to Chat</div>
       <div class="separator"></div>
       <div id="tool_chat" onclick="alert('Use $$ math $$ to type mathematically in chat');" class="menu_item">Help<span class="shortcut">⌘H</span></div>
     </div>
@@ -587,71 +587,46 @@
 
   <div id="tools_bottom_3">
     <div id="panel">
-                      <span style="font-color: black; font-size: 13px">
-                        <div class="tab">
-                          <input class="tablinks" value="&nbsp;&nbsp;Emoji&nbsp;|" type="button" onclick="openTab(event, 'Emoj');">
-                          <input class="tablinks" value="&nbsp;Math&nbsp;|" type="button" onclick="openTab(event, 'Math');">
-                          <input class="tablinks" value="&nbsp;Formula&nbsp;&nbsp;" type="button" onclick="openTab(event, 'Form');">
-                        </div>
-                        <div id="Emoj" class="tabcontent">
-                          <input value="😃" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😆" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="🙁" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😋" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😣" class="emojibutton" type="button" onclick="input(this);" />
-                          <br />
-                          <input value="😉" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😵" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😢" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😤" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😲" class="emojibutton" type="button" onclick="input(this);" />
-                          <br />
-                          <input value="😑" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😕" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😎" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😇" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="😝" class="emojibutton" type="button" onclick="input(this);" />
-                        </div>
-
-                        <div id="Math" class="tabcontent">
-                          <input value="α" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="β" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="δ" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="θ" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="μ" class="emojibutton" type="button" onclick="input(this);" />
-                          <br />
-                          <input value="π" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="≈" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="≠" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="≡" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="∞" class="emojibutton" type="button" onclick="input(this);" />
-                          <br />
-                          <input value="±" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="∆" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="∫" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="√" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="²" class="emojibutton" type="button" onclick="input(this);" />
-                          <br />
-                          <input value="∑" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="∪" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="∩" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="≥" class="emojibutton" type="button" onclick="input(this);" />
-                          <input value="≤" class="emojibutton" type="button" onclick="input(this);" />
-                        </div>
-                        <div id="Form" class="tabcontent">
-                          <input value='$$\int_{a}^{b} x^2 dx$$' placeholder="Integral Formula" class="formulabutton" type="button" ondblclick="input(this);" onclick="typeset(this);"/>
-                          <br />
-                          <input value='$$\sum_{n=1}^{\infty} 2^{-n} = 1$$' placeholder="Summation Formula" class="formulabutton" type="button" ondblclick="input(this);" onclick="typeset(this);"/>
-                          <br />
-                          <input value='$$\lim_{x\to\infty} f(x)$$' placeholder="Limit" class="formulabutton" type="button" ondblclick="input(this);" onclick="typeset(this);"/>
-                          <br />
-                          <input value='$$a_1^2 + a_2^2 = a_3^2$$' placeholder="Sub and Superscripts" class="formulabutton" type="button" ondblclick="input(this);" onclick="typeset(this);"/>
-                          <p id="previewArea">
-                            [Click Preview - Double Click Add]
-                          </p>
-                        </div>
-                      <span>
+      <span style="font-color: black; font-size: 13px">
+        <div class="tab">
+          <table>
+            <tr>
+              <td class="entry">
+                <ul>
+                  <li><input class="tablinks" value="Greek 1" type="button" onclick="openTab(event, 'Emoj');"></li>
+                  <li><input class="tablinks" value="Greek 2" type="button" onclick="openTab(event, 'Math');"></li>
+                  <li><input class="tablinks" value="[0-9+-/]" type="button" onclick="openTab(event, 'Form');"></li>
+                  <li><input class="tablinks" value="Symbols" type="button" onclick="openTab(event, 'Form');"></li>
+                </ul>
+              </td>
+              <td class="entry">
+                <div id="Emoj" class="tabcontent">
+                  <input value="😃" class="emojibutton" type="button" onclick="input(this);" />
+                  <input value="😆" class="emojibutton" type="button" onclick="input(this);" />
+                  <input value="🙁" class="emojibutton" type="button" onclick="input(this);" />
+                  <input value="😋" class="emojibutton" type="button" onclick="input(this);" />
+                  <input value="😣" class="emojibutton" type="button" onclick="input(this);" />
+                  <br />
                 </div>
+
+                <div id="Math" class="tabcontent">
+                  <input value="α" class="emojibutton" type="button" onclick="input(this);" />
+                  <input value="β" class="emojibutton" type="button" onclick="input(this);" />
+                  <input value="δ" class="emojibutton" type="button" onclick="input(this);" />
+                  <input value="θ" class="emojibutton" type="button" onclick="input(this);" />
+                  <input value="μ" class="emojibutton" type="button" onclick="input(this);" />
+                  <br />
+                </div>
+                <div id="Form" class="tabcontent">
+                  <input value='$$\int_{a}^{b} x^2 dx$$' placeholder="Integral Formula" class="formulabutton" type="button" ondblclick="input(this);" onclick="typeset(this);"/>
+                  <br />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      <span>
+</div>
   </div>
 </div>
 
