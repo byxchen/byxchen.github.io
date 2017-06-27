@@ -5,10 +5,10 @@ div.tab {
 }
 
 .emojibutton{
-  height:20px;
-  width:20px;
+  height:10%;
+  margin-bottom: 2%;
   border:none;
-  background:none;
+  background-color: white;
 }
 
 .formulabutton{
@@ -34,7 +34,7 @@ button.accordion.active, button.accordion:hover {
 }
 
 div#panel {
-    top:-500%;
+    top:-445%;
     display:none;
     position:absolute;
     z-index:99;
