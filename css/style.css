@@ -23,6 +23,12 @@ body {
   background-repeat:repeat;
 }
 
+#dclm{
+  background: url("../img/plaid.png");
+  background-repeat:repeat;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 #proj{
   background-color:#062F4F;
 }

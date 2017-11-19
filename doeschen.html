@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="css/sstyle.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+</head>
+<body id="dclm">
+	<div style="width: 100%; color: white; font-size: 40px; text-align: center; margin-top:12%; font-family: Raleway;">
+		Does Chen...
+		<br>
+		<select style="font-family: Raleway; font-size: 30px">
+		  <option value="Love">Love Me</option>
+		  <option value="Appreciate">Appreciate Me</option>
+		  <option value="Want">Want Me</option>
+		  <option value="Need">Need Me</option>
+		</select>
+		<br>
+		<button id="button" onclick="reveal();"> Click to find out answer </button>
+		<div id="hidden" style="display:none; margin-top:-10%; margin-bottom:-10%">
+			<p style="text-shadow: -5px 5px 0px #4d4d4d,
+                 -10px 10px 0px #262626,
+                 -15px 15px 0px #0d0d0d; font-size: 300px; color:white;">
+				YES.
+			</p>
+		</div>
+		<script>
+			function reveal(){
+				var x = document.getElementById("hidden");
+				var y = document.getElementById("button");
+				x.style.display = "block";
+				y.style.display = "none";
+			}
+		</script>
+	</div>
+</body>
