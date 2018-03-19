@@ -1,7 +1,0 @@
-Easter Egg Q0
-
-Hint:
-if(defendingEarthFromInvaders.lost){
-	string url = loseScreen.getCharacterName();
-	open("byxc.me/ee/"+url);
-}
