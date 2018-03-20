@@ -75,6 +75,10 @@ body{
 	text-decoration:none;
 }
 
+.white{
+	color: white;
+}
+
 .rightmargin{
 	margin-right: 12px;
 }
