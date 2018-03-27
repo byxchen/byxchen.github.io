@@ -100,9 +100,10 @@ body{
 
 .tags{
 	font-size: 8pt;
+	margin-top: 10px;
 }
 
 .tags-header{
-	font-size:8pt;
-	color: #ffd12d;
+	color: #99ffbb;
+	font-size: 8pt;
 }
