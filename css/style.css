@@ -93,3 +93,16 @@ body{
 	font-size: 11pt;
 	text-decoration: none;
 }
+
+.low-bottom{
+	margin-bottom: 4px;
+}
+
+.tags{
+	font-size: 8pt;
+}
+
+.tags-header{
+	font-size:8pt;
+	color: #ffd12d;
+}
