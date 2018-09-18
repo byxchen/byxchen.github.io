@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://byxc.me/</loc>
+  <lastmod>2018-05-03T14:28:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://byxc.me/index</loc>
+  <lastmod>2018-05-03T14:28:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://byxc.me/resume</loc>
+  <lastmod>2018-05-03T14:28:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://byxc.me/ta</loc>
+  <lastmod>2018-05-03T14:28:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://byxc.me/projects</loc>
+  <lastmod>2018-05-03T14:28:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://byxc.me/contact</loc>
+  <lastmod>2018-05-03T14:28:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://byxc.me/assets/Brian_Chen_Resume.pdf</loc>
+  <lastmod>2018-05-03T14:28:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://byxc.me/assets/MathUI17_PFMCS.pdf</loc>
+  <lastmod>2018-05-03T14:28:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
