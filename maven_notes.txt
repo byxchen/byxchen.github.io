@@ -1,0 +1,21 @@
+CSCC01 TUT02 - Build Automation
+Notes:
+ running 
+ 	mvn compile - equivalent of javac
+ 	mvn test - equivalent of running JUnit tests
+ after changes, do both 				DUE
+ 	mvn compile								Monday 5PM
+ 	mvn test
+ to run the app							Find notes at:
+ 	cd target/classes						byxc.me/ta
+ 	java ca/utoronto/app/MergeSort
+ to create a new testcase
+ 	use:
+ 	@Test
+ 	@DisplayName ...
+
+
+Note:
+CSEC - Orientation 
+	Sept 21st 4-6PM IC130. 
+	    Visit csec.club
