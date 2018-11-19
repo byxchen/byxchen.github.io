@@ -111,3 +111,17 @@ body{
 	color: #99ffbb;
 	font-size: 8pt;
 }
+
+.inline-img{
+	max-width: 300px;
+	border-radius: 5px;
+	display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+    .inline-img{
+		width: 100%;
+		margin-top: 4px;
+		border-radius: 5px;
+	}
+}
