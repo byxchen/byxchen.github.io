@@ -1,0 +1,82 @@
+Prenex Normal Form (PNF)
+
+Definition: A predicate formula is in prenex normal form iff it has form:
+ Q1x1 ... Qkxk E where each Q (- {E, V} and E is a quantifier free formula
+ e.g. Vx Ey Vz Ew (P(x,y,z,w))
+      ^quantifier variables  ^E
+ PNF Theorum:
+  Every predicate formula has an equivalent PNF formula 
+
+Chapter 7 - Regular languages
+ Alphabet
+  A nonempty finite set of symbols (atomic symbols)
+	Sigma{0,1} (Binary alphabet)
+	 Sigma*{} - set of all strings made up of symbols from Sigma 
+	  is the smallest set s.t. 
+	  Basis: Epsilon (- Sigma*{}
+	  Inductive step: if x (- Sigma*{} and a (- Sigma, then xa (- Sigma*{}
+	 Epsilon - empty string 
+	  Remember that E (- Sigma*{} always 
+ Language
+  Over some alphabet (Sigma) is a subset of Sigma*{} 
+  e.g. Sigma = {0,1}
+  L = {x(- Sigma*{}: x starts and ends with 0}
+  
+ Language Operations
+ --Unary
+  Complementation:
+   To complement a language L, 
+    L(bar) = Sigma*-L  = {x: x (- Sigma*{}, x !(- L}
+	(the set of Sigma* that does not belong in L)
+  Kleene Star L*:
+   L* = {x: x=Epsilon or x=y1,y2,yk where each yi (- L and k>0}
+    EMPTYSET* = Epsilon
+ --Binary 
+  Intersection: L n L'
+  Union: L u L'
+  Concatenation: LL' or L(compose)L', L.L', etc.
+   {xy, x(- L, y (- L'}
+   EMPTYSETL' = EMPTYSET
+  Exponentiation:
+   L^k = (k=0 -> empty string) 
+         (k>1 -> k concatenate itself multiple times)
+  Reversal L^r = {x^r: x (- L}
+   e.g. 1110^r = 0111
+
+Regular expressions (over alphabet sigma)
+ Define the set RE of regexes over Sigma 
+  Definitions:
+  Alphabet for regexes: Sigma U {(, ), EpsilonSYMBOL(not Epsilon), EMPTYSETSYMBOL, +, *}
+   RE is the smallest set such that
+    Basis: EMPTYSET, Epsilon (- RE and if a (- Sigma, then a(- RE
+	Inductive Step: If R,S (- RE, then (R+S), (RS), R* (- RE 
+ Define the language denoted by a regular expression: (L(R), the set of Strings that match the Regex, R)
+  Basis: 
+  (1) if R = EMPTYSETSYMBOL, then L(R) = EMPTYSET
+  (2) if R = Epsilon, then L(R) = {Epsilon}
+  (3) if R = a then L(R) = {a} 
+  Induction step:
+  L((R+S)) = L(R) U L(S) 
+  L((R.S)) = L(R) . L(S) 			[concatenate]
+  L(R*) = L(R)* 
+ 2 regexes R,S are equivalent means that L(R) = L(S), they denote the same language 
+  R (tripleEQUALS) S        OR R === S 
+ 
+ Precedence -
+  Leave out outermost parentheses 
+   (01) -> 01      [01 is actually Length 4 because of removed brackets]
+  Concatenation over Union. 
+   01+0 = (01)+0
+  Kleene star over concatenate 
+   01* = 0(1*)
+  Everything is right associated
+  011 = (0(11))
+  
+  Examples
+   (0+1)* = matches all strings of 0s and 1s 
+   0* + 1* = matches all strings of all 0s or all 1s 
+   0(0+1)* = matches all strings that start with 0 
+   (0+1)(0+1)* = matches all strings of length > 0
+   
+  
+  

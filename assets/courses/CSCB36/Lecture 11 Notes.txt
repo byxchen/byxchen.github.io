@@ -1,0 +1,113 @@
+More Context-Free-Grammars CFGs
+ Proving a language is not regular using CFGs 
+ 
+ Take the following CFG as an example,
+ S -> 0B, 1A, E
+ A -> 0S, 1AA
+ B -> 1S, 0BB 
+ 
+ or
+ 
+ S -> E, 1S0S, 0S1S 
+ 
+ Theorum
+ For any regular language L, there is a CFG G such that L(G) = L
+ 
+ Define: 
+ A CFG = {V, Sigma, P, S} is right-linear iff every production has the form 
+ A -> E or A -> xB where A and B are the variables,and x (- Sigma*
+ 
+ A CFG is a strict right-linear iff G is right linear and every production in P has form 
+ A -> E or A -> cB, where A,B (- V, c (- Sigma
+ 
+ BIG RESULT +
+ Let L be a language 
+ Then the following are equivalent 
+ 1) L is regular 
+ 2) L = L(G) for some right linear CFG, G 
+ 3) L = L(G) for some strict right linear CFG, G 
+ 
+ Suppose that G = (V, Sigma, P, S) is a strict right linear CFG. 
+ We construct a NFSA M = (Q, Sigma, Sigma*, s, F)
+ such that L(G) = L(M)
+ 
+ Let Q = V (states = variables)
+	For every A in V, sigma (- Sigma, U Epsilon, 
+ Sigma*(A, sigma) = {B: A->sigmaB is a production in P}
+ s = S (starting variable)
+ F = A such that A -> E is a product in P 
+ 
+ Claim:
+  L(G) = L(M) means that G generates x <=> M accepts x 
+  
+ Suppose M = (Q, Sigma, Sigma*, s, F) in a DFSA 
+ 
+ Here's a strict right linear CFG s.t. L(G) = L(M)
+ 
+ Let Q = V
+  P = {A->sigmaB: A, B (- V, a (- Sigma and sigma*(A, a) = B}
+ 
+
+ Push Down Automaton (PDA)
+  - An NFSA with a stack (has a memory)
+  - We don't know when we're at the empty stack 
+	- We can push a special symbol at the very start (e.g. $, use that as the /0 symbol) to act as a bottom of stack indicator
+	  Transitions are not 1, 0, etc but instead 
+	  0: E -> %
+	  1: % -> E 
+	  1: X -> E
+	  0: E -> X etc...
+	General label:
+	a: x -> y 
+	a (- Sigma, or Epsilon (symbol or emptystr)
+	x, y (- G (stack) or Epsilon (item in stack, or emptystr)
+	
+	e.g.
+	X = G, Y = E --- pop (replace stack top with epsilon)
+	X = E, Y = G --- pop (replace emptystr at top of stack with symbol)
+	X = G, Y = G --- replace (replace stack top with symbol)
+	X = E, Y = E --- no op(eration)
+	
+	example
+	1: $ -> E (if you read a 1, and see a $ on top of stack, pop the $ and insert the E) 
+	If nothing can be done, you are at a dead state.
+	If the stack is empty, then M accepts x.
+	
+	e.g. string 100011.
+		read state stack 
+		1     q2     $
+		0     q0	 -
+		0     q1     $
+		0     q1     x$    (top of stack is in front)
+		1     q1     $ 
+		1     q0     -
+	
+	Nondeterminism -> only one way of doing it. E.g. has a nothing transition, only accepts mirrors (110011). You don't know where/when to take the transition! Only at 110 can you take the transition and will the PDA accept it.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

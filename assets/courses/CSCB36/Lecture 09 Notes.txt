@@ -1,0 +1,91 @@
+If R===S then
+  L(R) === L(S)
+  e.g. (0*1*)* === (0+1)*
+   Proof:
+    if x(- L(R) then x (- L(S) that is, L(R) subsetOf L(S)
+	if x(- L(S) then x (- L(R) that is, L(S) subsetOf L(R) 
+
+ Machines (Deterministic Finite State Automata) [DFSA]
+  Definition:
+  A DFSA is a 5-tuple (Q, Sigma, Delta, s, F)
+  where:
+   Q is the finite set of states {q0, q1...qn}
+   Sigma is the alphabet (input) eg. 10 
+   Delta is the transition function 
+    Delta: QxSigma -> Q (maps from a state and an input symbol to a state)
+	 delta(q, c) = qn 
+   s (- Q - the initial state (q0) 
+   F (- Q - the set of Accepting states 
+   
+   Delta*: Q x Sigma* -> Q (processes whole string)
+   Delta*(q, x) = q' means if in state q, and read string x, then go to state q' 
+   Delta*(s,x) (- F (final state) -> M accepts x means that if X is read, then M is an accepting state (M is a machine)
+   
+   
+   Circles are states (q0, q1...qn)
+   Arrows that goes between states have values (0,1,etc.)  are called Transitions
+   Double circles are accepting states 
+   Arrowed state is initial state (q0)
+    For each value, we read into the DFSA 
+	 e.g. 10011
+	     q0/q2/q3/q2/q0/q2 but only q3 is accepting state, so above string fails 
+ 
+  
+  Extended transition fuction
+  delta*(q,x) = q'
+   means that if in state q, and read string x, then go to state q'
+			  
+  
+  Language of a DFSA 
+   The set of all strings that match a particular DFSA 
+   Where M is a machine:
+   L(M) = {x (- Sigma*: M accepts x} (the set of strings that are accepted by M)
+   
+   To prove this, we need a state invariant
+   State Invariant (SI)
+   Sigma*(q,x){ q0     iff something about x}
+				q1	   iff something else about x}
+				
+   
+   Conventions
+   (q0) --> ((q1))      instead of --> 1  --> 0, can be written as
+        1,0           
+	
+   Dead states (states that never accept), all the arrows point back to itself. This is a redundant state, we can remove it
+   
+   NFSA/NFA (nondeterministic finite state automaton)
+    Basically a DFSA with 2 added features:
+	 (1) Multiple transitions on same argument 
+	     /--------------1-----\
+	 (q0) ---1-->(q1)         (q2)
+	 
+	 (2) Epsilon transition
+	 Where E is Epsilon
+	 (q0) ---E--->(q1)
+	 
+	 Q - set of states
+	 Sigma - input alphabet 
+	 Epsilon - transition function
+	 
+	It is possible for a string to end up in either an accepting or a dead state (e.g. 2 are not, 1 is accepting)
+	Therefore the definition of accepting is a bit weirder:
+	 For NFSAs, 
+	 M accepts X means if its possible to read whole string and land in an accepting state, then it accepts 
+	 
+	 Sigma*(s, x) AND F check Nonempty
+	 If the set of all states you can get to with X (Sigma*(s,x))overlaps with the set of Accepting states (F), then M accepts X.
+	 
+	 Theorum -> 
+		Every Language that has a DFSA that accepts it, has a NFSA that accepts it 
+		
+	THE BIG RESULT
+		Let L be a language
+		The following are equivalent
+		1) L = L(R) for some Regex R (there is a Regex that denotes a language)
+		2) L = L(M) for some DFSA M
+		3) L = L(M) for some NFSA M 
+		
+		That is, regexes, DFSAs, NFSAs, can all represent languages 
+		
+	 
+	 

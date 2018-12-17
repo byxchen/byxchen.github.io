@@ -1,0 +1,22 @@
+For natural number k we define a predicate P(k) as follows.
+ P(k): If x, k, y (y = k) are natural numbers, when x-y = x+y the program terminates and returns x+k
+
+Base case: Let k = 0 (y = 0)
+ recursiveAddition(x, y) returns x [line 1]
+ So recursiveAddition returns x+y as wanted
+ P(0) holds.
+ 
+Inductive Step: Let k > 0 (y > 0)
+ Suppose P(j) holds whenever 0 <= j < k [IH]
+ WTP: P(k) holds
+ 
+ Since k > 0, recursiveAddition runs Line 3
+ Also, since k > 0, then 0 <= k-1 <= k-1
+ Hence, IH applies to recursiveAddition(k-1)
+ 
+ By IH, recursiveAddition(k-1) returns x+(k-1)
+ So, by line 2 recursiveAddition terminates and returns x, which would be
+  x = (x + k-1) + 1 [By IH applies to recursiveAddition(k-1) above and Line 4]
+  x = (x + k-1 + 1) [Simplification]
+  x = (x+k)
+ as wanted.

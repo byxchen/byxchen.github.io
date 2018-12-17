@@ -1,0 +1,63 @@
+L = {0^i1^j: i=j or i=2j}
+So 0s = 1s or 2x(0s) = 1s 
+
+Below is the CFG for the above language:
+	A -> E, 0A1
+	B -> E, 00B1 
+	S -> A, B 
+
+For a PDA to accept, it needs to read all input, end on accepting state, and have stack empty.
+ There are variations, for example, ending on an accepting state alone is also acceptable.
+ Or for having just the stack empty (but exclude the initial empty stack)
+ 
+ 
+Context-Sensative Grammar
+ A0 -> 11A0
+ e.g. changing strings into other strings
+ 
+BIG RESULT 2 
+ Let L be a language. Then
+ L = L(G) for some CFG, G
+	iff
+ L = L(M) for some PDA, M
+ 
+PDAs are by characteristic, NFSAs. There exist deterministic PDAs, called deterministic PDAS, or DPDAs. However, PDAs are more powerful.
+
+Non-Context-Free Language:
+
+Recap:
+
+Big Result Equivalent Expressiveness:
+
+	Big RESULT
+	 Let L be a language, then 
+	 1) L = L(R) for some regex, R 
+	 2) L = L(M) for some DFSA, M 
+	 3) L = L(M) for some NFSA, M 
+	 
+	Big RESULT Plus 
+	 Let L be a language, then 
+	 1) L = L(G) for some CFG, G 
+	 2) L = L(G) for some right-linear CFG, G 
+	 3) L = L(G) for some strict right-linear CFG, G 
+	 
+	Big RESULT 2 
+	 Let L be a language, then 
+	 1) L = L(G) for some CFG, G 
+	 2) L = L(M) for some PDA, M 
+
+-------------------------------------------------------------------------------------------------	 
+										FINAL EXAM
+-------------------------------------------------------------------------------------------------
+	MARK BREAKDOWN
+80 Marks Total
+Q1 - Induction, etc 			[10Marks]
+Q2 - Program Correctness		[20Marks]
+Q3 - Propositional Logic		[10Marks]
+Q4 - Predicate Logic			[10Marks]		
+Q5 - Regular Languages 			[20Marks]		DFSAs/NFSAs/Regex			--> Pick 2 of 3 questions
+Q6 - Context Free Languages 	[10Marks]		CFGs/(RL/SRL)CFGs/PDAs		--> Pick 1 of 2 questions
+	 Give you a language. Pick either creating a PDA or a CFG.
+	
+
+	

@@ -1,0 +1,103 @@
+Chapter 6 - Predicate logic / First order logic
+
+Q(n): If L is a list and len(L) = n, then max(L) returns the largest element in L
+P(F): T1*(F) = 1
+M(x): X is male
+Binary predicates(takes two)
+S(x,y): x, y are siblings
+P(x,y,z): x, y are parents of z
+
+Mathematical symbols used:
+	E = There exists
+	V = For every 
+	(- = Belongs to/element of
+
+Arity of a predicate: The number of terms a predicate takes (unary, binary, ternary, etc)
+
+e.g.
+ Nick has no Sisters.
+ !Ex(S(Nick, x) && !(M(x)))
+ There does not exist a person x, for which is a sibling of Nick and is Not male
+ 
+ Nick has an uncle
+ Ex,y,z (P(x,y,Nick) && S(x, z) && M(z))
+ There exists x, y, z such that a parent of Nick, x, has a sibling z, who is a male
+ 
+Think of Q(n) as a subset of N.
+ Q(n):	 { 1  Q(n) holds
+		 { 0  otherwise
+For example, LT = {(x,y) | x < y} (- N
+			 LT maps D^2 -> {0, 1}
+
+A first order language consists of:
+ -> a set of variables (x, y, z, x1, x2...) infinite set
+ -> a set of predicate symbols {P1, P2, Pn} each with its arity
+ -> a set of constant symbols {c1, c2.. cn}
+ 
+Formulas
+ Terms: a veriable or constant
+ Atomic formula: 
+	P(t1, ..., tj) where P is a predicate of Arity j 
+	                     t1...tj are terms
+
+ Define L, the set of formulas
+ L is the smallest set such that:
+ Basis: if F is an atomic formula then F (- L
+ Induction Step: If, F1, F2 (- L, then !F1, (F1&&F2), (F1||F2), (F1->F2), (F1<->F2), VxF1, ExF1 (- L
+ 
+ You can form an unique parse tree of any formula
+ 
+ Free variables (contextual to formulas)
+ 
+ for i in range (10)
+  print(i+j)
+ Within the above formula, i is bound but j is free.
+ 
+ def blah(j)
+ for i in range (10)
+  print(i+j)
+ Within the above formula, both i and j are bound
+ 
+ P(x) && VxQ(x)
+ F1      F2
+ F1 - x is free
+ F2 - x is bound
+ 
+ Order of operations: (remember right associatve)
+ !
+ &
+ |
+ ->, <->
+ E, V
+ 
+ VxP(x) - truth depends
+ Depends on:
+  - the domain (some set D != NULL)
+  - the predicates in the formula
+ So, we need to know what P(x) means before we can evaluate it. 
+ 
+ P(c) && ExP(x)
+  - the domain (some set D != NULL)
+  - the predicates in the formula
+  - the value of constants(c)
+ e.g. D=N, P(x): x is prime, c=7 ----> TRUE. Since 7 is prime, and there exists a x that P(x) holds.
+ 
+ The three above things (domain, predicate, values) form a structure - called a sentence. 
+	We also need values for free variables too. (Valuation)
+ An interpretation consists of:
+  a structure -> domain, predicate, constants
+  a valuation -> values for free variables
+ e.g. here's a formula -- find an interpretation that satisfies it. We would need to find a structure/valuation that makes it satisfied
+ 
+ Special predicate ->
+  Equality predicates always mean (..&&..&&..)
+  
+ Same idea with propositional logic -> 
+ Let F be a formula F of the first order language L 
+  Valid - satisfied by every interpretation of L
+  Satisfiable - satisfied by some interpretation of L 
+  Unstatisfiable - iff not satisfiable by any interpretation of L
+ A truth assignment to a propositional formula is as an interpration is to a predicate formula
+ 
+  
+ 

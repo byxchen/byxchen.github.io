@@ -1,0 +1,170 @@
+CSCB36 - Theory of Computation
+
+Online discussion 2 OTW (July 16)
+ Find a partner
+ Max of 2 posts per person
+ 
+Propositional Formulas using Structural induction
+ Truth values depend upon values in formula -> Truth assignment (Tau)
+  assigns a value of 1/0 to each formula
+
+Definitions:
+ Let F, F' be propositional formulas
+	Propositional formulas have variables in them and evaluate to some false/true value (1/0)
+		e.g. (X || Y)
+	Truth assignments are some combination of values that give F/F' a value.
+		e.g. X = 1, Y = 0
+	T be a truth assignment
+		T satisfies F -> T*(F) = 1
+		 This is a way of saying that when you plug in all values of F it evaluates to true
+		T falsifies F -> T*(F) = 0
+	F is satisfiable 
+		Means for some T, T satisfies F
+	F is falsifiable
+		Means for some T, T falsifies F
+	F is a tautology (e.g. X || !X)
+		Means for every T, T satisfies F
+	F is a contradiction / F is unsatisfiable (e.g. X && !X)
+		Means for every T, T falsifies F
+	F logically implies F'
+		Means for every T, if T satisfies F, T also satisfies F'
+	F is logically equivalent to F' / F LEQV F'
+		Means F and F' logically imply each other
+	Whats the difference betwen ->, =>, and <->, <=>
+		<=>/=> used to relate formulas
+		<->/-> used INSIDE formulas
+	Theorum 5?
+		F LEQV F' iff (F<->F') is a tautology
+		F => F' iff (F -> F') is a tautology
+
+ A literal is a variable or the negation of a variable (!X, X)
+ A term is a literal or the conjunction of two or more literals (e.g. X && !X)
+ A clause is a literal or the disjuntion of two or more literals (e.g. X || !X)
+ A disjunctive normal form formula (DNF) is a term or the disjuntion of 2 or more terms (..&&..&&..)||(..&&..&&..) ORs of a BUNCH OF ANDs
+ A conjunctive normal form formula (CNF) is a term or the conjunction of 2 or more terms (..||..||..)&&(..||..||..) ANDs of a BUNCH OF ORs
+ 
+ Theorum - DNF Theorum
+	Every formula is logically equivalent (LEQV) to a DNF formula
+	e.g. F = (X||Y) -> (!X&&Z)
+		 DNF = (!X && !Y && !Z) || (!X && !Y && Z)... etc. Just list out all of the correct ones according to truth tables
+ Theorum - CNF Theorum
+	Every formula is logically equivalent (LEQV) to a CNF formula
+	We look at the DNF for !F (!X && Y && !Z) || ... etc
+		DeMorgan's Law -> Not(Things OR Things) ==> (Thing AND Thing)
+		= ![(!X && Y && !Z) || ... etc]
+		= [!(!X && Y && !Z)] && [!...] etc
+		= (X || !Y || Z) && [!...] etc
+	Or we can just practice
+		Read where the 0s are (each 0 is a clause)
+		Just flip the values (0, 1, 0) = (X || !Y || Z)
+							 (1, 0, 0) = (!X || Y || Z)
+		CNF = (X || !Y || Z) && (!X || Y || Z) && ... 
+	
+ Boolean Function(s)
+	Takes some positive number of inputs (n) and returns one boolean value as output
+	e.g. Agreement(x,y,z) = {1 if x=y=z
+							{0 otherwise
+ The idea of a formula representing a function
+	Once we have the variable values, we can find the output of the function.
+	For any truth assignment r,
+	r satisfies F whenever f(r(x1), r(x2)...) = 1
+	  falsifies F whenever f(r(x1), r(x2)...) = 0
+ 
+ 
+The completeness of connectives
+ A set of connectives (C) is called complete iff every boolean function can be represented by a propositional formula that only uses connectives in C.
+ Note:
+  A formula that doesnt use any connectives, it uses every set
+ We can write a DNF formula/CNF formula for any function
+  Thus, the set {!, &&, ||) is complete
+  A) {!, &&} is complete too
+  B) {!, ||} is complete too
+  A and B are KNOWN SETS OF CONNECTIVES, do not need to be proven
+ 
+ 
+ Proving a set of connectives, (C) to be complete.
+  1. Start with a known set of connectives A), B). 
+  2. Prove that any formula that uses only elements in A)/B) is Logically Equivalent to a formula that only uses elements in C).
+   2.1 Use structural induction to define the set G that uses {!, &&} or {!, ||}
+   2.2 Use structural induction to prove fthat for every formula F (- G, there exists F' (- C, and F' LEQV F
+   2.3 Our result follows from the fact that A) or B) is a complete set of connectives
+  Examples
+   {0, ->} as a set of connectives (C). [0 is an unary connective, 0(x) = 0]
+   Prove that C is a complete set of connectives
+   
+   Step 1. 
+   Choose {!, ||}
+   
+   Step 2
+   2.1
+   We define the set G of formulas that use {!, ||}
+   Basis: If x is a propositional variable, then x (- G
+   Inductive Step: If F1, F2 (- G, then !F, (F1||F2) (- G
+
+   2.2
+   Now we prove that for every formula F (- G there exists a formula F' such that F' uoe (uses only elements) {0, ->} and F' LEQV F 
+   Basis: Let F=x where x is a propositional variable 
+   Now consider F' = x
+   Then F' uoe C
+   F' LEQV F as wanted
+   
+   Inductive Step:
+   Suppose there are F1', F2', such that
+   F1', F2' uoe C and F1' F2' LEQV F1 and F2 respectively [IH]
+   Case 1: F = !F
+	Let F' = (F' -> 0F')
+    F' uoc {0, ->} [IH, F' uoc C]
+	and F' = (F' -> 0F')
+	     LEQV(F -> 0F) [IH]
+		 LEQV(!F)
+		 = F
+	As wanted.
+   Case 2: F = (F1 || F2)
+   Same case, but F' = ((F1'->0F1')->F2')
+   ... etc
+  
+  
+  Proving a set of connectives, (C) to be not complete.
+   1. Use structural induction to define the set of H of formulas that uoc C.
+   2. Define a predicate P(F) that holds for every F (- H, but not in general
+   3. Use structural induction to prove P(F) holds for every formula F (- H
+   4. Give a specific formula F and show that P(F) does not hold
+  Examples
+  
+  Step 1
+   We define the set of H connectives as {1, ->} [1 is an unary connective, 1(x) = 1]
+   Let H be the samllest set such that
+   Basis: If x is a propositional variable, then x (- H
+   Inductive Step: If F1, F2 (- H, then 1F, F1->F2 (- H
+   
+  Step 2
+   For a formula F, we definite predicate P(F) as follows.
+   P(F): r1*(F) = 1.
+   r1 is the truth assignment that assigns 1 to every variable
+   In other words, P(F) says that F is satisfied whenever all its variables are assigned to true
+  
+  Step 3
+   We prove that for every F (- H, P(F) holds.
+   Basis: Let F = x where x is a propositional variable
+   Then r1(F) = r1(x) 
+              = 1, as wanted
+   Indutive Step:
+	Suppose P(F1), and P(F2) [IH]
+	There are 2 cases to consider: F = 1F, F = (F1->F2)
+	Case 1: For F = 1F
+	Then r1(F) = r1(1F) [IH]
+			   = r1(1)
+			   = 1, as wanted
+	Case 2: For F = (F1->F2)
+	Then r1(F) = r1(F1->F2) [IH]
+			   = 1 [IH, r1 satisfies F2, so r1 also satisfies F1->F2], as wanted
+	QED
+   
+   Step 4
+    We come up with a formula that is not true for the predicate
+	F = !X
+	r1(F) = r1(!X)
+		  = (!1)
+		  = 0
+	Thus for F = !X, P(F) does not hold.
+   Therefore {1, ->} is not complete.

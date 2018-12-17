@@ -1,0 +1,17 @@
+Takes in two lists a, b and determines if a or b are sublists of each other. That is, every element in b, in the same order, is contained in a, or vice versa.
+
+Precondition: a and b are nonempty lists
+Postcondition: Returns if a or b are sublists of each other.
+
+1 is_sublist(a, b):
+2 if(len(a) > len(b)):
+3     c = b
+4     b = a
+5     a = c
+6 
+7 if(len(a) == 1):
+8     return a[0] == b[0]
+9 elif(a[0] == b[0])
+10    return (a[1:], b[1:])
+11 else:
+12     return False

@@ -1,0 +1,28 @@
+Step 1: Formulate LI
+ List Invariants:
+  a) 0 < b <= n
+  b) n % A[0 ... A.length() - 1] == 0 (when length of A != 0)
+
+Step 3:
+ Suppose the loop terminates, and consider the values and contents of A, b, n on exit.
+ By LI
+  a) b = n
+  b) n % A[0 ... A.length() - 1] == 0
+ According to the postcondition, 
+ 1) For any index index where i is a natural number such that 1 <= i < A.length(), A[i] > A[i-1]
+  b is strictly increasing [line 6]
+  A's contents depend strictly on b [line 5]
+  Thus we can conclude that each successive element is larger than the previous element
+ 2) For any element x in A, x mod n == 0
+  n % A[0 ... A.length() - 1] == 0 [IH b]
+  Each element in A is a factor of n by definition too [line 4]
+  Thus, because each element in A is defined as a factor of n, we can conclude that for any element x in A, 
+  x mod n == 0.
+ 3) A.length = number of factors of n
+  b traverses all possible values between 1 and n, and terminates at n [LI a, IH a]
+  Because b takes on all values between 1 and n, it follows that all factors between 1 and n (which would include all possible factors of n)
+  lie in the list A
+ By IH, we have proven 1), 2), and 3) of the postcondition, that is, factors(n) returns a sorted list of all the factors of n.
+  
+Step 4: Define an appropriate expression for e 
+ Let e = n - b
