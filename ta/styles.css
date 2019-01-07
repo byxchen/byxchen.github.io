@@ -1,3 +1,26 @@
+
+
+#titleText{
+    font-weight: 600; 
+    font-size: 200%; 
+    text-align: center; 
+    margin-top: 6px; 
+    margin-bottom: 2px;
+    color: white;
+}
+
+.lightWhite{
+    color: #1f1f1f;
+}
+
+.greytop{
+    background-color: #262626;
+}
+
+.greentop{
+    background-color: #3366cc;
+}
+
 .name{
     color: black; 
     font-size: 48px;
