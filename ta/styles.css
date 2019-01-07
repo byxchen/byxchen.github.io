@@ -1,0 +1,53 @@
+.name{
+    color: black; 
+    font-size: 48px;
+}
+
+.githubIcon {
+    float: left;
+    width:25px;
+    height:25px;
+}
+.projectLink {
+    line-height: 25px;
+}
+
+.link{
+    color: #555;
+}
+
+.card-body{
+    font-size: 14px;
+}
+
+.social-media {
+    padding: 10px 10px; 
+}
+
+.txt-style{
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.tutHeader {
+    overflow: hidden;
+}
+
+.alignHeading {
+    /* small hack that works, bootstrap is removing the top margin which mislaigns h1-h6*/
+    margin-top: 0.67em !important;
+}
+
+.spoiler, .spoiler2{ 
+    color: gray; 
+    background-color:gray;
+  }
+  
+.spoiler:hover{
+color: white;
+}
+
+.spoiler2:hover { 
+background-color:white; 
+}
