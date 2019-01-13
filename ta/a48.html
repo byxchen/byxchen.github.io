@@ -70,7 +70,65 @@
 		</div>
 
 		<div id="accordion">
-		    <div class="card">
+			<div class="card">
+		      <div class="card-header" id="heading2">
+		        <h5 class="mb-0">
+		          <button 
+		            class="btn btn-link collapsed" 
+		            data-toggle="collapse" 
+		            data-target="#collapse2" 
+		            aria-expanded="false" 
+		            aria-controls="collapse2"
+		            title="+ Week 2: January 14th">
+		            + Week 2: January 14th | Introductory C
+		          </button>
+		        </h5>
+		      </div>
+		      <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">
+		        <div class="card-body">
+		          <b>The tutorial this week covered basics in C such as loops, conditionals, comparison operators, and how to use printf in C.</b> 
+		          <br><br>
+		          We discovered that the <span class="code">|</span> and <span class="code">&</span> operators are bitwise operators - meaning they actually take the bit-by-bit of two variables (e.g. 2 = 00000010). We then discussed how the <span class="code">||</span> and <span class="code">&&</span> are logical operators - meaning that they act the same as (a or b) and (a and b) in Python. <b> Do not use single operators in place of double operators </b>. We also briefly touched upon the fact that <b>anything not 0 is True in C</b>.
+		          <br><br>
+		          We examined the behavior of these different operators through some code: 
+				  <div class="codeblock">
+					int a = 2;<br>
+					int b = 0;<br>
+					int c = 7;<br>
+					if((a=b && (c=3) & b==0)){<br>
+						&nbsp;&nbsp;printf("Printed \n");<br>
+					}<br>
+					else{<br>
+						&nbsp;&nbsp;printf("Not printed \n");<br>
+					}<br>
+					return 0;<br>
+				  </div>
+				  We also created a program to print all the perfect squares from [1..100] in C:
+				  <div class="codeblock">
+				  	int is_square(int num){<br>
+						&nbsp;&nbsp;double ans = sqrt((double)num);<br>
+						&nbsp;&nbsp;int int_ans = (int) ans;<br>
+						&nbsp;&nbsp;if(ans == int_ans){<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;	return sqrt(num);<br>
+						&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;return 0;<br>
+					}<br>
+					<br>
+					int main(){
+						&nbsp;&nbsp;for(int i = 1; i < 101; i++){<br>
+						&nbsp;&nbsp;	int ans = is_square(i);<br>
+						&nbsp;&nbsp;	if(ans != 0){<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;		printf("%d = %d * %d \n", i, ans, ans);<br>
+						&nbsp;&nbsp;	}<br>
+						&nbsp;&nbsp;}<br>
+					}
+				  </div>
+		      </div>
+		     </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
 		      <div class="card-header" id="heading1">
 		        <h5 class="mb-0">
 		          <button 
@@ -84,15 +142,15 @@
 		          </button>
 		        </h5>
 		      </div>
-		      <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+		      <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
 		        <div class="card-body">
 		          <b>There were no tutorials this week.</b> 
 		          <br>
 		          Instead here's a link to a funny comic - <a href="http://dilbert.com/strip/2017-01-02">Dilbert Programming Environment</a>.
 		          <br><br>
-							We will be using <b>C</b> for this course. Consider familiarizing yourself with the C language and get started by downloading a text editor (I recommend <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> or <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a> for beginners, and <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> for more advanced students). Try to understand how to write and run C code (most text editors have syntax highlighting, which is useful!) - it's quite a bit different than Python. Read Paco's notes on the Quercus site for details.
-							<br><br>
-							Looking to store your code? Try not to use Google Drive or Dropbox, instead, consider checking out <b>Git</b> - a version control system widely used by software engineers. I recommend setting up a GitHub (Git hosting service) account - GitHub offers a free student pack loaded with goodies <a href="https://education.github.com/pack" target="_blank">here</a>. Git is a storage system for your code, being able to revert to previous versions, accessed from any computer, and loads of other amazing functionality that makes developing much easier.
+					We will be using <b>C</b> for this course. Consider familiarizing yourself with the C language and get started by downloading a text editor (I recommend <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> or <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a> for beginners, and <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> for more advanced students). Try to understand how to write and run C code (most text editors have syntax highlighting, which is useful!) - it's quite a bit different than Python. Read Paco's notes on the Quercus site for details.
+					<br><br>
+					Looking to store your code? Try not to use Google Drive or Dropbox, instead, consider checking out <b>Git</b> - a version control system widely used by software engineers. I recommend setting up a GitHub (Git hosting service) account - GitHub offers a free student pack loaded with goodies <a href="https://education.github.com/pack" target="_blank">here</a>. Git is a storage system for your code, being able to revert to previous versions, accessed from any computer, and loads of other amazing functionality that makes developing much easier.
 		      </div>
 		     </div>
 		    </div>

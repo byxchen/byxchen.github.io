@@ -72,3 +72,16 @@ color: white;
 .spoiler2:hover { 
 background-color:white; 
 }
+
+.codeblock{
+    background-color: #404040;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: Courier;
+}
+
+.code{
+    font-family: Courier;
+}
