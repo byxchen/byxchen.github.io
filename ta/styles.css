@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 #titleText{
     font-weight: 600; 
     font-size: 200%; 
@@ -79,9 +81,10 @@ background-color:white;
     border-radius: 5px;
     padding: 10px;
     font-size: 12px;
-    font-family: Courier;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .code{
-    font-family: Courier;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 800;
 }

@@ -70,6 +70,47 @@
 		</div>
 
 		<div id="accordion">
+
+			<div class="card">
+		      <div class="card-header" id="heading3">
+		        <h5 class="mb-0">
+		          <button 
+		            class="btn btn-link collapsed" 
+		            data-toggle="collapse" 
+		            data-target="#collapse3" 
+		            aria-expanded="false" 
+		            aria-controls="collapse3"
+		            title="+ Week 1: January 7th">
+		            + Week 3: January 24th | Warnings and Errors
+		          </button>
+		        </h5>
+		      </div>
+		      <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion">
+		        <div class="card-body">
+		          <b>The tutorial this week covered how to identify warnings and errors in C.</b> 
+		          <br>
+					To avoid nasty undefined behavior such as what we get when we do something like:
+					<div class="codeblock">
+						float f = 3.14159;
+						<br>
+						printf("%d \n", f);
+					</div>
+					The above code will spit out some random number like -394815815, which is not expected behavior. To avoid this, we explained the use of several <b>Flags</b> in our compilation of C code for this course.
+					<br><br>
+					This includes two new items that we need to add:
+					<ul>
+						<li> <span class="code">-Wall</span> short for "warn all" - it turns on (almost) all the warnings that gcc can tell you about </li>
+						<li> <span class="code">-Werror</span> every warning is treated as an error and halts compilation </li>
+					</ul>
+					So now for the rest of the course we expect you to compile all your solutions using:
+					<div class="codeblock">
+						gcc -Wall -Werror program.c
+					</div>
+					We then solved Ex.0 and Ex.2 from Unit 2 Notes together, discussing the problems and their solutions.
+		      </div>
+		     </div>
+		    </div>
+
 			<div class="card">
 		      <div class="card-header" id="heading2">
 		        <h5 class="mb-0">
@@ -84,10 +125,10 @@
 		          </button>
 		        </h5>
 		      </div>
-		      <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">
+		      <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
 		        <div class="card-body">
 		          <b>The tutorial this week covered basics in C such as loops, conditionals, comparison operators, and how to use printf in C.</b> 
-		          <br><br>
+		          <br>
 		          We discovered that the <span class="code">|</span> and <span class="code">&</span> operators are bitwise operators - meaning they actually take the bit-by-bit of two variables (e.g. 2 = 00000010). We then discussed how the <span class="code">||</span> and <span class="code">&&</span> are logical operators - meaning that they act the same as (a or b) and (a and b) in Python. <b> Do not use single operators in place of double operators </b>. We also briefly touched upon the fact that <b>anything not 0 is True in C</b>.
 		          <br><br>
 		          We examined the behavior of these different operators through some code: 
