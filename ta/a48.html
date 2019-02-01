@@ -77,6 +77,56 @@
 		          <button 
 		            class="btn btn-link collapsed" 
 		            data-toggle="collapse" 
+		            data-target="#collapse4" 
+		            aria-expanded="false" 
+		            aria-controls="collapse4"
+		            title="+ Week 1: January 7th">
+		            + Week 4: January 31st | Pointers and Strings
+		          </button>
+		        </h5>
+		      </div>
+		      <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion">
+		        <div class="card-body">
+		          <b>The tutorial this week covered strings and basic pointer logic in C.</b> 
+		          <br>
+				  We covered the differences between:
+				  <div class="codeblock">
+				  	p = &x;     &nbsp;&nbsp;&nbsp;   // Take the address of x and store it in pointer p <br>
+		            *(p) = y;   &nbsp;  // Make the contents of the locker (p) equal to y   <br>
+		            *(p+2) = z;   // Make the contents of locker (p+2) equal to z	  <br>
+		            y=*(p+5);    &nbsp; // Make y equal to the contents of locker (p+5)	  <br>
+		            m=*(p)+9;   &nbsp;  // Take contents of locker p, increase by 9, store in m
+				  </div>
+				  <br>
+				  We wrote some basic functions, like strConcat, concatenates new to end of orig:
+				  <div class="codeblock">
+				  	void strConcat(char *orig, char *new){	<br>
+						&nbsp;&nbsp;while(*orig){<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;	orig++;<br>
+						&nbsp;&nbsp;}	<br>
+						&nbsp;&nbsp;while(*new){<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;	*orig = *new;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;	orig++;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;	new++;<br>
+						&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;*orig = '\0';<br>
+					}
+				  </div>
+				  We also discussed a solution to a problem about: A function which takes a pointer to a string, and a pointer to an array of ints. It counts how many times each character appears in the input string and updates that count in the corresponding entry of the array
+				  <br><br>
+				  We motivated the answer by looping through the string and taking the char-to-int value (ASCII) and storing/incrementing it in the 255 char array. For example, 'H' would be 71. Code was left for the reader to complete.
+				  <br><br> 
+				  We also introduced a club - the <a href="https://csec.club" target="_blank">Computer Science Enrichment Club</a>. Come join us if you're not busy!
+		      </div>
+		     </div>
+		    </div>
+
+			<div class="card">
+		      <div class="card-header" id="heading3">
+		        <h5 class="mb-0">
+		          <button 
+		            class="btn btn-link collapsed" 
+		            data-toggle="collapse" 
 		            data-target="#collapse3" 
 		            aria-expanded="false" 
 		            aria-controls="collapse3"
@@ -85,7 +135,7 @@
 		          </button>
 		        </h5>
 		      </div>
-		      <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion">
+		      <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
 		        <div class="card-body">
 		          <b>The tutorial this week covered how to identify warnings and errors in C.</b> 
 		          <br>
