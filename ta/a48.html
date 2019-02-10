@@ -72,7 +72,51 @@
 		<div id="accordion">
 
 			<div class="card">
-		      <div class="card-header" id="heading3">
+		      <div class="card-header" id="heading5">
+		        <h5 class="mb-0">
+		          <button 
+		            class="btn btn-link collapsed" 
+		            data-toggle="collapse" 
+		            data-target="#collapse5" 
+		            aria-expanded="false" 
+		            aria-controls="collapse5"
+		            title="+ Week 1: January 7th">
+		            + Week 5: Feb 7th | Structs
+		          </button>
+		        </h5>
+		      </div>
+		      <div id="collapse5" class="collapse show" aria-labelledby="heading4" data-parent="#accordion">
+		        <div class="card-body">
+		          <b>The tutorial this week covered structs and their usages.</b> 
+		          <br>
+				  We covered the differences between a struct (a compound/composite data type, called CDT in notes) and an object.
+				  <br><br>
+				  We went over how to initialize a struct - disc is the object name, Record is the declarable object. An example below:
+				  <div class="codeblock">
+				  	typedef struct disc{<br>
+					&nbsp;&nbsp;	char name[1000]; <br>
+					&nbsp;&nbsp;	int pub_year;<br>
+					&nbsp;&nbsp;	char author[1000];<br>
+					} Record;
+				  </div>
+				  <br>
+				  We wrote some basic functions to work with structs. We also talked about accessing members of CDTs through <span class="code">(*struct).property</span> (bad) vs <span class="code">struct->property</span> (good).
+				  <div class="codeblock">
+				  	void set_record_info(Record *rec, char *name, char *author, int year){<br>
+					&nbsp;&nbsp;	strcpy(rec->name, name);<br>
+					&nbsp;&nbsp;	strcpy(rec->author, author);<br>
+					&nbsp;&nbsp;	rec->pub_year = year; <br>
+					}
+				  </div>
+				  We briefly discussed the difference and use cases between <span class="code">fgets()</span> and <span class="code">scanf()</span>.
+				  <br><br>
+				  We also discussed a solution to a problem about: A program which creates a 10 record array, then uses <span class="code">fgets()</span> and <span class="code">scanf()</span> to fill out all records using a function.
+		      </div>
+		     </div>
+		    </div>
+
+			<div class="card">
+		      <div class="card-header" id="heading4">
 		        <h5 class="mb-0">
 		          <button 
 		            class="btn btn-link collapsed" 
@@ -85,7 +129,7 @@
 		          </button>
 		        </h5>
 		      </div>
-		      <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion">
+		      <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
 		        <div class="card-body">
 		          <b>The tutorial this week covered strings and basic pointer logic in C.</b> 
 		          <br>
