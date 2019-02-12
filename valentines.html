@@ -8,7 +8,7 @@
 	<body style="background-color: rgb(255, 120, 120); margin: 0px;">
 		<div id="normal">
 			<div id="normalStuff">
-				<div style="margin: 14vh 20vw 0vh 26vw; font-family: 'Lobster Two'; color: white; font-size: 90px;">
+				<div style="margin: 14vh 20vw 0vh; font-family: 'Lobster Two'; color: white; font-size: 90px;">
 					Will you be my Valentine?
 					<br>
 					<div class='btn' onclick="toggleBackground();" style="background-color: pink">
@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<div id="yayStuff" style="display:none">
-				<div style="margin: 14vh 20vw 0vh 26vw; font-family: 'Lobster Two'; color: white; font-size: 90px;">
+				<div style="margin: 14vh 20vw 0vh; font-family: 'Lobster Two'; color: white; font-size: 90px;">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💖 Oh darn! 💖
 						<br>
 						<img class="inl" src="assets/pp.gif"/>
@@ -38,21 +38,19 @@
 	</body>
 	<script>
 	let toggleBackground = () => {
-		setTimeout(function(){
-			let vid = document.createElement("iframe");
-			vid.setAttribute("marginwidth", "26vh");
-			vid.setAttribute("src", "https://www.youtube.com/embed/MefCPhBSabU?autoplay=1");
-			vid.setAttribute("width", "560");
-			vid.setAttribute("height", "315");
-			vid.setAttribute("frameborder", "0");
-			vid.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
-			const sln = document.getElementById("sln");
-			const par = sln.parentNode;
-			par.replaceChild(vid, sln);
-			document.getElementById("normal").id = "party";
-			document.getElementById("yayStuff").style.display = "block";
-			document.getElementById("normalStuff").style.display="none";
-		}, 500);
+		let vid = document.createElement("iframe");
+		vid.setAttribute("marginwidth", "26vh");
+		vid.setAttribute("src", "https://www.youtube.com/embed/MefCPhBSabU?autoplay=1");
+		vid.setAttribute("width", "560");
+		vid.setAttribute("height", "315");
+		vid.setAttribute("frameborder", "0");
+		vid.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+		const sln = document.getElementById("sln");
+		const par = sln.parentNode;
+		par.replaceChild(vid, sln);
+		document.getElementById("normal").id = "party";
+		document.getElementById("yayStuff").style.display = "block";
+		document.getElementById("normalStuff").style.display="none";
 	}
 	</script>
 </html>
