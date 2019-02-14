@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>Valentines</title>
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+		<link rel="stylesheet" href="vlstyles.css"> <!-- Resource style -->
+	</head>
+	<body style="background-color: rgb(255, 120, 120); margin: 0px;">
+		<div id="normal">
+			<div id="normalStuff">
+				<div style="margin: 14vh 20vw 0vh; font-family: 'Lobster Two'; color: white; font-size: 90px;">
+					Will you be my Valentine?
+					<br>
+					<div class='btn' onclick="toggleBackground();" style="background-color: pink">
+						Yes
+					</div>
+					<div class='btn' onclick="toggleBackground();" style="background-color: red">
+						Yes but red
+					</div>
+				</div>
+			</div>
+			<div id="yayStuff" style="display:none">
+				<div style="margin: 14vh 20vw 0vh; font-family: 'Lobster Two'; color: white; font-size: 90px;">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💖 Oh darn! 💖
+						<br>
+						<img class="inl" src="assets/pp.gif"/>
+						<img class="inl" src="assets/pp.gif"/>
+						<img class="inl" src="assets/pp.gif"/>
+					</div>
+			</div>
+			<div style="margin: 0 auto">
+				<div style="margin-left: 34vw; margin-top: 10vh;">
+					<div id="sln">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+	let toggleBackground = () => {
+		let vid = document.createElement("iframe");
+		vid.setAttribute("marginwidth", "26vh");
+		vid.setAttribute("src", "https://www.youtube.com/embed/MefCPhBSabU?autoplay=1");
+		vid.setAttribute("width", "560");
+		vid.setAttribute("height", "315");
+		vid.setAttribute("frameborder", "0");
+		vid.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+		const sln = document.getElementById("sln");
+		const par = sln.parentNode;
+		par.replaceChild(vid, sln);
+		document.getElementById("normal").id = "party";
+		document.getElementById("yayStuff").style.display = "block";
+		document.getElementById("normalStuff").style.display="none";
+	}
+	</script>
+</html>
