@@ -71,6 +71,46 @@
 
 		<div id="accordion">
 
+				<div class="card">
+						<div class="card-header" id="heading6">
+							<h5 class="mb-0">
+								<button 
+									class="btn btn-link collapsed" 
+									data-toggle="collapse" 
+									data-target="#collapse6" 
+									aria-expanded="false" 
+									aria-controls="collapse6"
+									title="+ Week 1: January 7th">
+									+ Week 6: Feb 14th | Arrays and Memory
+								</button>
+							</h5>
+						</div>
+						<div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordion">
+							<div class="card-body">
+								<b>The tutorial this week covered arrays (1D and 2D), array pointer notation, and calloc/free.</b> 
+								<br>
+								We talked about the differences between static (int arr[10]) and dynamicly sized arrays (int arr[y]). We wrote some code to create a pointer array:
+								<div class="codeblock">
+									int *newArray(int size){<br>
+										&nbsp;&nbsp;int *array;&nbsp;// A pointer! not an array declaration<br>
+										&nbsp;&nbsp;array=(int *)calloc(size,sizeof(int));       // Get 'size' items large enough to hold one int each<br>
+										&nbsp;&nbsp;return array;<br>
+									}
+								</div>
+						<br>
+						We discussed the difference between array index notation <span class="code">arr[10]</span> vs array pointer notation <span class="code">*(arr + 10)</span>. 
+						We talked the fact that arrays must be contiguous - continuous and sequential. If there is not enough memory space, calloc returns NULL. We talked about the need to use
+						<span class="code">free(my_array)</span> and how it pertains to pointer arrays. We discussed the importance of 2D arrays and how they're just stored as large 1D arrays.
+						<br><br>
+						Finally we discussed how we approach pointer notation to 2D arrays in C - remember they're in <a href="https://en.wikipedia.org/wiki/Row-_and_column-major_order" target="_blank">Row-Major notation!</a>
+						<div class="codeblock">
+							// For array[i][j] the pointer notation equivalent is:<br>
+						*(array + i +(j*row_size));
+						</div>
+					</div>
+					 </div>
+					</div>
+
 			<div class="card">
 		      <div class="card-header" id="heading5">
 		        <h5 class="mb-0">
@@ -85,7 +125,7 @@
 		          </button>
 		        </h5>
 		      </div>
-		      <div id="collapse5" class="collapse show" aria-labelledby="heading4" data-parent="#accordion">
+		      <div id="collapse5" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
 		        <div class="card-body">
 		          <b>The tutorial this week covered structs and their usages.</b> 
 		          <br>
