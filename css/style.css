@@ -39,8 +39,19 @@ body{
 	font-size: 11pt;
 }
 
+.cpy-text{
+	color: #d9dde2;
+	font-size: 8pt;
+}
+
 .header-text{
 	color: #66ccff;
+	font-size: 11pt;
+	text-decoration: none;
+}
+
+.header-text-2{
+	color: #99ffbb;
 	font-size: 11pt;
 	text-decoration: none;
 }
