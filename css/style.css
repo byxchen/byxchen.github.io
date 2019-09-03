@@ -3,6 +3,11 @@
 	src: url('https://fonts.googleapis.com/css?family=Inconsolata');
 }
 
+@font-face{
+	font-family: rubik;
+	src: url('https://fonts.googleapis.com/css?family=Rubik');
+}
+
 body{
 	font-family: inconsolata;
 	font-size: 12pt;
@@ -103,6 +108,12 @@ body{
 	color: #99ffbb;
 }
 
+.entry-link{
+	color: #66ccff;
+	font-size: 12pt;
+	text-decoration: none;
+}
+
 .entry-subtitle{
 	color: #6bd66e;
 	font-size: 11pt;
@@ -139,4 +150,37 @@ body{
 
 .min{
 	font-size: 12px;
+}
+
+.date-time{
+	font-size: 12px;
+	color: white;
+}
+
+.blog-entry{
+	font-family: rubik;
+	font-size: 10pt;
+	line-height: 150%;
+	margin-top: 10px;
+}
+
+.blog-header{
+	font-size: 14pt;
+	color: #99ffbb;
+}
+
+.blog-subheader{
+	font-size: 12pt;
+	color: #6bd66e;
+}
+
+.blog-summary-text{
+	font-size: 10pt;
+	font-style: italic;
+	color: #aeeb34;
+}
+
+.blog-bold{
+	color: #99ffbb;
+	font-style: bold;
 }
