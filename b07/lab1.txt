@@ -1,0 +1,144 @@
+------------------------------------------------------------------|
+|-   CSCB07 Fall 2019 - Lab 1 - Introduction to SVN and Linux     -|        
+|------------------------------------------------------------------|
+|                                                                  |
+|Welcome to your first lab!  In this lab, we will be learning about|
+|some basic Linux commands, as well as working with our first SVN  |
+|repository.                                                       |
+|                                                                  |
+|Throughout this lab, you will regularly need to call your TA over |
+|to show them the progress you have made.  If you are stuck at any |
+|point, please call your TA over and ask them about the problem you|
+|are facing.  Remember, they are there to help you!                |
+|                                                                  |
+|Your TA will also be grading you for completing the exercises     |
+|in this lab.  It should be pretty easy to get through this        |
+|first one successfully in the hour.                               |
+|                                                                  |
+|In order to get started there will be some pre-requisite work.    |
+|                                                                  |
+|------------------------------------------------------------------|
+|-                      Preparation                               -|
+|------------------------------------------------------------------|
+|1. run the following commands:                                    | 
+|    cd /cmshome/[PUT YOUR UTORID HERE]/cscb07f19_space            | 
+|    mkdir ./lab1                                                  | 
+|    cd lab1                                                       |
+|    touch HelloWorld.java	                                       | 
+|                                                                  |                                                                  
+|------------------------------------------------------------------| 
+|                    Explanation                                   |
+|------------------------------------------------------------------|
+|So what did we just do?  First, we changed the directory (cd) to  |
+|our course folder.  We can also run the command pwd here to check |
+|what directory we are in.  pwd stands for Present Working         |
+|Directory, and can be incredibly useful in keeping track of where |
+|you currently are in the file system.  Once we changed directories|
+|we ran the command to make a new directory (mkdir) and gave it a  |
+|name for the directory we wanted to make (lab1).  We are then     |
+|moving into this folder (using cd again), and creating a file 	   |
+|(touch) called HelloWorld.java.								   |
+|                                                                  |
+|------------------------------------------------------------------|
+|                   Part 1 - Write the code				           |
+|------------------------------------------------------------------|
+|Complete the following steps, and let your TA know once you have  |
+|finished:                                                         |
+|1. Open the file HelloWorld.java with a command line editor (pico,|
+|   vim, emacs, etc.)	                                           |					
+|2. Add the following code into the file:                          |
+|		public class HelloWorld {                                  |
+|         public static void main(String[] args){                  |
+|           System.out.println("Hello world!");                    |
+|         }                                                        |
+|	    }                                                          |
+|3. Save the file and exit the editor.                             |
+|4. Run the command:                                               |
+|    cat HelloWorld.java										   |
+|5. If this successfully shows the above code, you saved correctly |
+|   and can move on to the next section, otherwise, go back to step|
+|   1 and follow the instructions carefully! Ask your TA if you    |
+|   continue to be stuck.                                          |
+|------------------------------------------------------------------|
+|                  Part 2 - Compile your code                      |
+|------------------------------------------------------------------|
+|We now want to be able to run our Hello world program.  Java is a |
+|compiled language** so, we will need to compile the program, prior|
+|to running it. Complete the following steps, and let your TA know |
+|when you are finished:                                            |
+|1. run the following command:									   |
+|    ls			                                                   |
+|2. Note what you see after running it                             |
+|3. Run the following commands:									   |
+|    javac HelloWorld.java                                         |
+|    ls                                                            |
+|4. Note what you see after running this.                          |
+|5. If you didn't get any errors you are doing great! Time to move |
+|   on to the final section of the lab. If you had an error, try to|
+|   fix it. Be sure that your program code is written correctly,   |
+|   and that you titled your file and your class the same. Names   |
+|   are case sensitive!                                            |
+|                                                                  |
+|**Java is technically both a compiled and interpreted language. We|
+|  will be discussing this in much more detail in lecture.         |
+|------------------------------------------------------------------|
+|                       Part 3 - Run your Program!                 |
+|------------------------------------------------------------------|
+|Finally we've completed writing and compiling our first program.  |
+|At this time, run the final step below to see your program work:  |
+|  java HelloWorld                                                 |
+|if this worked, you will see Hello World! appear on a line below  |
+|the command.  You've now finished your first lab!                 |
+|------------------------------------------------------------------|
+|                       Conclusion                                 |
+|------------------------------------------------------------------|
+|You have now finished your first lab! Congratulations!  If you are|
+|done early, feel free to continue playing around with linux and   |
+|java or help your classmates with areas they may be stuck, or try |
+|out the bonus below, for a head start on your first exercise.     |
+|------------------------------------------------------------------|
+|                       Bonus                                      |
+|------------------------------------------------------------------|
+|Edit your hello world program to change the body of the main      |
+|function as follows:                                              |
+|  public static void main(String[] args) {						   |
+|    System.out.println("Hello " + args[0] + "!");                 |
+|  }                                                               |
+|Now, compile the code and run it with the following command:      |
+|  java HelloWorld [ENTER YOUR NAME HERE]                          |
+|                                                                  |
+|Finally, what happens if we run our original command to run the   |
+|program:                                                          |
+|  java HelloWorld                                                 |
+|You should have received an index out of bounds error! The array  |
+|args contains the command line arguments found after the name of  |
+|the class that you are running with the java command. As there is |
+|nothing after the class name, the array is empty and does not have|
+|an item at position 0.  In order to safe guard our code, we must  |
+|add a check, to ensure that there are arguments:                  |
+|  public static void main(String[] args) {                        |
+|    if (args.length<1){                                           |
+|      System.out.println("Hello world!");                         |
+|    }else{                                                        |
+|      System.out.println("Hello " + args[0] + "!");               |
+|    }                                                             |
+|  }                                                               |
+|Once you've updated the code, recompile it, and try to run the    |
+|program both with and without another parameter. Note the new     |
+|behaviour.  At this time you've finished lab 1!                   |
+|------------------------------------------------------------------|
+|                       LINUX CHEAT SHEET                          |
+|------------------------------------------------------------------|
+|The following commands may help you in completing your lab:       |
+| man [command] - get the manual for a command - great way to learn|
+|                 more about how to use a command                  |
+| rmdir [dir]   - delete a directory                               |
+| touch [file]  - create a file named [file]                       |
+| pico [file]   - open [file] in a simple text editor              |
+| cd [dir]      - change direcotry to [dir]                        |
+| pwd           - return the present working directory             |
+| ls            - list the contents of current directory           |
+| ~             - represents your home folder.                     |
+| cat [file]    - display the contents of a file on command line   |
+|NOTE: To save a file in pico, press ctrl+o                        |
+|------------------------------------------------------------------|
