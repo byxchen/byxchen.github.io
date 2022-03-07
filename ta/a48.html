@@ -1,337 +1,363 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131386538-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	  gtag('config', 'UA-131386538-1');
+		gtag('config', 'UA-131386538-1');
 	</script>
-	<meta name="description" content="Brian Chen's personal site - blogger, software engineer, and student @ UofT"/>
-	<meta name="keywords" content="Chen Yuxiang, Brian, Chen, Xiang, Yu, Yuxiang, Brian Chen, Toronto, UofT, UTSC, Computer, Science, Computer Science, byxc, byxchen, brianyxc"/>
+	<meta name="description" content="Brian Chen's personal site - blogger, software engineer, and student @ UofT" />
+	<meta name="keywords"
+		content="Chen Yuxiang, Brian, Chen, Xiang, Yu, Yuxiang, Brian Chen, Toronto, UofT, UTSC, Computer, Science, Computer Science, byxc, byxchen, brianyxc" />
 	<meta name="author" content="Brian Chen">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon2.png">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<title>byxchen - csca48</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript"
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
 </head>
 
 
-  <body style="background-color: #f2f2f2;">
-    <nav class="nav greytop">
-      <div class="nav-container">
-        <a href="/index">
-          <p class="nav-title" style="float:left; color: #cccccc;">Home</p>
-        </a>
-		<a href="/ta" style="float: right; color: #cccccc;">Tutorials</a><br>
-        <p id="titleText">CSCA48 Winter 2019</p>
-      </div>
-    </nav>
-    <main>
-      <br>
-      <div>
-		  <p class="txt-style"><b>TA name:</b> Brian Chen</p>
-		  <p class="txt-style"><b>Tutorial TUT0005:</b> Thursday 9-10AM, at IC220.</p>	
-		  <p class="txt-style"><b>Email Policy:</b> 
-		  	<br>
-		  	Before emailing me, consider attending my practical or posting the question on <a href = ".">Piazza</a>. My email address is <a href="mailto:brianyx.chen@mail.utoronto.ca?subject=CSCA48">brianyx.chen[at]mail.utoronto.ca</a>. When emailing me, use your utoronto email and in the subject include "CSCA48".</p>
-		  <p class="txt-style"><b>Expectations:</b> <br>
-		  	<ul>
-		  		<li style="font-size: 14px;">Material covered in tutorial sessions are dependent on lecture material, so please be familiar with the content.</li>
-		  		<li style="font-size: 14px;">There may be a <b>quiz</b> held in tutorial, so please be on time.</li>
-		  	</ul>
-		  	</p> 
-		  <p class="txt-style"><b>Weekly Notes:</b>&nbsp;&nbsp;&nbsp;<span style="font-size: 12px;">Note - these are not a replacement, but instead a supplement for weekly tutorials</span></p>
+<body style="background-color: #f2f2f2;">
+	<nav class="nav greytop">
+		<div class="nav-container">
+			<a href="/index">
+				<p class="nav-title" style="float:left; color: #cccccc;">Home</p>
+			</a>
+			<a href="/ta" style="float: right; color: #cccccc;">Tutorials</a><br>
+			<p id="titleText">CSCA48 Winter 2019</p>
+		</div>
+	</nav>
+	<main>
+		<br>
+		<div>
+			<p class="txt-style"><b>TA name:</b> Brian Chen</p>
+			<p class="txt-style"><b>Tutorial TUT0005:</b> Thursday 9-10AM, at IC220.</p>
+			<p class="txt-style"><b>Email Policy:</b>
+				<br>
+				Before emailing me, consider attending my practical or posting the question on <a href=".">Piazza</a>.
+				My email address is <a
+					href="mailto:brianyx.chen@mail.utoronto.ca?subject=CSCA48">brianyx.chen[at]mail.utoronto.ca</a>.
+				When emailing me, use your utoronto email and in the subject include "CSCA48".
+			</p>
+			<p class="txt-style"><b>Expectations:</b> <br>
+			<ul>
+				<li style="font-size: 14px;">Material covered in tutorial sessions are dependent on lecture material, so
+					please be familiar with the content.</li>
+				<li style="font-size: 14px;">There may be a <b>quiz</b> held in tutorial, so please be on time.</li>
+			</ul>
+			</p>
+			<p class="txt-style"><b>Weekly Notes:</b>&nbsp;&nbsp;&nbsp;<span style="font-size: 12px;">Note - these are
+					not a replacement, but instead a supplement for weekly tutorials</span></p>
 		</div>
 
 		<div id="accordion">
 
-				<div class="card">
-						<div class="card-header" id="heading6">
-							<h5 class="mb-0">
-								<button 
-									class="btn btn-link collapsed" 
-									data-toggle="collapse" 
-									data-target="#collapse6" 
-									aria-expanded="false" 
-									aria-controls="collapse6"
-									title="+ Week 1: January 7th">
-									+ Week 6: Feb 14th | Arrays and Memory
-								</button>
-							</h5>
-						</div>
-						<div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordion">
-							<div class="card-body">
-								<b>The tutorial this week covered arrays (1D and 2D), array pointer notation, and calloc/free.</b> 
-								<br>
-								We talked about the differences between static (int arr[10]) and dynamicly sized arrays (int arr[y]). We wrote some code to create a pointer array:
-								<div class="codeblock">
-									int *newArray(int size){<br>
-										&nbsp;&nbsp;int *array;&nbsp;// A pointer! not an array declaration<br>
-										&nbsp;&nbsp;array=(int *)calloc(size,sizeof(int));       // Get 'size' items large enough to hold one int each<br>
-										&nbsp;&nbsp;return array;<br>
-									}
-								</div>
+			<div class="card">
+				<div class="card-header" id="heading6">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6"
+							aria-expanded="false" aria-controls="collapse6" title="+ Week 1: January 7th">
+							+ Week 6: Feb 14th | Arrays and Memory
+						</button>
+					</h5>
+				</div>
+				<div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordion">
+					<div class="card-body">
+						<b>The tutorial this week covered arrays (1D and 2D), array pointer notation, and
+							calloc/free.</b>
 						<br>
-						We discussed the difference between array index notation <span class="code">arr[10]</span> vs array pointer notation <span class="code">*(arr + 10)</span>. 
-						We talked the fact that arrays must be contiguous - continuous and sequential. If there is not enough memory space, calloc returns NULL. We talked about the need to use
-						<span class="code">free(my_array)</span> and how it pertains to pointer arrays. We discussed the importance of 2D arrays and how they're just stored as large 1D arrays.
+						We talked about the differences between static (int arr[10]) and dynamicly sized arrays (int
+						arr[y]). We wrote some code to create a pointer array:
+						<div class="codeblock">
+							int *newArray(int size){<br>
+							&nbsp;&nbsp;int *array;&nbsp;// A pointer! not an array declaration<br>
+							&nbsp;&nbsp;array=(int *)calloc(size,sizeof(int)); // Get 'size' items large enough to hold
+							one int each<br>
+							&nbsp;&nbsp;return array;<br>
+							}
+						</div>
+						<br>
+						We discussed the difference between array index notation <span class="code">arr[10]</span> vs
+						array pointer notation <span class="code">*(arr + 10)</span>.
+						We talked the fact that arrays must be contiguous - continuous and sequential. If there is not
+						enough memory space, calloc returns NULL. We talked about the need to use
+						<span class="code">free(my_array)</span> and how it pertains to pointer arrays. We discussed the
+						importance of 2D arrays and how they're just stored as large 1D arrays.
 						<br><br>
-						Finally we discussed how we approach pointer notation to 2D arrays in C - remember they're in <a href="https://en.wikipedia.org/wiki/Row-_and_column-major_order" target="_blank">Row-Major notation!</a>
+						Finally we discussed how we approach pointer notation to 2D arrays in C - remember they're in <a
+							href="https://en.wikipedia.org/wiki/Row-_and_column-major_order" target="_blank">Row-Major
+							notation!</a>
 						<div class="codeblock">
 							// For array[i][j] the pointer notation equivalent is:<br>
-						*(array + i +(j*row_size));
+							*(array + i +(j*row_size));
 						</div>
 					</div>
-					 </div>
-					</div>
+				</div>
+			</div>
 
 			<div class="card">
-		      <div class="card-header" id="heading5">
-		        <h5 class="mb-0">
-		          <button 
-		            class="btn btn-link collapsed" 
-		            data-toggle="collapse" 
-		            data-target="#collapse5" 
-		            aria-expanded="false" 
-		            aria-controls="collapse5"
-		            title="+ Week 1: January 7th">
-		            + Week 5: Feb 7th | Structs
-		          </button>
-		        </h5>
-		      </div>
-		      <div id="collapse5" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
-		        <div class="card-body">
-		          <b>The tutorial this week covered structs and their usages.</b> 
-		          <br>
-				  We covered the differences between a struct (a compound/composite data type, called CDT in notes) and an object.
-				  <br><br>
-				  We went over how to initialize a struct - disc is the object name, Record is the declarable object. An example below:
-				  <div class="codeblock">
-				  	typedef struct disc{<br>
-					&nbsp;&nbsp;	char name[1000]; <br>
-					&nbsp;&nbsp;	int pub_year;<br>
-					&nbsp;&nbsp;	char author[1000];<br>
-					} Record;
-				  </div>
-				  <br>
-				  We wrote some basic functions to work with structs. We also talked about accessing members of CDTs through <span class="code">(*struct).property</span> (bad) vs <span class="code">struct->property</span> (good).
-				  <div class="codeblock">
-				  	void set_record_info(Record *rec, char *name, char *author, int year){<br>
-					&nbsp;&nbsp;	strcpy(rec->name, name);<br>
-					&nbsp;&nbsp;	strcpy(rec->author, author);<br>
-					&nbsp;&nbsp;	rec->pub_year = year; <br>
-					}
-				  </div>
-				  We briefly discussed the difference and use cases between <span class="code">fgets()</span> and <span class="code">scanf()</span>.
-				  <br><br>
-				  We also discussed a solution to a problem about: A program which creates a 10 record array, then uses <span class="code">fgets()</span> and <span class="code">scanf()</span> to fill out all records using a function.
-		      </div>
-		     </div>
-		    </div>
-
-			<div class="card">
-		      <div class="card-header" id="heading4">
-		        <h5 class="mb-0">
-		          <button 
-		            class="btn btn-link collapsed" 
-		            data-toggle="collapse" 
-		            data-target="#collapse4" 
-		            aria-expanded="false" 
-		            aria-controls="collapse4"
-		            title="+ Week 1: January 7th">
-		            + Week 4: January 31st | Pointers and Strings
-		          </button>
-		        </h5>
-		      </div>
-		      <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
-		        <div class="card-body">
-		          <b>The tutorial this week covered strings and basic pointer logic in C.</b> 
-		          <br>
-				  We covered the differences between:
-				  <div class="codeblock">
-				  	p = &x;     &nbsp;&nbsp;&nbsp;   // Take the address of x and store it in pointer p <br>
-		            *(p) = y;   &nbsp;  // Make the contents of the locker (p) equal to y   <br>
-		            *(p+2) = z;   // Make the contents of locker (p+2) equal to z	  <br>
-		            y=*(p+5);    &nbsp; // Make y equal to the contents of locker (p+5)	  <br>
-		            m=*(p)+9;   &nbsp;  // Take contents of locker p, increase by 9, store in m
-				  </div>
-				  <br>
-				  We wrote some basic functions, like strConcat, concatenates new to end of orig:
-				  <div class="codeblock">
-				  	void strConcat(char *orig, char *new){	<br>
-						&nbsp;&nbsp;while(*orig){<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;	orig++;<br>
-						&nbsp;&nbsp;}	<br>
-						&nbsp;&nbsp;while(*new){<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;	*orig = *new;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;	orig++;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;	new++;<br>
-						&nbsp;&nbsp;}<br>
-						&nbsp;&nbsp;*orig = '\0';<br>
-					}
-				  </div>
-				  We also discussed a solution to a problem about: A function which takes a pointer to a string, and a pointer to an array of ints. It counts how many times each character appears in the input string and updates that count in the corresponding entry of the array
-				  <br><br>
-				  We motivated the answer by looping through the string and taking the char-to-int value (ASCII) and storing/incrementing it in the 255 char array. For example, 'H' would be 71. Code was left for the reader to complete.
-				  <br><br> 
-				  We also introduced a club - the <a href="https://csec.club" target="_blank">Computer Science Enrichment Club</a>. Come join us if you're not busy!
-		      </div>
-		     </div>
-		    </div>
-
-			<div class="card">
-		      <div class="card-header" id="heading3">
-		        <h5 class="mb-0">
-		          <button 
-		            class="btn btn-link collapsed" 
-		            data-toggle="collapse" 
-		            data-target="#collapse3" 
-		            aria-expanded="false" 
-		            aria-controls="collapse3"
-		            title="+ Week 1: January 7th">
-		            + Week 3: January 24th | Warnings and Errors
-		          </button>
-		        </h5>
-		      </div>
-		      <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
-		        <div class="card-body">
-		          <b>The tutorial this week covered how to identify warnings and errors in C.</b> 
-		          <br>
-					To avoid nasty undefined behavior such as what we get when we do something like:
-					<div class="codeblock">
-						float f = 3.14159;
+				<div class="card-header" id="heading5">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5"
+							aria-expanded="false" aria-controls="collapse5" title="+ Week 1: January 7th">
+							+ Week 5: Feb 7th | Structs
+						</button>
+					</h5>
+				</div>
+				<div id="collapse5" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+					<div class="card-body">
+						<b>The tutorial this week covered structs and their usages.</b>
 						<br>
-						printf("%d \n", f);
+						We covered the differences between a struct (a compound/composite data type, called CDT in
+						notes) and an object.
+						<br><br>
+						We went over how to initialize a struct - disc is the object name, Record is the declarable
+						object. An example below:
+						<div class="codeblock">
+							typedef struct disc{<br>
+							&nbsp;&nbsp; char name[1000]; <br>
+							&nbsp;&nbsp; int pub_year;<br>
+							&nbsp;&nbsp; char author[1000];<br>
+							} Record;
+						</div>
+						<br>
+						We wrote some basic functions to work with structs. We also talked about accessing members of
+						CDTs through <span class="code">(*struct).property</span> (bad) vs <span
+							class="code">struct->property</span> (good).
+						<div class="codeblock">
+							void set_record_info(Record *rec, char *name, char *author, int year){<br>
+							&nbsp;&nbsp; strcpy(rec->name, name);<br>
+							&nbsp;&nbsp; strcpy(rec->author, author);<br>
+							&nbsp;&nbsp; rec->pub_year = year; <br>
+							}
+						</div>
+						We briefly discussed the difference and use cases between <span class="code">fgets()</span> and
+						<span class="code">scanf()</span>.
+						<br><br>
+						We also discussed a solution to a problem about: A program which creates a 10 record array, then
+						uses <span class="code">fgets()</span> and <span class="code">scanf()</span> to fill out all
+						records using a function.
 					</div>
-					The above code will spit out some random number like -394815815, which is not expected behavior. To avoid this, we explained the use of several <b>Flags</b> in our compilation of C code for this course.
-					<br><br>
-					This includes two new items that we need to add:
-					<ul>
-						<li> <span class="code">-Wall</span> short for "warn all" - it turns on (almost) all the warnings that gcc can tell you about </li>
-						<li> <span class="code">-Werror</span> every warning is treated as an error and halts compilation </li>
-					</ul>
-					So now for the rest of the course we expect you to compile all your solutions using:
-					<div class="codeblock">
-						gcc -Wall -Werror program.c
-					</div>
-					We then solved Ex.0 and Ex.2 from Unit 2 Notes together, discussing the problems and their solutions.
-		      </div>
-		     </div>
-		    </div>
+				</div>
+			</div>
 
 			<div class="card">
-		      <div class="card-header" id="heading2">
-		        <h5 class="mb-0">
-		          <button 
-		            class="btn btn-link collapsed" 
-		            data-toggle="collapse" 
-		            data-target="#collapse2" 
-		            aria-expanded="false" 
-		            aria-controls="collapse2"
-		            title="+ Week 2: January 14th">
-		            + Week 2: January 14th | Introductory C
-		          </button>
-		        </h5>
-		      </div>
-		      <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-		        <div class="card-body">
-		          <b>The tutorial this week covered basics in C such as loops, conditionals, comparison operators, and how to use printf in C.</b> 
-		          <br>
-		          We discovered that the <span class="code">|</span> and <span class="code">&</span> operators are bitwise operators - meaning they actually take the bit-by-bit of two variables (e.g. 2 = 00000010). We then discussed how the <span class="code">||</span> and <span class="code">&&</span> are logical operators - meaning that they act the same as (a or b) and (a and b) in Python. <b> Do not use single operators in place of double operators </b>. We also briefly touched upon the fact that <b>anything not 0 is True in C</b>.
-		          <br><br>
-		          We examined the behavior of these different operators through some code: 
-				  <div class="codeblock">
-					int a = 2;<br>
-					int b = 0;<br>
-					int c = 7;<br>
-					if((a=b && (c=3) & b==0)){<br>
-						&nbsp;&nbsp;printf("Printed \n");<br>
-					}<br>
-					else{<br>
-						&nbsp;&nbsp;printf("Not printed \n");<br>
-					}<br>
-					return 0;<br>
-				  </div>
-				  We also created a program to print all the perfect squares from [1..100] in C:
-				  <div class="codeblock">
-				  	int is_square(int num){<br>
-						&nbsp;&nbsp;double ans = sqrt((double)num);<br>
-						&nbsp;&nbsp;int int_ans = (int) ans;<br>
-						&nbsp;&nbsp;if(ans == int_ans){<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;	return sqrt(num);<br>
-						&nbsp;&nbsp;}<br>
-						&nbsp;&nbsp;return 0;<br>
-					}<br>
-					<br>
-					int main(){<br>
-						&nbsp;&nbsp;for(int i = 1; i < 101; i++){<br>
-						&nbsp;&nbsp;	int ans = is_square(i);<br>
-						&nbsp;&nbsp;	if(ans != 0){<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;		printf("%d = %d * %d \n", i, ans, ans);<br>
-						&nbsp;&nbsp;	}<br>
-						&nbsp;&nbsp;}<br>
-					}
-				  </div>
-		      </div>
-		     </div>
-		    </div>
-		  </div>
+				<div class="card-header" id="heading4">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4"
+							aria-expanded="false" aria-controls="collapse4" title="+ Week 1: January 7th">
+							+ Week 4: January 31st | Pointers and Strings
+						</button>
+					</h5>
+				</div>
+				<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+					<div class="card-body">
+						<b>The tutorial this week covered strings and basic pointer logic in C.</b>
+						<br>
+						We covered the differences between:
+						<div class="codeblock">
+							p = &x; &nbsp;&nbsp;&nbsp; // Take the address of x and store it in pointer p <br>
+							*(p) = y; &nbsp; // Make the contents of the locker (p) equal to y <br>
+							*(p+2) = z; // Make the contents of locker (p+2) equal to z <br>
+							y=*(p+5); &nbsp; // Make y equal to the contents of locker (p+5) <br>
+							m=*(p)+9; &nbsp; // Take contents of locker p, increase by 9, store in m
+						</div>
+						<br>
+						We wrote some basic functions, like strConcat, concatenates new to end of orig:
+						<div class="codeblock">
+							void strConcat(char *orig, char *new){ <br>
+							&nbsp;&nbsp;while(*orig){<br>
+							&nbsp;&nbsp;&nbsp;&nbsp; orig++;<br>
+							&nbsp;&nbsp;} <br>
+							&nbsp;&nbsp;while(*new){<br>
+							&nbsp;&nbsp;&nbsp;&nbsp; *orig = *new;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp; orig++;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp; new++;<br>
+							&nbsp;&nbsp;}<br>
+							&nbsp;&nbsp;*orig = '\0';<br>
+							}
+						</div>
+						We also discussed a solution to a problem about: A function which takes a pointer to a string,
+						and a pointer to an array of ints. It counts how many times each character appears in the input
+						string and updates that count in the corresponding entry of the array
+						<br><br>
+						We motivated the answer by looping through the string and taking the char-to-int value (ASCII)
+						and storing/incrementing it in the 255 char array. For example, 'H' would be 71. Code was left
+						for the reader to complete.
+						<br><br>
+						We also introduced a club - the <a href="https://csec.club" target="_blank">Computer Science
+							Enrichment Club</a>. Come join us if you're not busy!
+					</div>
+				</div>
+			</div>
 
-		  <div class="card">
-		      <div class="card-header" id="heading1">
-		        <h5 class="mb-0">
-		          <button 
-		            class="btn btn-link collapsed" 
-		            data-toggle="collapse" 
-		            data-target="#collapse1" 
-		            aria-expanded="false" 
-		            aria-controls="collapse1"
-		            title="+ Week 1: January 7th">
-		            + Week 1: January 7th | Setting Up Your Environment
-		          </button>
-		        </h5>
-		      </div>
-		      <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
-		        <div class="card-body">
-		          <b>There were no tutorials this week.</b> 
-		          <br>
-		          Instead here's a link to a funny comic - <a href="http://dilbert.com/strip/2017-01-02">Dilbert Programming Environment</a>.
-		          <br><br>
-					We will be using <b>C</b> for this course. Consider familiarizing yourself with the C language and get started by downloading a text editor (I recommend <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> or <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a> for beginners, and <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> for more advanced students). Try to understand how to write and run C code (most text editors have syntax highlighting, which is useful!) - it's quite a bit different than Python. Read Paco's notes on the Quercus site for details.
+			<div class="card">
+				<div class="card-header" id="heading3">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3"
+							aria-expanded="false" aria-controls="collapse3" title="+ Week 1: January 7th">
+							+ Week 3: January 24th | Warnings and Errors
+						</button>
+					</h5>
+				</div>
+				<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+					<div class="card-body">
+						<b>The tutorial this week covered how to identify warnings and errors in C.</b>
+						<br>
+						To avoid nasty undefined behavior such as what we get when we do something like:
+						<div class="codeblock">
+							float f = 3.14159;
+							<br>
+							printf("%d \n", f);
+						</div>
+						The above code will spit out some random number like -394815815, which is not expected behavior.
+						To avoid this, we explained the use of several <b>Flags</b> in our compilation of C code for
+						this course.
+						<br><br>
+						This includes two new items that we need to add:
+						<ul>
+							<li> <span class="code">-Wall</span> short for "warn all" - it turns on (almost) all the
+								warnings that gcc can tell you about </li>
+							<li> <span class="code">-Werror</span> every warning is treated as an error and halts
+								compilation </li>
+						</ul>
+						So now for the rest of the course we expect you to compile all your solutions using:
+						<div class="codeblock">
+							gcc -Wall -Werror program.c
+						</div>
+						We then solved Ex.0 and Ex.2 from Unit 2 Notes together, discussing the problems and their
+						solutions.
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" id="heading2">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2"
+							aria-expanded="false" aria-controls="collapse2" title="+ Week 2: January 14th">
+							+ Week 2: January 14th | Introductory C
+						</button>
+					</h5>
+				</div>
+				<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+					<div class="card-body">
+						<b>The tutorial this week covered basics in C such as loops, conditionals, comparison operators,
+							and how to use printf in C.</b>
+						<br>
+						We discovered that the <span class="code">|</span> and <span class="code">&</span> operators are
+						bitwise operators - meaning they actually take the bit-by-bit of two variables (e.g. 2 =
+						00000010). We then discussed how the <span class="code">||</span> and <span
+							class="code">&&</span> are logical operators - meaning that they act the same as (a or b)
+						and (a and b) in Python. <b> Do not use single operators in place of double operators </b>. We
+						also briefly touched upon the fact that <b>anything not 0 is True in C</b>.
+						<br><br>
+						We examined the behavior of these different operators through some code:
+						<div class="codeblock">
+							int a = 2;<br>
+							int b = 0;<br>
+							int c = 7;<br>
+							if((a=b && (c=3) & b==0)){<br>
+							&nbsp;&nbsp;printf("Printed \n");<br>
+							}<br>
+							else{<br>
+							&nbsp;&nbsp;printf("Not printed \n");<br>
+							}<br>
+							return 0;<br>
+						</div>
+						We also created a program to print all the perfect squares from [1..100] in C:
+						<div class="codeblock">
+							int is_square(int num){<br>
+							&nbsp;&nbsp;double ans = sqrt((double)num);<br>
+							&nbsp;&nbsp;int int_ans = (int) ans;<br>
+							&nbsp;&nbsp;if(ans == int_ans){<br>
+							&nbsp;&nbsp;&nbsp;&nbsp; return sqrt(num);<br>
+							&nbsp;&nbsp;}<br>
+							&nbsp;&nbsp;return 0;<br>
+							}<br>
+							<br>
+							int main(){<br>
+							&nbsp;&nbsp;for(int i = 1; i < 101; i++){<br>
+								&nbsp;&nbsp; int ans = is_square(i);<br>
+								&nbsp;&nbsp; if(ans != 0){<br>
+								&nbsp;&nbsp;&nbsp;&nbsp; printf("%d = %d * %d \n", i, ans, ans);<br>
+								&nbsp;&nbsp; }<br>
+								&nbsp;&nbsp;}<br>
+								}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="heading1">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1"
+						aria-expanded="false" aria-controls="collapse1" title="+ Week 1: January 7th">
+						+ Week 1: January 7th | Setting Up Your Environment
+					</button>
+				</h5>
+			</div>
+			<div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
+				<div class="card-body">
+					<b>There were no tutorials this week.</b>
+					<br>
+					Instead here's a link to a funny comic - <a href="http://dilbert.com/strip/2017-01-02">Dilbert
+						Programming Environment</a>.
 					<br><br>
-					Looking to store your code? Try not to use Google Drive or Dropbox, instead, consider checking out <b>Git</b> - a version control system widely used by software engineers. I recommend setting up a GitHub (Git hosting service) account - GitHub offers a free student pack loaded with goodies <a href="https://education.github.com/pack" target="_blank">here</a>. Git is a storage system for your code, being able to revert to previous versions, accessed from any computer, and loads of other amazing functionality that makes developing much easier.
-		      </div>
-		     </div>
-		    </div>
-		  </div>
-  	  </div>
-    </main>
-    <br><br>
-  </body>
+					We will be using <b>C</b> for this course. Consider familiarizing yourself with the C language and
+					get started by downloading a text editor (I recommend <a href="https://notepad-plus-plus.org/"
+						target="_blank">Notepad++</a> or <a href="https://www.sublimetext.com/" target="_blank">Sublime
+						Text</a> for beginners, and <a href="https://code.visualstudio.com/" target="_blank">Visual
+						Studio Code</a> for more advanced students). Try to understand how to write and run C code (most
+					text editors have syntax highlighting, which is useful!) - it's quite a bit different than Python.
+					Read Paco's notes on the Quercus site for details.
+					<br><br>
+					Looking to store your code? Try not to use Google Drive or Dropbox, instead, consider checking out
+					<b>Git</b> - a version control system widely used by software engineers. I recommend setting up a
+					GitHub (Git hosting service) account - GitHub offers a free student pack loaded with goodies <a
+						href="https://education.github.com/pack" target="_blank">here</a>. Git is a storage system for
+					your code, being able to revert to previous versions, accessed from any computer, and loads of other
+					amazing functionality that makes developing much easier.
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</main>
+	<br><br>
+</body>
+
 </html>
